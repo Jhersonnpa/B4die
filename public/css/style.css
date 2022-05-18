@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --yellow: #FFDB49;
+    --yellow-dark: #FEAF26;
+    --white: #ffffff;
+    --gray-shadow: #F6F6F6;
+    --gray-light: #EAEAEA;
+    --gray-dark: #545454;
+    --blue-dark: #202935;
+    --black-blue: #0D1117;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--black-blue);
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+}
+
+.nav-top {
+    width: 100%;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--white);
+    padding: 5px 0;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    justify-self: end;
+}
+
+li {
+    display: inline-block;
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.nav-bottom ul a {
+    text-decoration: none;
+    color: var(--gray-dark);
+    border-bottom: 2px solid var(--white);
+    font-size: 1.2rem;
+    transition: all .5s;
+}
+
+.nav-bottom ul a:hover {
+    border-bottom: 2px solid var(--gray-dark);
+}
