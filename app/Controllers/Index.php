@@ -8,4 +8,9 @@ class Index extends BaseController
     {
         return view('index');
     }
+
+    public function ranking()
+    {
+        return view('ranking');
+    }
 }

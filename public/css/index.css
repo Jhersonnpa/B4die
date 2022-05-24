@@ -1,0 +1,167 @@
+:root {
+    --yellow: #FFDB49;
+    --yellow-dark: #FEAF26;
+    --white: #ffffff;
+    --gray-shadow: #F6F6F6;
+    --gray-light: #EAEAEA;
+    --gray-dark: #545454;
+    --blue-dark: #202935;
+    --black-blue: #0D1117;
+}
+
+/* Slider */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 800px;
+}
+
+.img-slider {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--yellow);
+  font-size: 1.4rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#slide-1 {
+    background: url(../img/mochilero-index.jpg)center no-repeat;
+    background-size: cover;
+}
+
+#slide-2 {
+    background: url(../img/kart.jpg)center no-repeat;
+    background-size: cover;
+}
+
+#slide-3 {
+    background: url(../img/caida-libre.jpg)center no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color:var(--yellow);
+}
+
+p {
+    color: var(--white);
+}
+
+.container > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+.card img {
+    height: 100px;
+}
+
+.card-title {
+    color:var(--blue-dark);
+}
+
+span {
+    color: var(--gray-dark);
+}
+
+.card > a { 
+    text-decoration: none;
+    color: var(--blue-dark);
+}
