@@ -7,6 +7,8 @@
     --gray-dark: #545454;
     --blue-dark: #202935;
     --black-blue: #0D1117;
+    --bronze: #CE782D;
+    --silver: #BBBBBB;
 }
 
 body{
@@ -24,43 +26,100 @@ body{
 
 }
 
+/* contenido numero uno */
 .top1{
     background-color: var(--white);
     margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
     border-radius: 4px;
-    height: 150px;
+    height: 175px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+.crown{
+  margin: 10px; 
+}
+.bxs-crown{
+  color: var(--yellow-dark);
+  font-size: 2em;
+}
+.img-top1{
+  border-radius: 50%;
+  width: 175px;
+  height: 90%;
+  align-self: center;
+}
+.info-top1{
+  width: 40%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.username1{
+  font-size: 1.5em;
+  padding-top: 30px;
+}
+.divRango{
+  display: flex;
+}
+.logoRango{
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+.range1{
+  margin-top: 3%;
+  margin-left: 2%;
+}
+.titulo-top-expe{
+  margin-top: 3%;
+}
+.expe-top{
+  line-height: 27px;
 }
 
+.logros{
+
+}
+
+
+/* contenido 5 primeros */
 .wrapper{
     margin-top: 50px;
     display: grid;  
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
 .wrapper > div{
-    padding: 20px 0;
     background-color: var(--white);
     height: 150px;
     border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nums{
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.second{
+  color: var(--silver);
+}
+.third{
+  color: var(--bronze);
 }
 
-/* .thead{
-    padding: 8px;
-    border-bottom: 2px solid black;
+.img-primeros{
+  border-radius: 50px;
+  width: ;
+  height: ;
 }
 
-table > tbody > tr >td{
-    padding: 8px;
-    text-align: center;
-}
-.bold{
-    font-weight: 800;
-} */
 
+
+
+
+/* Tabla con el resto de jugadores */
 .tabla{
     margin-top: 50px;
     margin-left: 200px;

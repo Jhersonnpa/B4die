@@ -34,22 +34,32 @@
         <h1 class="header-ranking">Ranking Global</h1>
 
         <div class="top1">
-
+            <div class="crown"><i class='bx bxs-crown'></i></div>
+            <img class="img-top1" src="<?= base_url('img/foto1.jpg')?>" alt="Imagen usuario en primer lugar">
+            <div class="info-top1">
+                <p class="username1"><b>Jhersonnpa</b></p>
+                <div class="divRango"><img src="<?= base_url('img/rango.png')?>" alt="rango" class="logoRango"><p class="range1">Leyenda</p></div>
+                <p class="titulo-top-expe"><b>Experiencia top</b> <p class="expe-top">Salto en paracaidas</p></p>
+            </div>
+            <div class="logros">
+            <!-- <img src="<?= base_url('img/rango.png')?>" alt="rango"> -->
+            </div>
         </div>
 
 
         <div class="wrapper">
             <div class="two">
-
+                <div class="nums second">2</div>
+                <!-- <div><img src="<?= base_url('img/foto1.jpg')?>" alt=""></div>  -->
             </div>
             <div class="three">
-
+                <div class="nums third">3</div>
             </div>
             <div class="four">
-
+                <div class="nums">4</div>
             </div>
             <div class="five">
-
+                <div class="nums">5</div>
             </div>
         </div>
 
