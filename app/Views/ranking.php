@@ -53,23 +53,54 @@
             </div>
         </div>
 
+        <div class="tabla">
+            <table class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Usuario</th>
+                        <th>Rango</th>
+                        <th>Logros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bold">6</td>
+                        <td>Jhersonnpa</td>
+                        <td>Leyenda</td>
+                        <td>1 2 3 4 5</td>
+                    </tr>
 
-        <table>
-            <thead>
-                <th>#</th>
-                <th>Usuario</th>
-                <th>Rango</th>
-                <th>Logros</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>6</td>
-                    <td>Jhersonnpa</td>
-                    <td>Leyenda</td>
-                    <td>1 2 3 4 5</td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr>
+                        <td class="bold">7</td>
+                        <td>Marcmuu</td>
+                        <td>Leyenda</td>
+                        <td>6 7 8 9 10</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bold">8</td>
+                        <td>Sabater</td>
+                        <td>Pelele</td>
+                        <td>1 2 3 4 5</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bold">9</td>
+                        <td>Elhombre</td>
+                        <td>pinpin</td>
+                        <td>6 7 8 9 10</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bold">10</td>
+                        <td>Freixes</td>
+                        <td>tucan</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 
