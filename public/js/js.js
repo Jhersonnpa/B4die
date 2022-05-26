@@ -46,6 +46,9 @@ function showPosition(position) {
 
 function getMap() {
 let ultimaCapa;
+var long = localStorage.getItem('long');
+var lat = localStorage.getItem('lat');
+
 var map = new ol.Map({
     target: 'map',
     layers: [
@@ -67,8 +70,7 @@ if (navigator.geolocation) {
 else {
     alert("Geolocalización desactivada");
 }
-var long = 2.096726;
-var lat = 41.544223;
+
 var posicion1 = { "longitud": 2.096726, "latitud": 41.544223};
 console.log(posicion1);
 console.log(lat + long);

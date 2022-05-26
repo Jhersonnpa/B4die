@@ -24,13 +24,72 @@
         <div class="nav-bottom">
             <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
             <ul>
-                <li><a href="#">Experiencias</a></li>
-                <li><a href="<?=base_url().'/ranking'?>">Ranking</a></li>
-                <li><a href="#">Mapa</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" target="__blank" id="experiencias">Experiencias</a></li>
+                <li><a href="<?=base_url().'/ranking'?>" target="__blank">Ranking</a></li>
+                <li><a href="#" target="__blank">Mapa</a></li>
+                <li><a href="#" target="__blank">Contacto</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="nav-experiencias">
+        <ul>
+            <h3>aéreo</h3>
+            <li><a href="#">Paracaidismo</a></li>
+            <li><a href="#">Aeromodelismo</a></li>
+            <li><a href="#">Ala delta</a></li>
+            <li><a href="#">Parapente</a></li>
+            <li><a href="#">Acrobacia aérea</a></li>
+            <li><a href="#">Parafoil</a></li>
+            <li><a href="#">Parasailing</a></li>
+            <li><a href="#">Globo aeroestatico</a></li>
+            <li><a href="#">Wingfly</a></li>
+            <li><a href="#">Salto base</a></li>
+            <li><a href="#">Puenting</a></li>
+            <li><a href="#">Vuelta en Helicóptero</a></li>
+        </ul>
+        <ul>
+            <h3>terrestre</h3>
+            <li><a href="#">Senderismo</a></li>
+            <li><a href="#">Alpinismo</a></li>
+            <li><a href="#">Rapel</a></li>
+            <li><a href="#">Escalada</a></li>
+            <li><a href="#">Parkour</a></li>
+            <li><a href="#">Zorbing</a></li>
+            <li><a href="#">Bubble Football</a></li>
+            <li><a href="#">Tobogan Alpino</a></li>
+            <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
+            <li><a href="#">Street Luge</a></li>
+            <li><a href="#">Slackline</a></li>
+            <li><a href="#">Tirolina</a></li>
+        </ul>
+        <ul>
+            <h3>acuático</h3>
+            <li><a href="#">Surf</a></li>
+            <li><a href="#">Kitesurf</a></li>
+            <li><a href="#">Wakesurf</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul>
+            <h3>viajes</h3>
+            <li><a href="#">culo</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
 
     <div class="slideshow-container">
 
@@ -38,7 +97,7 @@
             <div class="jumbo-slider">
                 <span>Lorem, ipsum.</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <button>Ir</button>
+                <a href="#"><button>Ir</button></a>
             </div>
         </div>
 
@@ -46,7 +105,7 @@
             <div class="jumbo-slider">
                 <span>Lorem, ipsum.</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <button>Ir</button>
+                <a href="#"><button>Ir</button></a>
             </div>
         </div>
 
@@ -54,7 +113,7 @@
             <div class="jumbo-slider">
                 <span>Lorem, ipsum.</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <button>Ir</button>
+                <a href="#"><button>Ir</button></a>
             </div>
         </div>
 
@@ -153,15 +212,45 @@
         </div>
     </div>
 
-    <div class="container2">
-        <div class="idea">
+    
 
-        </div>
-        <div class="texto-idea">
-            <p>Hola</p>
+    <div class="container">
+        <h2>¿No está tu experiencia deseada?</h2>
+        <div class="container2">
+            <div class="idea">
+
+            </div>
+            <div class="texto-idea">
+                <div class="jumbotron">
+                    <span>Lorem, ipsum. Lorem, ipsum dolor.</span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
+                    <a href="#"><button>Ir</button></a>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <div class="logo-footer">
+            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <p>&copy;</p>
+        </div>
+        <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Terminos de privacidad</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <div class="media-footer">
+            <div>
+                <a href="#"><i class='bx bxl-instagram' id="insta"></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' style="color: #1A6ED8;"></i></a>
+            </div>
+            <div>
+                <a href="#"><i class='bx bxs-up-arrow-square' ></i></a>
+            </div>
+        </div>
+    </footer>
     
     <!-- Animación Sliders -->
     <script  type="text/javascript">

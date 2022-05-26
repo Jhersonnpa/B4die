@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Index::index');
 $routes->add('/ranking','Index::ranking');
+$routes->add('/perfil','Index::perfil');
 
 /*
  * --------------------------------------------------------------------

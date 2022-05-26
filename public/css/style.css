@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --yellow: #FFDB49;
     --yellow-dark: #FEAF26;
@@ -27,10 +31,14 @@ body {
 /* Navbar */
 nav {
     width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-top {
     width: 100%;
+    height: 30%;
     padding: 5px;
     background-color: var(--yellow);
     display: flex;
@@ -47,6 +55,7 @@ nav {
 
 .nav-bottom {
     width: 100%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -77,5 +86,93 @@ nav {
 
 .nav-bottom ul a:hover {
     border-bottom: 2px solid var(--gray-dark);
+}
+
+.nav-experiencias {
+    width: 100%;
+    min-height: 40vh;
+    background-color: var(--black-blue);
+    color: var(--white);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-experiencias > ul {
+    list-style: none;
+}
+
+.nav-experiencias  h3 {
+    text-transform: uppercase;
+    padding: 5px 5px 5px 0;
+}
+
+.nav-experiencias a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#experiencias:hover 
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--blue-dark);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.logo-footer > p {
+    color: var(--white);
+}
+
+footer > ul {
+    height: 79px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all .5s;
+}
+
+footer > ul > li > a:hover {
+    color: var(--gray-light);
+}
+
+.media-footer {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.media-footer i {
+    font-size: 1.7rem;
+}
+
+#insta {
+    color: #833ab4;
+}
+
+.media-footer i:last-child {
+    color:var(--black-blue);
+}
+
+.media-footer i:last-child:hover {
+    animation: animate__bounce;
 }
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die</title>
+    <title>B4die - Ranking</title>
+    
     <link rel="icon" href="<?= base_url('img/icon-b4die.ico')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
@@ -20,12 +21,12 @@
             </div>
         </div>
         <div class="nav-bottom">
-            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <a href="<?= base_url()?>" target="__blank"><img src="<?= base_url('img/logo.png')?>"></a>
             <ul>
-                <li><a href="#">Experiencias</a></li>
-                <li><a href="#">Ranking</a></li>
-                <li><a href="#">Mapa</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" target="__blank">Experiencias</a></li>
+                <li><a href="<?=base_url().'/ranking'?>">Ranking</a></li>
+                <li><a href="#" target="__blank">Mapa</a></li>
+                <li><a href="#" target="__blank">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -33,35 +34,59 @@
     <div class="container">
         <h1 class="header-ranking">Ranking Global</h1>
 
-        <div class="top1">
+        <div class="cartaTop1">
             <div class="crown"><i class='bx bxs-crown'></i></div>
             <img class="img-top1" src="<?= base_url('img/foto1.jpg')?>" alt="Imagen usuario en primer lugar">
-            <div class="info-top1">
+            <div class="divInfoTop1">
                 <p class="username1"><b>Jhersonnpa</b></p>
-                <div class="divRango"><img src="<?= base_url('img/rango.png')?>" alt="rango" class="logoRango"><p class="range1">Leyenda</p></div>
-                <p class="titulo-top-expe"><b>Experiencia top</b> <p class="expe-top">Salto en paracaidas</p></p>
+                <div class="divRango"><img src="<?= base_url('img/rango.png')?>" alt="rango" class="logoRango"><p class="textoRango">Leyenda</p></div>
+                <p class="tituloExpeTop"><b>Experiencia top</b> <p class="nombreExpeTop">Salto en paracaidas</p></p>
             </div>
-            <div class="logros">
-            <!-- <img src="<?= base_url('img/rango.png')?>" alt="rango"> -->
+            <div class="divLogrosTop">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
             </div>
         </div>
 
 
-        <div class="wrapper">
-            <div class="two">
+        <div class="cartasTop">
+            <div class="carta">
                 <div class="nums second">2</div>
-                <!-- <div><img src="<?= base_url('img/foto1.jpg')?>" alt=""></div>  -->
+                <img src="<?= base_url('img/foto1.jpg')?>" alt="" class="imgPerfilTop">
+                <div class="divInfoTops">
+                    <p class="username">MarcMuu</p>
+                    <div class="divRange"><img src="<?= base_url('img/rango.png')?>" alt="rango" class="logoRange"><p class="textRange">Leyenda</p></div>
+                    <p class="tituloExpe"><b>Experiencia top</b> <p class="nombreExpe">Moto acuatica</p></p>
+                </div>
+                <div class="divLogros">
+                    <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                    <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                    <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                    <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+                </div>
             </div>
-            <div class="three">
+
+            <div class="">
                 <div class="nums third">3</div>
             </div>
-            <div class="four">
+            <div class="">
                 <div class="nums">4</div>
             </div>
-            <div class="five">
+            <div class="">
                 <div class="nums">5</div>
             </div>
         </div>
+
 
         <div class="tabla">
             <table class="table table-hover table-responsive">
@@ -113,12 +138,27 @@
         </div>
     </div>
 
-
-
-
-
-
-    
+    <!-- Footer -->
+    <footer>
+        <div class="logo-footer">
+            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <p>&copy;</p>
+        </div>
+        <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Terminos de privacidad</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <div class="media-footer">
+            <div>
+                <a href="#"><i class='bx bxl-instagram' id="insta"></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' style="color: #1A6ED8;"></i></a>
+            </div>
+            <div>
+                <a href="#"><i class='bx bxs-up-arrow-square' ></i></a>
+            </div>
+        </div>
+    </footer>
    
 </body>
 </html>

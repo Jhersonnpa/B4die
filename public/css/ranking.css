@@ -21,13 +21,14 @@ body{
     margin-right: 100px;
 }
 
+
+/* titulo ranking */
 .header-ranking{
     color: var(--gray-dark);
-
 }
 
 /* contenido numero uno */
-.top1{
+.cartaTop1{
     background-color: var(--white);
     margin-top: 50px;
     margin-left: 20%;
@@ -50,15 +51,15 @@ body{
   height: 90%;
   align-self: center;
 }
-.info-top1{
+.divInfoTop1{
   width: 40%;
   padding-left: 50px;
   display: flex;
   flex-direction: column;
 }
 .username1{
-  font-size: 1.5em;
-  padding-top: 30px;
+  font-size: 2em;
+  margin-top: 7%;
 }
 .divRango{
   display: flex;
@@ -68,34 +69,49 @@ body{
   height: 40px;
   align-self: center;
 }
-.range1{
-  margin-top: 3%;
-  margin-left: 2%;
+.textoRango{
+  align-self: center;
+  padding-left: 3%;
 }
-.titulo-top-expe{
+.tituloExpeTop{
   margin-top: 3%;
 }
-.expe-top{
+.nombreExpeTop{
   line-height: 27px;
 }
-
-.logros{
-
+.divLogrosTop{
+  width: 40%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
 }
+.logoLogros{
+  width: 40px;
+  height: 40px;
+}
+
 
 
 /* contenido 5 primeros */
-.wrapper{
+.cartasTop{
     margin-top: 50px;
     display: grid;  
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.wrapper > div{
+.cartasTop > div{
     background-color: var(--white);
     height: 150px;
     border-radius: 4px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.carta{
+  display: flex;
+
 }
 .nums{
   padding: 10px;
@@ -108,11 +124,56 @@ body{
 .third{
   color: var(--bronze);
 }
+.imgPerfilTop{
+  border-radius: 50%;
+  width: 110px;
+  height: 70%;
+  align-self: center;
+}
+.divInfoTops{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+}
 
-.img-primeros{
-  border-radius: 50px;
-  width: ;
-  height: ;
+.username{
+  font-size: 1.2em;
+  margin-top: 10%;
+  font-weight: 500;
+}
+.divRange{
+  display: flex;
+}
+.logoRange{
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+.textRange{
+  align-self: center;
+  padding-left: 3%;
+}
+.tituloExpe{
+  margin-top: 3%;
+}
+.nombreExpe{
+  line-height: 20px;
+}
+
+.divLogros{
+  width: 20%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 30px;
+  grid-template-rows: 30px 30px 30px 30px;
+  row-gap: 5px;
+  justify-content: end;
+  padding-right: 5%;
+}
+.logoLogros{
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -121,9 +182,7 @@ body{
 
 /* Tabla con el resto de jugadores */
 .tabla{
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+  margin: 75px 25%;
 }
 
 table {

@@ -13,4 +13,9 @@ class Index extends BaseController
     {
         return view('ranking');
     }
+
+    public function perfil()
+    {
+        return view('perfil');
+    }
 }

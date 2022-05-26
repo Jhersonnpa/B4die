@@ -13,7 +13,7 @@
 .mySlides {
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 700px;
     align-items: center;
 }
 
@@ -21,23 +21,58 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  max-height: 600px;
+  max-height: 700px;
+  margin-bottom: 50px;
   position: relative;
   overflow: hidden;
 }
 
 /* Caption text */
 .jumbo-slider {
-    width: 300px;
-    height: 500px;
-    margin-left: 20%;
+    width: 500px;
+    min-height: 250px;
+    border-radius: 4px;
+    margin-left: 15%;
     display: flex;
     flex-direction: column;
+    gap: 50px;
+    background-color: #2029358e;
+    opacity: 0.75;
+    padding: 15px;
+    transition: all .5s;
+}
+
+.jumbo-slider:hover {
+    background-color: var(--blue-dark);
+    opacity: 1;
 }
 
 .jumbo-slider > span:first-child {
     color: var(--yellow-dark);
     font-size: 3rem;
+}
+
+.jumbo-slider > span:nth-child(2) {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.jumbo-slider > a >button {
+    width: 50%;
+    height: 57px;
+    color: var(--black-blue);
+    background-color: var(--yellow);
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+    align-self: center;
+}
+
+.jumbo-slider > a >button:hover {
+    background-color: var(--yellow-dark);
 }
 
 .active {
@@ -87,7 +122,7 @@
 }
 
 #slide-2 {
-    background: url(../img/kart.jpg)center no-repeat;
+    background: url(../img/surfista-slider.jpg)center no-repeat;
     background-size: cover;
 }
 
@@ -99,8 +134,7 @@
 .container {
     width: 90%;
     height: 700px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -193,10 +227,8 @@ span {
 }
 
 .container2 {
-    width: 90%;
-    height: 700px;
-    margin: auto;
-    margin-top: 100px;
+    width: 100%;
+    height: 100%;
     background-color: var(--blue-dark);
     display: flex;
 }
@@ -209,4 +241,54 @@ span {
 .texto-idea{
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Jumbotron */
+.jumbotron {
+    width: 70%;
+    min-height: 250px;
+    border-radius: 4px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #2029358e;
+    opacity: 0.75;
+    padding: 15px;
+    transition: all .5s;
+}
+
+.jumbotron {
+    background-color: var(--blue-dark);
+    opacity: 1;
+}
+
+.jumbotron > span:first-child {
+    color: var(--yellow-dark);
+    font-size: 3rem;
+}
+
+.jumbotron > span:nth-child(2) {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.jumbotron > a >button {
+    width: 189px;
+    height: 44px;
+    color: var(--black-blue);
+    background-color: var(--yellow);
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.jumbotron > a >button:hover {
+    background-color: var(--yellow-dark);
 }
