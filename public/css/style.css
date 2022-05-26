@@ -34,6 +34,7 @@ nav {
     height: 12vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .nav-top {
@@ -76,7 +77,7 @@ nav {
     font-weight: 400;
 }
 
-.nav-bottom ul a {
+.nav-bottom > ul > li > a {
     text-decoration: none;
     color: var(--gray-dark);
     border-bottom: 2px solid var(--white);
@@ -84,35 +85,9 @@ nav {
     transition: all .5s;
 }
 
-.nav-bottom ul a:hover {
+.nav-bottom > ul > li>  a:hover {
     border-bottom: 2px solid var(--gray-dark);
 }
-
-.nav-experiencias {
-    width: 100%;
-    min-height: 40vh;
-    background-color: var(--black-blue);
-    color: var(--white);
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.nav-experiencias > ul {
-    list-style: none;
-}
-
-.nav-experiencias  h3 {
-    text-transform: uppercase;
-    padding: 5px 5px 5px 0;
-}
-
-.nav-experiencias a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-#experiencias:hover 
 
 
 /* Footer */
@@ -175,4 +150,55 @@ footer > ul > li > a:hover {
 .media-footer i:last-child:hover {
     animation: animate__bounce;
 }
+
+/* drop */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-height: 40vh;
+    background-color: var(--black-blue);
+    color: var(--white);
+    margin-top: 15px;
+    justify-content: space-evenly;
+    z-index: 1;
+    transition: all .5s;
+    margin-top: -3px !important;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.nav-experiencias {
+    width: 100%;
+    min-height: 40vh;
+    background-color: var(--black-blue);
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.dropdown-content > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content  h3 {
+    text-transform: uppercase;
+    padding: 5px 5px 5px 0;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: var(--white) !important;
+    border: none;
+}
+
 

@@ -78,7 +78,12 @@
             <section id="guardadas">
                 <h2>Guardadas</h2>
                 <div class="cartitasGuardadas">
+                    <div class="cartitaSaved"></div>
+                    <div class="cartitaSaved"></div>
+                    <div class="cartitaSaved"></div>
 
+                    <a class="prev" onclick="arrow(-1)">❮</a>
+                    <a class="next" onclick="arrow(1)">❯</a>
                 </div>
             </section>
             
