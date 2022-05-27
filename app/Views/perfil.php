@@ -77,21 +77,237 @@
         <div class="general">
             <section id="guardadas">
                 <h2>Guardadas</h2>
-                <div class="cartitasGuardadas">
-                    <div class="cartitaSaved"></div>
-                    <div class="cartitaSaved"></div>
-                    <div class="cartitaSaved"></div>
-
-                    <a class="prev" onclick="arrow(-1)">❮</a>
-                    <a class="next" onclick="arrow(1)">❯</a>
-                </div>
+                    <div class="main-scroll-div">
+                        <div>
+                            <button class="icon icon-left" onclick="scrollL()"><i class='bx bx-chevron-left'></i></button>
+                        </div>
+                            <div class="cover">
+                                <div class="scroll-cartitas snaps-inline">
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="child">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div>
+                            <button class="icon icon-right" onclick="scrollR()"><i class='bx bx-chevron-right'></i></button>
+                        </div>
+                    </div>
+                
             </section>
             
             <section id="realizadas">
                 <h2>Realizadas</h2>
-                <div class="cartitasRealizadas">
+                    <div class="main-scroll-div">
+                        <div>
+                            <button class="icon icon-left2" onclick="scrollL2()"><i class='bx bx-chevron-left'></i></button>
+                        </div>
+                            <div class="cover">
+                                <div class="scroll-cartitas2 snaps-inline">
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    <div class="childLogros">
+                                        <div class="card">
+                                            <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                            <span class="card-title">Card Title</span>
+                                            <span>More details about card</span>
+                                            <span>Even more details about the card</span>
+                                            <a href="#">View details</a>
+                                            <span class="new">new</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        <div>
+                            <button class="icon icon-right2" onclick="scrollR2()"><i class='bx bx-chevron-right'></i></button>
+                        </div>
+                    </div>
 
-                </div>
             </section>
             
         </div>

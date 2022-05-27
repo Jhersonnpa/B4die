@@ -116,22 +116,6 @@
     font-size: 3em;
     font-weight: 400;
 }
-.cartitasGuardadas{
-    width: 100%;
-    background-color: red;
-    height: 300px;
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-around;
-}
-.cartitaSaved{
-    width: 30%;
-    background-color: var(--white);
-    border-radius: 4px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
 #realizadas{
     margin-top: 5%;
@@ -140,129 +124,141 @@
     color: var(--yellow);
     font-size: 3em;
     font-weight: 400;
-}
+} 
 
 
-
-/* ================ */
 /* Slider */
-.mySlides {
-    display: flex;
+.main-scroll-div{
     width: 100%;
-    height: 700px;
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-cartitas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+/* remove the scroll bar */
+.scroll-cartitas::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+
+/* para que al hacer scroll no se quede la carta partida */
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10px;
+}
+.snaps-inline > *{
+    scroll-snap-align: start;
 }
 
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  max-height: 700px;
-  margin-bottom: 50px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Caption text */
-.jumbo-slider {
-    width: 500px;
-    min-height: 250px;
+/* card activities */
+.child{
+    min-width: 30%;
+    height: 300px;
+    margin: 10px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color:var(--gray-light);
     border-radius: 4px;
-    margin-left: 15%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    background-color: #2029358e;
-    opacity: 0.75;
-    padding: 15px;
-    transition: all .5s;
+    position: relative;
 }
-
-.jumbo-slider:hover {
-    background-color: var(--blue-dark);
-    opacity: 1;
+.card img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
 }
-
-.jumbo-slider > span:first-child {
-    color: var(--yellow-dark);
-    font-size: 3rem;
+.card-title {
+    color:var(--blue-dark);
+    font-weight: 800;
 }
-
-.jumbo-slider > span:nth-child(2) {
-    color: var(--white);
-    font-size: 1.4rem;
+span {
+    color: var(--gray-dark);
+    padding: 5px;
 }
-
-.jumbo-slider > a >button {
-    width: 50%;
-    height: 57px;
-    color: var(--black-blue);
-    background-color: var(--yellow);
-    border-radius: 4px;
-    border: none;
-    font-size: 1.2rem;
+.card > a { 
+    text-decoration: none;
+    color: var(--blue-dark);
     font-weight: 600;
-    cursor: pointer;
-    transition: all .5s;
-    align-self: center;
+    padding: 5px;
 }
-
-.jumbo-slider > a >button:hover {
-    background-color: var(--yellow-dark);
-}
-
-.active {
-  background-color: #717171;
-}
-
-.prev, .next {
-    cursor: pointer;
+.new {
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
+    right: 5px;
+    top: 5px;
+    background-color: var(--yellow-dark);
+    color: var(--blue-dark);
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+
+/* flexa direcciones scroll */
+.icon{
+    color: var(--white);
+    background-color: var(--black-blue);
+    font-size: 2em;
     padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    outline: none;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.icon-left:hover, .icon-right:hover {
+    background-color: var(--blue-dark);
 }
 
-  /* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+
+/* cartas logros */
+.childLogros{
+    min-width: 23%;
+    height: 300px;
+    margin: 10px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color:var(--gray-light);
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.scroll-cartitas2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.icon-left2:hover, .icon-right2:hover {
+    background-color: var(--blue-dark);
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-#slide-1 {
-    background: url(../img/mochilero-index.jpg)center no-repeat;
-    background-size: cover;
-}
-
-#slide-2 {
-    background: url(../img/surfista-slider.jpg)center no-repeat;
-    background-size: cover;
-}
-
-#slide-3 {
-    background: url(../img/caida-libre.jpg)center no-repeat;
-    background-size: cover;
-}
+/* remove the scroll bar */
+.scroll-cartitas2::-webkit-scrollbar{
+    -webkit-appearance: none;
+    }

@@ -26,63 +26,66 @@
             <ul class="navbar">
                 <li class="dropdown">
                     <a href="#" target="__blank" id="experiencias" class="dropbtn">Experiencias</a>
-                    <div class="dropdown-content nav-experiencias" id="nav-experiencias">
-                        <ul>
-                            <h3>aéreo</h3>
-                            <li><a href="#">Paracaidismo</a></li>
-                            <li><a href="#">Aeromodelismo</a></li>
-                            <li><a href="#">Ala delta</a></li>
-                            <li><a href="#">Parapente</a></li>
-                            <li><a href="#">Acrobacia aérea</a></li>
-                            <li><a href="#">Parafoil</a></li>
-                            <li><a href="#">Parasailing</a></li>
-                            <li><a href="#">Globo aeroestatico</a></li>
-                            <li><a href="#">Wingfly</a></li>
-                            <li><a href="#">Salto base</a></li>
-                            <li><a href="#">Puenting</a></li>
-                            <li><a href="#">Vuelta en Helicóptero</a></li>
-                        </ul>
-                        <ul>
-                            <h3>terrestre</h3>
-                            <li><a href="#">Senderismo</a></li>
-                            <li><a href="#">Alpinismo</a></li>
-                            <li><a href="#">Rapel</a></li>
-                            <li><a href="#">Escalada</a></li>
-                            <li><a href="#">Parkour</a></li>
-                            <li><a href="#">Zorbing</a></li>
-                            <li><a href="#">Bubble Football</a></li>
-                            <li><a href="#">Tobogan Alpino</a></li>
-                            <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
-                            <li><a href="#">Street Luge</a></li>
-                            <li><a href="#">Slackline</a></li>
-                            <li><a href="#">Tirolina</a></li>
-                        </ul>
-                        <ul>
-                            <h3>acuático</h3>
-                            <li><a href="#">Surf</a></li>
-                            <li><a href="#">Kitesurf</a></li>
-                            <li><a href="#">Wakesurf</a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                        <ul>
-                            <h3>viajes</h3>
-                            <li><a href="#">culo</a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
+                    <div class="dropdown-content" id="nav-experiencias">
+                        <div class="transparent"></div>
+                        <div class="nav-experiencias">
+                            <ul>
+                                <li><a href="#" class="subcategoria">aereo</a></li>
+                                <li><a href="#">Paracaidismo</a></li>
+                                <li><a href="#">Aeromodelismo</a></li>
+                                <li><a href="#">Ala delta</a></li>
+                                <li><a href="#">Parapente</a></li>
+                                <li><a href="#">Acrobacia aérea</a></li>
+                                <li><a href="#">Parafoil</a></li>
+                                <li><a href="#">Parasailing</a></li>
+                                <li><a href="#">Globo aeroestatico</a></li>
+                                <li><a href="#">Wingfly</a></li>
+                                <li><a href="#">Salto base</a></li>
+                                <li><a href="#">Puenting</a></li>
+                                <li><a href="#">Vuelta en Helicóptero</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="subcategoria">terrestre</a></li>
+                                <li><a href="#">Senderismo</a></li>
+                                <li><a href="#">Alpinismo</a></li>
+                                <li><a href="#">Rapel</a></li>
+                                <li><a href="#">Escalada</a></li>
+                                <li><a href="#">Parkour</a></li>
+                                <li><a href="#">Zorbing</a></li>
+                                <li><a href="#">Bubble Football</a></li>
+                                <li><a href="#">Tobogan Alpino</a></li>
+                                <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
+                                <li><a href="#">Street Luge</a></li>
+                                <li><a href="#">Slackline</a></li>
+                                <li><a href="#">Tirolina</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="subcategoria">acuatico</a></li>
+                                <li><a href="#">Surf</a></li>
+                                <li><a href="#">Kitesurf</a></li>
+                                <li><a href="#">Wakesurf</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#" class="subcategoria">viajes</a></li>
+                                <li><a href="#">culo</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
                 <li><a href="<?=base_url().'/ranking'?>" target="__blank">Ranking</a></li>

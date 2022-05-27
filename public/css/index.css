@@ -133,8 +133,8 @@
 
 .container {
     width: 90%;
-    height: 700px;
-    margin: 50px auto;
+    height: 90vh;
+    margin: 75px auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -176,8 +176,9 @@ p {
 }
 
 .card img {
-    height: 100px;
-    width: 100%;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 4px 4px 0 0;
 }
 
@@ -210,6 +211,7 @@ span {
 
 .container > .buscador {
     width: 100%;
+    /* min-height: 500px; */
     display: flex;
     height: 90%;
     border-radius: 4px;

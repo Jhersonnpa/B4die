@@ -145,3 +145,25 @@ for (var i = 0; i < markers.length; i++) {
 }
 map.addLayer(vectorLayer);
 }
+
+
+// SLIDER PERFIL
+// cartas guardadas
+function scrollL(){
+    var left = document.querySelector(".scroll-cartitas");
+    left.scrollBy(-350, 0);
+}
+function scrollR(){
+    var right = document.querySelector(".scroll-cartitas");
+    right.scrollBy(350, 0);
+}
+
+// cartas logros
+function scrollL2(){
+    var left = document.querySelector(".scroll-cartitas2");
+    left.scrollBy(-350, 0);
+}
+function scrollR2(){
+    var right = document.querySelector(".scroll-cartitas2");
+    right.scrollBy(350, 0);
+}
