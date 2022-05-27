@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B4die</title>
-    <link rel="icon" href="<?= base_url('img/icon-b4die.ico')?>">
+    <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="<?= base_url('css/index.css')?>">
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="nav-bottom">
-            <a href="<?= base_url().'/experiencias'?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
             <ul class="navbar">
                 <li class="dropdown">
                     <a href="<?= base_url().'/experiencias'?>" target="__blank" id="experiencias" class="dropbtn">Experiencias</a>
@@ -90,12 +90,23 @@
                 </li>
                 <li><a href="<?=base_url().'/ranking'?>" target="__blank">Ranking</a></li>
                 <li><a href="#" target="__blank">Mapa</a></li>
-                <li><a href="#" target="__blank">Contacto</a></li>
+                <li><a href="#jsModal" id="popup" class="jsModalTrigger">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
-    
+    <!-- Modal -->
+    <div id="jsModal" class="modal">
+    <div class="modal__overlay jsOverlay"></div>
+    <div class="modal__container">
+        <form action="" method="post">
+            <input type="text" name="Email" id="Email" placeholder="Email">
+            <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
+            <textarea name="msj" id="msj" cols="30" rows="10">Mensaje</textarea>
+        </form>
+        <button class="modal__close jsModalClose"><i class='bx bx-x-circle' style='color:#feaf26'  ></i></button>
+    </div>
+    </div>
 
     <div class="slideshow-container">
 
@@ -206,7 +217,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="div-buscador">
         <h2>Buscador de actividades</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quas itaque delectus nostrum fugit ut, id nisi at, natus doloribus aspernatur ipsum officiis vero dignissimos, quasi voluptatibus ea obcaecati vitae!</p>
         <div class="buscador" style="background-color: #202935;">
@@ -239,7 +250,7 @@
     <!-- Footer -->
     <footer>
         <div class="logo-footer">
-            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
             <p>&copy;</p>
         </div>
         <ul>
@@ -258,11 +269,12 @@
         </div>
     </footer>
     
-    <!-- Animación Sliders -->
+    <!-- JS -->
     <script  type="text/javascript">
         window.onload = function(){
             showSlides(1);
-             getMap();
+            getMap();
+            modal();
         }
        
     </script>

@@ -33,7 +33,9 @@
     
     <div class="flex">
         <div class="perfil">
-            <img src="<?= base_url('img/foto1.jpg')?>" alt="Imagen perfil" class="fotoPerfil">
+            <div class="divFoto">
+                <img src="<?= base_url('img/MARC_MORELL.jpg')?>" alt="Imagen perfil" class="fotoPerfil">
+            </div>
             <div class="infoPerfil">
                 <div class="nombreUsuario">Jhersonnpa</div>
                 <div class="datos">

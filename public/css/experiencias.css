@@ -1,0 +1,159 @@
+:root {
+    --yellow: #FFDB49;
+    --yellow-dark: #FEAF26;
+    --white: #ffffff;
+    --gray-shadow: #F6F6F6;
+    --gray-light: #EAEAEA;
+    --gray-dark: #545454;
+    --blue-dark: #202935;
+    --black-blue: #0D1117;
+}
+
+#scroll{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+}
+#scroll h2{
+    color: var(--yellow);
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+/* Slider */
+.main-scroll-div{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-cartitas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+/* remove the scroll bar */
+.scroll-cartitas::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+
+/* para que al hacer scroll no se quede la carta partida */
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10px;
+}
+.snaps-inline > *{
+    scroll-snap-align: start;
+}
+
+
+/* card activities */
+.child{
+    min-width: 30%;
+    height: 100%;
+    margin: 10px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color:var(--gray-light);
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card img {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+.card-title {
+    color:var(--blue-dark);
+    font-weight: 800;
+}
+span {
+    color: var(--gray-dark);
+    padding: 5px;
+}
+.card > a { 
+    text-decoration: none;
+    color: var(--blue-dark);
+    font-weight: 600;
+    padding: 5px;
+}
+.new {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: var(--yellow-dark);
+    color: var(--blue-dark);
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/* flexa direcciones scroll */
+.icon{
+    color: var(--white);
+    background-color: var(--black-blue);
+    font-size: 2em;
+    padding: 16px;
+    outline: none;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.icon-left:hover, .icon-right:hover {
+    background-color: var(--blue-dark);
+}
+.icon-right, .icon-right2{
+    margin: 0px 10px;
+}
+
+
+#mapa{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2%;
+}
+#mapa h2{
+    color: var(--yellow);
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+#mapa p{
+    color: var(--white);
+}
+
+#map{
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5%;
+}
