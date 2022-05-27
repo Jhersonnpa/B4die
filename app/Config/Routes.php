@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Index::index');
 $routes->add('/ranking','Index::ranking');
 $routes->add('/perfil','Index::perfil');
-
+$routes->add('/experiencias','Index::experiencias');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

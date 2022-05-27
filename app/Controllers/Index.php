@@ -14,8 +14,8 @@ class Index extends BaseController
         return view('ranking');
     }
 
-    public function perfil()
+    public function experiencias()
     {
-        return view('perfil');
+        return view('experiencias');
     }
 }

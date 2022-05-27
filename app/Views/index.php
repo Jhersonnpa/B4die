@@ -22,10 +22,10 @@
             </div>
         </div>
         <div class="nav-bottom">
-            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <a href="<?= base_url().'/experiencias'?>"><img src="<?= base_url('img/logo.png')?>"></a>
             <ul class="navbar">
                 <li class="dropdown">
-                    <a href="#" target="__blank" id="experiencias" class="dropbtn">Experiencias</a>
+                    <a href="<?= base_url().'/experiencias'?>" target="__blank" id="experiencias" class="dropbtn">Experiencias</a>
                     <div class="dropdown-content" id="nav-experiencias">
                         <div class="transparent"></div>
                         <div class="nav-experiencias">
