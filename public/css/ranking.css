@@ -12,15 +12,15 @@
 }
 
 body{
-    background-color: var(--gray-light);
+    background-color: var(--gray-light)!important;
 }
 
 .container{
+    width:90%;
+    margin: auto; 
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
@@ -32,24 +32,25 @@ body{
 /* contenido numero uno */
 .cartaTop1{
     background-color: var(--white);
+    width: 60%;
+    margin: auto;
     margin-top: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
     border-radius: 4px;
-    height: 175px;
+    height: 20vh;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
 }
 .crown{
-  margin: 10px; 
+  width: 5%; 
 }
 .bxs-crown{
   color: var(--yellow-dark);
   font-size: 2em;
+  margin: 10px;
 }
 .img-top1{
   border-radius: 50%;
-  width: 175px;
+  width: 18%;
   height: 90%;
   align-self: center;
 }
@@ -83,7 +84,8 @@ body{
 }
 .divLogrosTop{
   width: 40%;
-  margin-top: 2%;
+  align-self: center;
+  /* margin-top: 2%; */
   display: grid;
   grid-template-columns: 40px 40px 40px 40px;
   grid-template-rows: 40px 40px 40px;
@@ -253,8 +255,6 @@ table {
   .table-hover > tbody > tr.active:hover > th {
     background-color: #e8e8e8;
   }
-  
-  
   .table-responsive {
     min-height: 0.01%;
     overflow-x: auto;
@@ -279,3 +279,85 @@ table {
       white-space: nowrap;
     }
   }
+
+
+
+@media (max-width: 600px){
+  .container{
+    margin-top: 20px;
+  }
+  h1{
+    align-self: center;
+  }
+  /* carta numero 1 */
+  .cartaTop1{
+    width: 100%;
+    height: 15vh;
+    margin-top: 20px;
+  }
+  .crown{
+    width: 8%;
+  }
+  .bxs-crown{
+    font-size: 1.5em;
+    margin: 3px 0px 0px 3px;
+  }
+  .img-top1{
+    width: 25%;
+    height: 70%;
+  }
+  .divInfoTop1{
+    padding: 10px 0px 10px 10px;
+    width: 45%;
+  }
+  .username1{
+    font-size: 1em;
+  }
+  .tituloExpeTop{
+    font-size: 0.8em;
+  }
+  .nombreExpeTop{
+    font-size: 0.8em;
+  }
+  .logoRango{
+    width: 25px;
+    height: 25px;
+  }
+  .divLogrosTop{
+    grid-template-columns: 25px 25px 25px;
+    grid-template-rows: 25px 25px 25px 25px;
+    column-gap: 10px;
+    row-gap: 5px;
+    margin-right: 5px;
+  }
+/* cartas numeros 2,3,4,5 */
+.cartasTop{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cartasTop > div{
+  height: 15vh;
+}
+.nums{
+  padding: 3px;
+}
+.divInfoTops{
+
+}
+.logoRange{
+  width: 25px;
+  height: 25px;
+}
+.divLogros{
+  grid-template-columns: 25px;
+  grid-template-rows: 25px 25px 25px 25px;
+  row-gap: 3px;
+}
+.tabla{
+  margin: 0;
+  margin-top: 50px;
+}
+
+}

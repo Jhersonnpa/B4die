@@ -34,7 +34,6 @@ nav {
     height: 12vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .nav-top {
@@ -82,9 +81,8 @@ nav {
 
 #searchform label {
     padding-left: 1px;
-    display: inline-block;
-    position: relative;
-    left: 0.1em;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -216,11 +214,10 @@ footer > ul > li > a:hover {
     width: 100%;
     min-height: 40vh;
     color: var(--white);
-    margin-top: 20px;
+    margin-top: -5px;
     /* justify-content: space-evenly; */
     z-index: 1;
     transition: all .5s;
-    margin-top: -3px !important;
 }
 
 
@@ -257,7 +254,7 @@ footer > ul > li > a:hover {
 
 .transparent {
     width: 100%;
-    height: 1.14rem;
+    height: 2rem;
     background-color: #ffffff00;
 }
 
@@ -329,7 +326,6 @@ footer > ul > li > a:hover {
   position: relative;
   z-index: 22;
   width: 35%;
-  height: 80vh;
   top: 50%;
   transform: translateY(-50%);
   box-shadow: 0 0 8px #fff;
@@ -383,6 +379,111 @@ footer > ul > li > a:hover {
 
 .modal__container input[type="submit"]{
     background: var(--yellow-dark);
-    color: #fff;
+    color: var(--black-blue);
+    font-weight: 600;
     cursor: pointer;
+}
+
+/* User */
+  
+.dropdown-user {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+.dropbtn-user{
+    cursor: pointer;
+}
+  
+.dropdown-content-user {
+    display: none;
+    position: absolute;
+    background-color: var(--gray-shadow);
+    margin-top: 10rem;
+    padding: 1rem 0;
+    min-width: 160px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10000;
+}
+  
+.dropdown-content-user a {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+  
+.dropdown-content-user a:hover {
+    color: #333333;
+}
+  
+.dropdown-user:hover .dropdown-content-user {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.dropdown-content-user hr {
+    height: 2px;
+    background-color: var(--gray-dark);
+}
+
+
+/* Responsive mobile */
+@media only screen and (max-width: 600px){
+    /* Navbar */
+
+    /* Modal Contact */
+    .modal__container{
+        width: 80%;
+        top: 40%;
+        left: 4%;
+        margin: 0;
+    }
+
+    .modal__container input, .modal__container textarea{
+        width: 100%;  
+    }
+
+    /* Footer */
+    footer {
+        justify-content: center;
+        gap: 2px;
+    }
+    footer > ul {
+        justify-content: space-between;
+        gap: 5px;
+    }
+    footer li {
+        width: max-content;
+    }
+    footer li>a {
+        font-size: .8rem;
+    }
+    .logo-footer{
+        width: 20%;
+        height: 50%;
+    }
+    .logo-footer p {
+        display: none;
+    }
+    .media-footer {
+        gap: 0;
+    }
+    .media-footer i {
+        font-size: 1rem;
+    }
+
+}
+
+/* Responsive Tablet */
+@media only screen and (max-width: 768px){
+
+}
+
+/* Responsive Laptop */
+@media only screen and (max-width: 992px){
+    
 }

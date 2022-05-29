@@ -1,0 +1,148 @@
+CRITICAL - 2022-05-29 17:12:55 --> Class 'App\Controllers\UsuariModel' not found
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 17:13:13 --> Class 'App\Controllers\UsuariModel' not found
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 17:13:15 --> Class 'App\Controllers\UsuariModel' not found
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 17:14:33 --> Class 'App\Models\Usuari' not found
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 17:34:44 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\B4die\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-29 17:35:17 --> Undefined variable: activitat
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:35:28 --> Undefined variable: activitat
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:35:32 --> Undefined variable: results
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:36:04 --> Undefined variable: nom
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:36:48 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\B4die\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-29 17:36:57 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(160): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 160, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:38:48 --> Undefined variable: results
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:38:59 --> Undefined variable: nom
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(23): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-29 17:39:44 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-29 17:40:06 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 17:40:23 --> Undefined variable: nom
+#0 C:\xampp\htdocs\B4die\app\Views\index.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('index', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(27): view('index', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

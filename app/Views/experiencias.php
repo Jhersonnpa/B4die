@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die - Experiencias</title>
+    <title>B4die</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -16,9 +16,22 @@
 <body onload="getLocation()">
     <nav>
         <div class="nav-top">
-            <div>
-                <i class='bx bx-search-alt-2'></i>
-                <i class='bx bxs-user-circle'></i>
+            <div id="search">
+                <form action="" role="search" id="searchform">
+                    <label for="s">
+                        <i class='bx bx-search-alt-2'></i>
+                    </label>
+                    <input type="text" placeholder="Buscar" id="s" />
+                </form>
+            </div>
+            <div class="dropdown-user">
+                <i class='bx bxs-user-circle dropbtn-user'></i>
+                <div class="dropdown-content-user">
+                    <a href="#">Registrate</a>
+                    <a href="#">Inicia Sesión</a>
+                    <hr>
+                    <a href="#">Ayuda</a>
+                </div>
             </div>
         </div>
         <div class="nav-bottom">
@@ -90,19 +103,35 @@
                 </li>
                 <li><a href="<?=base_url().'/ranking'?>" target="__blank">Ranking</a></li>
                 <li><a href="#" target="__blank">Mapa</a></li>
-                <li><a href="#" class="btn" id="btn-modal">Contacto</a></li>
+                <li><a href="#jsModal" id="popup" class="jsModalTrigger">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div id="jsModal" class="modal">
+    <div class="modal__overlay jsOverlay"></div>
+    <div class="modal__container">
+        <form action="" method="post">
+            <h3>Contáctanos</h3>
+            <input type="text" name="Email" id="Email" placeholder="Email">
+            <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
+            <label for="msj"><i class='bx bx-envelope'></i> Mensaje</label>
+            <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar mensaje" name="submit">
+        </form>
+        <button class="modal__close jsModalClose"><i class='bx bx-x-circle' style='color:#feaf26'  ></i></button>
+    </div>
+    </div>
+
 <section id="scroll">
-    <h2>Experiencias</h2>   
+    <h2>CATEGORIA</h2>   
         <div class="main-scroll-div">
-            <div>
-                <button class="icon icon-left" onclick="scrollL()"><i class='bx bx-chevron-left'></i></button>
+            <div class="minimoMargen">
+                <button class="icon icon-left" onclick="scrollLCAT1()"><i class='bx bx-chevron-left'></i></button>
             </div>
                 <div class="cover">
-                    <div class="scroll-cartitas snaps-inline">
+                    <div class="CAT1 snaps-inline">
                         <div class="child">
                             <div class="card">
                                 <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
@@ -205,18 +234,364 @@
                         </div>
                     </div>
                 </div>
-            <div>
-                <button class="icon icon-right" onclick="scrollR()"><i class='bx bx-chevron-right'></i></button>
+            <div class="minimoMargen">
+                <button class="icon icon-right" onclick="scrollRCAT1()"><i class='bx bx-chevron-right'></i></button>
             </div>
         </div>
 
 </section>
 
-<section id="mapa">
-    <h2>Mapa</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! Quia praesentium ab voluptatibus eveniet nam, repudiandae sint quaerat pariatur ducimus tempora dolorem ipsa doloremque neque animi illum, voluptatum possimus iure dolores! Vitae totam voluptas aliquam.</p>
-            
-    <div id="map" class="map"></div>
+<section id="scroll">
+    <h2>CATEGORIA</h2>   
+        <div class="main-scroll-div">
+            <div class="minimoMargen">
+                <button class="icon icon-left" onclick="scrollLCAT2()"><i class='bx bx-chevron-left'></i></button>
+            </div>
+                <div class="cover">
+                    <div class="CAT2 snaps-inline">
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="minimoMargen">
+                <button class="icon icon-right" onclick="scrollRCAT2()"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+
+</section>
+
+
+<section id="scroll">
+    <h2>CATEGORIA</h2>   
+        <div class="main-scroll-div">
+            <div class="minimoMargen">
+                <button class="icon icon-left" onclick="scrollLCAT3()"><i class='bx bx-chevron-left'></i></button>
+            </div>
+                <div class="cover">
+                    <div class="CAT3 snaps-inline">
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="minimoMargen">
+                <button class="icon icon-right" onclick="scrollRCAT3()"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+
+</section>
+
+
+<section id="scroll">
+    <h2>CATEGORIA</h2>   
+        <div class="main-scroll-div">
+            <div class="minimoMargen">
+                <button class="icon icon-left" onclick="scrollLCAT4()"><i class='bx bx-chevron-left'></i></button>
+            </div>
+                <div class="cover">
+                    <div class="CAT4 snaps-inline">
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                        <div class="child">
+                            <div class="card">
+                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                                <span class="card-title">Card Title</span>
+                                <span>More details about card</span>
+                                <span>Even more details about the card</span>
+                                <a href="#">View details</a>
+                                <span class="new">new</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="minimoMargen">
+                <button class="icon icon-right" onclick="scrollRCAT4()"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+
 </section>
 
 

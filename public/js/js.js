@@ -204,6 +204,7 @@ map.addLayer(vectorLayer);
 }
 
 
+
 // SLIDER PERFIL
 // cartas guardadas
 function scrollL(){
@@ -223,4 +224,43 @@ function scrollL2(){
 function scrollR2(){
     var right = document.querySelector(".scroll-cartitas2");
     right.scrollBy(350, 0);
+}
+
+
+
+// SCROLL EXPERIENCIAS
+function scrollLCAT1(){
+  var left = document.querySelector(".CAT1");
+  left.scrollBy(-350, 0);
+}
+function scrollRCAT1(){
+  var right = document.querySelector(".CAT1");
+  right.scrollBy(350, 0);
+}
+
+function scrollLCAT2(){
+  var left = document.querySelector(".CAT2");
+  left.scrollBy(-350, 0);
+}
+function scrollRCAT2(){
+  var right = document.querySelector(".CAT2");
+  right.scrollBy(350, 0);
+}
+
+function scrollLCAT3(){
+  var left = document.querySelector(".CAT3");
+  left.scrollBy(-350, 0);
+}
+function scrollRCAT3(){
+  var right = document.querySelector(".CAT3");
+  right.scrollBy(350, 0);
+}
+
+function scrollLCAT4(){
+  var left = document.querySelector(".CAT4");
+  left.scrollBy(-350, 0);
+}
+function scrollRCAT4(){
+  var right = document.querySelector(".CAT4");
+  right.scrollBy(350, 0);
 }

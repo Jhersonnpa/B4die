@@ -21,11 +21,17 @@
                     <label for="s">
                         <i class='bx bx-search-alt-2'></i>
                     </label>
-                    <input type="text" value="" placeholder="Buscar" class="" id="s" />
+                    <input type="text" placeholder="Buscar" id="s" />
                 </form>
             </div>
-            <div id="menu-user">
-            <i class='bx bxs-user-circle'></i>
+            <div class="dropdown-user">
+                <i class='bx bxs-user-circle dropbtn-user'></i>
+                <div class="dropdown-content-user">
+                    <a href="#">Registrate</a>
+                    <a href="#">Inicia Sesión</a>
+                    <hr>
+                    <a href="#">Ayuda</a>
+                </div>
             </div>
         </div>
         <div class="nav-bottom">
@@ -152,43 +158,20 @@
     <div class="container">
         <h2>Experiencias más visitadas</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! Quia praesentium ab voluptatibus eveniet nam, repudiandae sint quaerat pariatur ducimus tempora dolorem ipsa doloremque neque animi illum, voluptatum possimus iure dolores! Vitae totam voluptas aliquam.</p>
+        
         <div class="cards">
-            <div class="card">
-                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
+            <?php foreach ($activitat as $key => $value) {
+            echo "
+            <div class='card'>
+                <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                <span class='card-title'>".$value['nom']."</span>
+                <span>".$value['descripcio']."</span>
+                <span>".$value['categoria']."</span>
+                <a href='#'>View details</a>
+                <span class='new'>new</span>
             </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/kart.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
+            ";
+            }?>
             <div class="card">
                 <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
                 <span class="card-title">Card Title</span>

@@ -16,9 +16,22 @@
 <body onload="getLocation()">
     <nav>
         <div class="nav-top">
-            <div>
-                <i class='bx bx-search-alt-2'></i>
-                <i class='bx bxs-user-circle'></i>
+            <div id="search">
+                <form action="" role="search" id="searchform">
+                    <label for="s">
+                        <i class='bx bx-search-alt-2'></i>
+                    </label>
+                    <input type="text" placeholder="Buscar" id="s" />
+                </form>
+            </div>
+            <div class="dropdown-user">
+                <i class='bx bxs-user-circle dropbtn-user'></i>
+                <div class="dropdown-content-user">
+                    <a href="#">Registrate</a>
+                    <a href="#">Inicia Sesión</a>
+                    <hr>
+                    <a href="#">Ayuda</a>
+                </div>
             </div>
         </div>
         <div class="nav-bottom">
@@ -95,6 +108,22 @@
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div id="jsModal" class="modal">
+    <div class="modal__overlay jsOverlay"></div>
+    <div class="modal__container">
+        <form action="" method="post">
+            <h3>Contáctanos</h3>
+            <input type="text" name="Email" id="Email" placeholder="Email">
+            <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
+            <label for="msj"><i class='bx bx-envelope'></i> Mensaje</label>
+            <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar mensaje" name="submit">
+        </form>
+        <button class="modal__close jsModalClose"><i class='bx bx-x-circle' style='color:#feaf26'  ></i></button>
+    </div>
+    </div>
+
 <section id="expe">
     <h2>Experiencia</h2>   
         <div class="card">
@@ -111,7 +140,7 @@
 
 <section id="mapa">
     <h2>Mapa</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! Quia praesentium ab voluptatibus eveniet nam, repudiandae sint quaerat pariatur ducimus tempora dolorem ipsa doloremque neque animi illum, voluptatum possimus iure dolores! Vitae totam voluptas aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! </p>
             
     <div id="map" class="map"></div>
 </section>
