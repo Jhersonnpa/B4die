@@ -23,4 +23,8 @@ class Index extends BaseController
     {
         return view('experiencias');
     }
+
+    public function experiencia(){
+        return view('experiencia');
+    }
 }

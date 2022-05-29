@@ -30,7 +30,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <div class="flex">
         <div class="perfil">
             <div class="divFoto">

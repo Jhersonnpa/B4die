@@ -94,7 +94,7 @@
             </ul>
         </div>
     </nav>
-    
+
 <section id="scroll">
     <h2>Experiencias</h2>   
         <div class="main-scroll-div">
