@@ -23,17 +23,19 @@
         <div class="nav-bottom">
             <a href="<?= base_url()?>" target="__blank"><img src="<?= base_url('img/logo.png')?>"></a>
             <ul>
-                <li><a href="#" target="__blank">Experiencias</a></li>
+                <li><a href="<?= base_url().'/experiencias'?>" target="__blank">Experiencias</a></li>
                 <li><a href="<?=base_url().'/ranking'?>">Ranking</a></li>
                 <li><a href="#" target="__blank">Mapa</a></li>
                 <li><a href="#" target="__blank">Contacto</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <div class="flex">
         <div class="perfil">
-            <img src="<?= base_url('img/foto1.jpg')?>" alt="Imagen perfil" class="fotoPerfil">
+            <div class="divFoto">
+                <img src="<?= base_url('img/MARC_MORELL.jpg')?>" alt="Imagen perfil" class="fotoPerfil">
+            </div>
             <div class="infoPerfil">
                 <div class="nombreUsuario">Jhersonnpa</div>
                 <div class="datos">
@@ -316,25 +318,25 @@
     
     <!-- Footer -->
     <footer>
-            <div class="logo-footer">
-                <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
-                <p>&copy;</p>
+        <div class="logo-footer">
+            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
+            <p>&copy;</p>
+        </div>
+        <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Terminos de privacidad</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <div class="media-footer">
+            <div>
+                <a href="#"><i class='bx bxl-instagram' id="insta"></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' style="color: #1A6ED8;"></i></a>
             </div>
-            <ul>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Terminos de privacidad</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <div class="media-footer">
-                <div>
-                    <a href="#"><i class='bx bxl-instagram' id="insta"></i></a>
-                    <a href="#"><i class='bx bxl-facebook-square' style="color: #1A6ED8;"></i></a>
-                </div>
-                <div>
-                    <a href="#"><i class='bx bxs-up-arrow-square' ></i></a>
-                </div>
+            <div>
+                <a href="#"><i class='bx bxs-up-arrow-square' ></i></a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
 

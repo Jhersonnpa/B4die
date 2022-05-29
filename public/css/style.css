@@ -40,19 +40,55 @@ nav {
 .nav-top {
     width: 100%;
     height: 30%;
-    padding: 5px;
     background-color: var(--yellow);
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0 14%;
 }
 
 .nav-top > div {
   color: var(--gray-dark);
   font-size: 1.4rem;
-  margin-right: 13%;
-  cursor: pointer;
+  height: 90%;
+  display: flex;
+  align-items: center;
 }
+
+/* Buscador */
+
+#searchform {
+    display: flex;
+    height: 100%;
+}
+#s {
+    transition: all 0.2s ease-out;
+    width: 1px;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    opacity: 0;
+}
+#s:focus {
+    width: 12rem;
+    height: 100%;
+    padding: 5px;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+#searchform label {
+    padding-left: 1px;
+    display: inline-block;
+    position: relative;
+    left: 0.1em;
+    cursor: pointer;
+}
+
+/* Nav-Bottom */
 
 .nav-bottom {
     width: 100%;
@@ -88,6 +124,15 @@ nav {
     border-bottom: 2px solid var(--gray-dark);
 }
 
+.nav-bottom > a {
+    height: 100%;
+    display: flex;
+}
+
+.logo{
+    width: max-content;
+    height: 100%;
+}
 
 /* Footer */
 
@@ -103,7 +148,13 @@ footer {
 .logo-footer {
     display: flex;
     align-items: flex-start;
+    height: 90%;
     gap: 5px;
+}
+
+.logo-footer > a {
+    height: 90%;
+    display: flex;
 }
 
 .logo-footer > p {
@@ -111,7 +162,7 @@ footer {
 }
 
 footer > ul {
-    height: 79px;
+    height: 100%;
     display: flex;
     align-items: center;
     list-style: none;
@@ -165,7 +216,7 @@ footer > ul > li > a:hover {
     width: 100%;
     min-height: 40vh;
     color: var(--white);
-    margin-top: 15px;
+    margin-top: 20px;
     /* justify-content: space-evenly; */
     z-index: 1;
     transition: all .5s;
@@ -206,7 +257,7 @@ footer > ul > li > a:hover {
 
 .transparent {
     width: 100%;
-    height: 1.7rem;
+    height: 1.14rem;
     background-color: #ffffff00;
 }
 
@@ -226,3 +277,112 @@ footer > ul > li > a:hover {
 }
 
 
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.1s, opacity 0.3s ease;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 21;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 24px;
+  color: #747474;
+  font-weight: bold;
+}
+.modal__close:hover {
+  color: #000;
+}
+.modal__close i {
+    cursor: pointer;
+}
+.modal__container {
+  position: relative;
+  z-index: 22;
+  width: 35%;
+  height: 80vh;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 8px #fff;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.modal__container form {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal__container input {
+    width: 70%;
+    height: 42px;
+    padding: 10px;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+}
+
+.modal_container input:focus {
+    border-bottom: 2px solid #78788c;
+}
+
+.modal__container label {
+    margin-top: 5px;
+    color: var(--gray-dark);
+}
+
+.modal__container textarea {
+    width: 70%;
+    padding: 10px;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 2px solid #bebed2;
+}
+
+.modal__container input[type="submit"]{
+    background: var(--yellow-dark);
+    color: #fff;
+    cursor: pointer;
+}

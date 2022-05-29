@@ -22,7 +22,6 @@
 .slideshow-container {
   max-width: 100%;
   max-height: 700px;
-  margin-bottom: 50px;
   position: relative;
   overflow: hidden;
 }
@@ -133,11 +132,15 @@
 
 .container {
     width: 90%;
-    height: 90vh;
-    margin: 75px auto;
+    min-height: minmax(90vh, 100vh);
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+#div-buscador {
+    height: 90vh;
 }
 
 h2 {

@@ -23,7 +23,7 @@
         <div class="nav-bottom">
             <a href="<?= base_url()?>" target="__blank"><img src="<?= base_url('img/logo.png')?>"></a>
             <ul>
-                <li><a href="#" target="__blank">Experiencias</a></li>
+                <li><a href="<?= base_url().'/experiencias'?>" target="__blank">Experiencias</a></li>
                 <li><a href="<?=base_url().'/ranking'?>">Ranking</a></li>
                 <li><a href="#" target="__blank">Mapa</a></li>
                 <li><a href="#" target="__blank">Contacto</a></li>
