@@ -16,9 +16,16 @@
 <body onload="getLocation()">
     <nav>
         <div class="nav-top">
-            <div>
-                <i class='bx bx-search-alt-2'></i>
-                <i class='bx bxs-user-circle'></i>
+            <div id="search">
+                <form action="" role="search" id="searchform">
+                    <label for="s">
+                        <i class='bx bx-search-alt-2'></i>
+                    </label>
+                    <input type="text" value="" placeholder="Buscar" class="" id="s" />
+                </form>
+            </div>
+            <div id="menu-user">
+            <i class='bx bxs-user-circle'></i>
             </div>
         </div>
         <div class="nav-bottom">
@@ -100,9 +107,12 @@
     <div class="modal__overlay jsOverlay"></div>
     <div class="modal__container">
         <form action="" method="post">
+            <h3>Contáctanos</h3>
             <input type="text" name="Email" id="Email" placeholder="Email">
             <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
-            <textarea name="msj" id="msj" cols="30" rows="10">Mensaje</textarea>
+            <label for="msj"><i class='bx bx-envelope'></i> Mensaje</label>
+            <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar mensaje" name="submit">
         </form>
         <button class="modal__close jsModalClose"><i class='bx bx-x-circle' style='color:#feaf26'  ></i></button>
     </div>
