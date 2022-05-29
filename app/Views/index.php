@@ -107,12 +107,18 @@
     <div class="modal__overlay jsOverlay"></div>
     <div class="modal__container">
         <form action="" method="post">
+<<<<<<< HEAD
             <h3>Contáctanos</h3>
             <input type="text" name="Email" id="Email" placeholder="Email">
             <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
             <label for="msj"><i class='bx bx-envelope'></i> Mensaje</label>
             <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
             <input type="submit" value="Enviar mensaje" name="submit">
+=======
+            <input type="text" name="Email" id="Email" placeholder="Email">
+            <input type="text" name="Asunto" id="Asunto" placeholder="Asunto">
+            <textarea name="msj" id="msj" cols="30" rows="10">Mensaje</textarea>
+>>>>>>> d1bee9895ab966695b721c7368a63a354257413e
         </form>
         <button class="modal__close jsModalClose"><i class='bx bx-x-circle' style='color:#feaf26'  ></i></button>
     </div>
