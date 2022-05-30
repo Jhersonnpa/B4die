@@ -16,7 +16,7 @@ class Index extends BaseController
     public function index()
     {
         $db = \Config\Database::connect();
-        $session = session();
+        // $session = session();
         $query   = $db->query('SELECT * FROM activitat LIMIT 4');
         $results = $query->getResultArray();
         $dades = ['activitat' => $results];

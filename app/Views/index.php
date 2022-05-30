@@ -167,8 +167,8 @@
                 <span class='card-title'>".$value['nom']."</span>
                 <span>".$value['descripcio']."</span>
                 <span>".$value['categoria']."</span>
-                <a href='#'>View details</a>
-                <span class='new'>new</span>
+                <a href='#'>Ver más</a>
+                <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
             </div>
             ";
             }?>
