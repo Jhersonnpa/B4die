@@ -172,14 +172,6 @@
             </div>
             ";
             }?>
-            <div class="card">
-                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
 
             <div class="card">
                 <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">

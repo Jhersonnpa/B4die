@@ -17,7 +17,7 @@ class Index extends BaseController
     {
         $db = \Config\Database::connect();
         // $session = session();
-        $query   = $db->query('SELECT * FROM activitat LIMIT 4');
+        $query   = $db->query('SELECT * FROM activitat LIMIT 6');
         $results = $query->getResultArray();
         $dades = ['activitat' => $results];
         return view('index', $dades);
@@ -25,7 +25,10 @@ class Index extends BaseController
 
     public function ranking()
     {
-        return view('ranking');
+        $db = \Config\Database::connect();
+        $query = $db->query('SELECT * FROM usuari ORDER BY puntuacion DESC');
+        $dades['top'] = $query->getResultArray();
+        return view('ranking', $dades);
     }
 
     public function perfil()

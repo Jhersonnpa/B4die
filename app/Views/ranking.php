@@ -127,30 +127,34 @@
     <div class="container">
         <h1 class="header-ranking">Ranking Global</h1>
 
-        <div class="cartaTop1">
-            <div class="crown"><i class='bx bxs-crown'></i></div>
-            <img class="img-top1" src="<?= base_url('img/foto1.jpg')?>" alt="Imagen usuario en primer lugar">
-            <div class="divInfoTop1">
-                <p class="username1"><b>Jhersonnpa</b></p>
-                <div class="divRango"><img src="<?= base_url('img/rango.png')?>" alt="rango" class="logoRango"><p class="textoRango">Leyenda</p></div>
-                <p class="tituloExpeTop"><b>Experiencia top</b> <p class="nombreExpeTop">Salto en paracaidas</p></p>
+        <?php 
+        $top1 = $top[0];
+        echo "
+        <div class='cartaTop1'>
+            <div class='crown'><i class='bx bxs-crown'></i></div>
+            <img class='img-top1' src='" .base_url('img/foto1.jpg')."' alt='Imagen usuario en primer lugar'>
+            <div class='divInfoTop1'>
+                <p class='username1'><b>".$top1['nom_usuari']."</b></p>
+                <div class='divRango'><img src='" .base_url('img/rango.png')."' alt='rango' class='logoRango'><p class='textoRango'>Leyenda</p></div>
+                <p class='tituloExpeTop'><b>Experiencia top</b> <p class='nombreExpeTop'>Salto en paracaidas</p></p>
             </div>
-            <div class="divLogrosTop">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
-                <img src="<?= base_url('img/rango.png')?>" alt="logro1" class="logoLogros">
+            <div class='divLogrosTop'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
             </div>
         </div>
-
+        ";
+        ?>
 
         <div class="cartasTop">
             <div class="carta">
