@@ -227,11 +227,7 @@
         <h2>¿No está tu experiencia deseada?</h2>
         <div class="container2">
             <div class="idea">
-<<<<<<< HEAD
-            <img src="<?= base_url('img/idea.jpg')?>" alt="">
-=======
                 <img src="<?= base_url('img/idea.jpg')?>" alt="idea" class="imagen-contacto">
->>>>>>> 06f1c38db9e4c8512abf777953b1220dc95dd3bc
             </div>
             <div class="texto-idea">
                 <div class="jumbotron">
