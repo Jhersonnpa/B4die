@@ -14,7 +14,7 @@
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
-    <nav>
+    <nav class="navbar">
         <div class="nav-top">
             <div id="search">
                 <form action="" role="search" id="searchform">
@@ -34,77 +34,82 @@
                 </div>
             </div>
         </div>
-        <div class="nav-bottom">
+        <div class="nav-bottom wrapper">
             <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
-            <ul class="navbar">
-                <li class="dropdown">
-                    <a href="<?= base_url().'/experiencias'?>" target="__blank" id="experiencias" class="dropbtn">Experiencias</a>
-                    <div class="dropdown-content" id="nav-experiencias">
-                        <div class="transparent"></div>
-                        <div class="nav-experiencias">
-                            <ul>
-                                <li><a href="#" class="subcategoria">aereo</a></li>
-                                <li><a href="#">Paracaidismo</a></li>
-                                <li><a href="#">Aeromodelismo</a></li>
-                                <li><a href="#">Ala delta</a></li>
-                                <li><a href="#">Parapente</a></li>
-                                <li><a href="#">Acrobacia aérea</a></li>
-                                <li><a href="#">Parafoil</a></li>
-                                <li><a href="#">Parasailing</a></li>
-                                <li><a href="#">Globo aeroestatico</a></li>
-                                <li><a href="#">Wingfly</a></li>
-                                <li><a href="#">Salto base</a></li>
-                                <li><a href="#">Puenting</a></li>
-                                <li><a href="#">Vuelta en Helicóptero</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#" class="subcategoria">terrestre</a></li>
-                                <li><a href="#">Senderismo</a></li>
-                                <li><a href="#">Alpinismo</a></li>
-                                <li><a href="#">Rapel</a></li>
-                                <li><a href="#">Escalada</a></li>
-                                <li><a href="#">Parkour</a></li>
-                                <li><a href="#">Zorbing</a></li>
-                                <li><a href="#">Bubble Football</a></li>
-                                <li><a href="#">Tobogan Alpino</a></li>
-                                <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
-                                <li><a href="#">Street Luge</a></li>
-                                <li><a href="#">Slackline</a></li>
-                                <li><a href="#">Tirolina</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#" class="subcategoria">acuatico</a></li>
-                                <li><a href="#">Surf</a></li>
-                                <li><a href="#">Kitesurf</a></li>
-                                <li><a href="#">Wakesurf</a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#" class="subcategoria">viajes</a></li>
-                                <li><a href="#">culo</a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
+            <!-- Res -->
+            <button type="button" class="burger" id="burger">
+            <i class='bx bx-menu'></i>
+            </button>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="dropdown menu-item">
+                        <a href="<?= base_url().'/experiencias'?>" id="experiencias" class="dropbtn menu-link">Experiencias</a>
+                        <div class="dropdown-content" id="nav-experiencias">
+                                <div class="transparent"></div>
+                                <div class="nav-experiencias">
+                                    <ul>
+                                        <li><a href="#" class="subcategoria">aereo</a></li>
+                                        <li><a href="#">Paracaidismo</a></li>
+                                        <li><a href="#">Aeromodelismo</a></li>
+                                        <li><a href="#">Ala delta</a></li>
+                                        <li><a href="#">Parapente</a></li>
+                                        <li><a href="#">Acrobacia aérea</a></li>
+                                        <li><a href="#">Parafoil</a></li>
+                                        <li><a href="#">Parasailing</a></li>
+                                        <li><a href="#">Globo aeroestatico</a></li>
+                                        <li><a href="#">Wingfly</a></li>
+                                        <li><a href="#">Salto base</a></li>
+                                        <li><a href="#">Puenting</a></li>
+                                        <li><a href="#">Vuelta en Helicóptero</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#" class="subcategoria">terrestre</a></li>
+                                        <li><a href="#">Senderismo</a></li>
+                                        <li><a href="#">Alpinismo</a></li>
+                                        <li><a href="#">Rapel</a></li>
+                                        <li><a href="#">Escalada</a></li>
+                                        <li><a href="#">Parkour</a></li>
+                                        <li><a href="#">Zorbing</a></li>
+                                        <li><a href="#">Bubble Football</a></li>
+                                        <li><a href="#">Tobogan Alpino</a></li>
+                                        <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
+                                        <li><a href="#">Street Luge</a></li>
+                                        <li><a href="#">Slackline</a></li>
+                                        <li><a href="#">Tirolina</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#" class="subcategoria">acuatico</a></li>
+                                        <li><a href="#">Surf</a></li>
+                                        <li><a href="#">Kitesurf</a></li>
+                                        <li><a href="#">Wakesurf</a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#" class="subcategoria">viajes</a></li>
+                                        <li><a href="#">culo</a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
                         </div>
-                    </div>
-                </li>
-                <li><a href="<?=base_url().'/ranking'?>" target="__blank">Ranking</a></li>
-                <li><a href="#" target="__blank">Mapa</a></li>
-                <li><a href="#jsModal" id="popup" class="jsModalTrigger">Contacto</a></li>
-            </ul>
+                    </li>
+                    <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
+                    <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -432,7 +437,28 @@
         </div>
     </footer>
 
+    <!-- JS -->
+    <script  type="text/javascript">
+        window.onload = function(){
+            modal();
+        }
 
+        const burgerMenu = document.getElementById("burger");
+        const navbarMenu = document.getElementById("menu");
+
+        // Show and Hide Navbar Menu
+        burgerMenu.addEventListener("click", () => {
+            burgerMenu.classList.toggle("is-active");
+            navbarMenu.classList.toggle("is-active");
+
+            if (navbarMenu.classList.contains("is-active")) {
+                navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
+            } else {
+                navbarMenu.removeAttribute("style");
+            }
+        });
+       
+    </script>
 
 </body>
 </html>

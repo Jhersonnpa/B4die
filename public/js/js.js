@@ -335,9 +335,6 @@ function mostrarPerfil(){
     general.style.padding = "0";
     
     cruz.remove("#cruz");
-    // var cruz = document.getElementById("cruz");
-    // cruz.style.display = "none";
   });
-
-
 }
+

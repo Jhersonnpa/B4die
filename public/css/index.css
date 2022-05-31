@@ -312,9 +312,9 @@ span {
         height: 400px;
     }
     .jumbo-slider{
-        width: 250px;
+        width: 80%;
         height: 100px;
-        margin-left: 20%;
+        margin: auto;
         gap: 20px;
     }
     .jumbo-slider > span:first-child{
