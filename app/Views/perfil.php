@@ -125,9 +125,9 @@
     </div>
 
     <div class="flex">
-        <div class="perfil">
+        <div class="perfil" id="perfil">
             <div class="divFoto">
-                <img src="<?= base_url('img/MARC_MORELL.jpg')?>" alt="Imagen perfil" class="fotoPerfil">
+                <img src="<?= base_url('img/MARC_MORELL.jpg')?>" alt="Imagen perfil" class="fotoPerfil" id="img-click" onclick="mostrarPerfil()">
             </div>
             <div class="infoPerfil">
                 <div class="nombreUsuario">Jhersonnpa</div>
@@ -408,6 +408,7 @@
         </div>
     </div>
 
+    
     
     <!-- Footer -->
     <footer>

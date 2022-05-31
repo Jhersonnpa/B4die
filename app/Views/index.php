@@ -157,7 +157,7 @@
 
     <div class="container">
         <h2>Experiencias más visitadas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! Quia praesentium ab voluptatibus eveniet nam, repudiandae sint quaerat pariatur ducimus tempora dolorem ipsa doloremque neque animi illum, voluptatum possimus iure dolores! Vitae totam voluptas aliquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis!</p>
         
         <div class="cards">
             <?php foreach ($activitat as $key => $value) {
@@ -172,6 +172,14 @@
             </div>
             ";
             }?>
+            <div class="card">
+                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
+                <span class="card-title">Card Title</span>
+                <span>More details about card</span>
+                <span>Even more details about the card</span>
+                <a href="#">View details</a>
+                <span class="new">new</span>
+            </div>
 
             <div class="card">
                 <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
@@ -205,28 +213,30 @@
     <div class="container" id="div-buscador">
         <h2>Buscador de actividades</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quas itaque delectus nostrum fugit ut, id nisi at, natus doloribus aspernatur ipsum officiis vero dignissimos, quasi voluptatibus ea obcaecati vitae!</p>
-        <div class="buscador" style="background-color: #202935;">
-            <div class="busca">
-                <button>Busca</button>
+            <div class="buscador">
+                <div class="busca"style="background-color: #202935;">
+                    <button>Busca</button>
+                </div>
+                <div id="map" class="map">
+                </div>  
             </div>
-            <div id="map" class="map">
-            </div>
-        </div>
+            
     </div>
-
-    
 
     <div class="container">
         <h2>¿No está tu experiencia deseada?</h2>
         <div class="container2">
             <div class="idea">
+<<<<<<< HEAD
             <img src="<?= base_url('img/idea.jpg')?>" alt="">
+=======
+                <img src="<?= base_url('img/idea.jpg')?>" alt="idea" class="imagen-contacto">
+>>>>>>> 06f1c38db9e4c8512abf777953b1220dc95dd3bc
             </div>
             <div class="texto-idea">
                 <div class="jumbotron">
-                    <span>Lorem, ipsum. Lorem, ipsum dolor.</span>
-                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                    <a href="#"><button>Ir</button></a>
+                    <span>Si crees que falta alguna experiencia en nuestra web, puedes sugerirnosla aqui!</span>
+                    <a href="#"><button>Enviar</button></a>
                 </div>
             </div>
         </div>

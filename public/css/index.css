@@ -214,9 +214,8 @@ span {
     border-radius: 4px;
 }
 
-.container > .buscador {
+.buscador {
     width: 100%;
-    /* min-height: 500px; */
     display: flex;
     height: 90%;
     border-radius: 4px;
@@ -229,16 +228,22 @@ span {
 
 .busca{
     border-radius: 4px 0 0 4px;
+    width: 50%;
 }
 .map{
     border-radius: 4px;
+    width: 50%;
+    height: 100%;
 }
 
-.container2 {
-    width: 100%;
-    height: 100%;
+.container2{
     background-color: var(--blue-dark);
+    width: 100%;
     display: flex;
+    height: 90%;
+    border-radius: 4px;
+    flex-direction: row;
+    gap: 0;
 }
 
 .container2 > div {
@@ -252,7 +257,11 @@ span {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
-
+.imagen-contacto{
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
 .texto-idea{
     width: 50%;
     height: 100%;
@@ -271,7 +280,7 @@ span {
     gap: 50px;
     background-color: #2029358e;
     opacity: 0.75;
-    padding: 15px;
+    padding: 30px 15px;
     transition: all .5s;
 }
 
@@ -280,14 +289,12 @@ span {
     opacity: 1;
 } */
 
-.jumbotron > span:first-child {
-    color: var(--yellow-dark);
-    font-size: 3rem;
-}
-
-.jumbotron > span:nth-child(2) {
+.jumbotron > span {
     color: var(--white);
-    font-size: 1.4rem;
+    font-size: 2.4rem;
+}
+.jumbotron > a{
+    align-self: center;
 }
 
 .jumbotron > a >button {

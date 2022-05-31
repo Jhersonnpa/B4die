@@ -264,3 +264,80 @@ function scrollRCAT4(){
   var right = document.querySelector(".CAT4");
   right.scrollBy(350, 0);
 }
+
+
+
+// FUNCION MENU LATERAL PERFIL
+function mostrarPerfil(){
+  var perfil = document.querySelector(".perfil");
+  perfil.style.width = "100%";
+  perfil.style.padding = "0";
+  perfil.style.gap = "1.5em;"
+  perfil.style.height= "120vh";
+
+  var divFoto = document.querySelector(".divFoto");
+  divFoto.style.height = "320px";
+  divFoto.style.marginTop = "5%"
+
+  var info = document.querySelector(".infoPerfil");
+  info.style.display = "flex";
+  info.style.justifyContent = "center";
+
+  var datos = document.querySelector(".datos");
+  datos.style.display = "flex";
+  datos.style.flexDirection = "column";
+  datos.style.alignItems = "center";
+
+  var logros = document.querySelector(".divLogros");
+  logros.style.display = "grid";
+  logros.style.gridTemplateColumns = "40px 40px 40px 40px";
+  logros.style.gridTemplateRows = "40px 40px 40px";
+  logros.style.columnGap = "20px";
+  logros.style.marginBottom = "30px";
+
+  var general = document.querySelector(".general");
+  general.style.display = "none";
+
+  var icono = document.createElement("span");
+  var flex = document.querySelector(".perfil");
+  flex.appendChild(icono);
+  icono.style.position = "absolute";
+  icono.style.width = "50px";
+  icono.style.height = "50px";
+  icono.style.right = "5px";
+  icono.style.top = "5px";
+  icono.style.backgroundColor = "transparent";
+  icono.setAttribute("class", "bx bx-x");
+  icono.setAttribute("id", "cruz");
+  icono.style.color = "white";
+  icono.style.fontSize = "3em";
+  
+  icono.addEventListener('click', () =>{
+    var perfil = document.querySelector(".perfil");
+    perfil.style.width = "20%";
+    perfil.style.padding = "0";
+    perfil.style.gap = "3em;";
+    perfil.style.height= "100vh";
+
+    var divFoto = document.querySelector(".divFoto");
+    divFoto.style.height = "100px";
+    divFoto.style.marginTop = "0"
+
+    var info = document.querySelector(".infoPerfil");
+    info.style.display = "none";
+
+    var logros = document.querySelector(".divLogros");
+    logros.style.display = "none";
+
+    var general = document.querySelector(".general");
+    general.style.display = "block";
+    general.style.width = "80%";
+    general.style.padding = "0";
+    
+    cruz.remove("#cruz");
+    // var cruz = document.getElementById("cruz");
+    // cruz.style.display = "none";
+  });
+
+
+}
