@@ -132,7 +132,7 @@
 
 .container {
     width: 90%;
-    min-height: minmax(90vh, 100vh);
+    height: minmax(90vh, 100vh);
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -159,6 +159,8 @@ p {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+
+
 
 .card {
     width: 100%;
@@ -222,6 +224,7 @@ span {
 
 .container > .buscador div {
     width: 50%;
+    height: 100%;
 }
 
 .busca{
@@ -237,10 +240,17 @@ span {
     background-color: var(--blue-dark);
     display: flex;
 }
-.idea {
+
+.container2 > div {
     width: 50%;
-    background: url(../img/idea.jpg)center no-repeat;
-    background-size: cover;
+    height: 100%;
+}
+.idea img{
+    height: 100%;
+    width: 50%;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .texto-idea{
@@ -256,7 +266,6 @@ span {
     width: 70%;
     min-height: 250px;
     border-radius: 4px;
-    margin-left: 15%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -266,10 +275,10 @@ span {
     transition: all .5s;
 }
 
-.jumbotron {
+/* .jumbotron {
     background-color: var(--blue-dark);
     opacity: 1;
-}
+} */
 
 .jumbotron > span:first-child {
     color: var(--yellow-dark);
@@ -296,4 +305,33 @@ span {
 
 .jumbotron > a >button:hover {
     background-color: var(--yellow-dark);
+}
+
+@media only screen and (max-width: 600px){
+    .container > .cards {
+        grid-template-columns: 1fr;
+    }
+    .jumbo-slider{
+        width: max-content;
+        margin: 0 10%;
+        gap: 10px;
+    }
+    .buscador, .container2 {
+        flex-direction: column;   
+    }
+    .container > .buscador div {
+        width: 100%;
+    }
+    .map {
+        display: none;
+    }
+    .container2 > div {
+        width: 100%;
+        height: 50%;
+    }
+    .texto-idea .jumbotron {
+        gap: 0;
+        width: 100%;
+        margin: 0;
+    }
 }

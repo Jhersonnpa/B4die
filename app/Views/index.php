@@ -220,7 +220,7 @@
         <h2>¿No está tu experiencia deseada?</h2>
         <div class="container2">
             <div class="idea">
-
+            <img src="<?= base_url('img/idea.jpg')?>" alt="">
             </div>
             <div class="texto-idea">
                 <div class="jumbotron">
