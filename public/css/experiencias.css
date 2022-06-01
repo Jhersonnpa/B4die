@@ -16,6 +16,7 @@
     flex-direction: column;
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 #scroll h2{
     color: var(--yellow);
@@ -40,7 +41,7 @@
     height: 100%;
 }
 
-.scroll-cartitas{
+.CAT1{
     width: 100%;
     height: auto;
     display: flex;
@@ -51,9 +52,58 @@
     scroll-behavior: smooth;
 }
 /* remove the scroll bar */
-.scroll-cartitas::-webkit-scrollbar{
+.CAT1::-webkit-scrollbar{
 -webkit-appearance: none;
 }
+
+.CAT2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+/* remove the scroll bar */
+.CAT2::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+
+
+.CAT3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+/* remove the scroll bar */
+.CAT3::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+
+
+.CAT4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+/* remove the scroll bar */
+.CAT4::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+
+
 
 /* para que al hacer scroll no se quede la carta partida */
 .snaps-inline{
@@ -133,27 +183,40 @@ span {
 }
 
 
-#mapa{
-    width: 90%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 2%;
-}
-#mapa h2{
-    color: var(--yellow);
-    font-size: 3em;
-    font-weight: 400;
-    margin-bottom: 2%;
-}
-#mapa p{
-    color: var(--white);
-}
+@media (max-width: 600px){
+    #scroll{
+        width: 100%; 
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    #scroll h2{
+        align-self: center;
+    }
+    .main-scroll-div{
+        width: 95%;
+        align-self: center;
+    }
+    .cover{
+        width: 90%;
+    }
+    .child{
+        min-width: 95%;
+    }
+    
+    .icon-right, .icon-right2{
+        margin: 0px;
+    }
+    .icon-left:hover, .icon-right:hover {
+       background: none;
+    }
+    .bx-chevron-left:before{
+        font-size: 0.8em;
+    }
+    .bx-chevron-right:before{
+        font-size: 0.8em;
+    }
+    .minimoMargen{
+        width: 5%;
+    }
 
-#map{
-    margin-top: 5%;
-    width: 100%;
-    height: 100vh;
-    margin-bottom: 5%;
-}
+}   

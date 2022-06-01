@@ -1,0 +1,146 @@
+:root {
+    --yellow: #FFDB49;
+    --yellow-dark: #FEAF26;
+    --white: #ffffff;
+    --gray-shadow: #F6F6F6;
+    --gray-light: #EAEAEA;
+    --gray-dark: #545454;
+    --blue-dark: #202935;
+    --black-blue: #0D1117;
+}
+
+#expe{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+}
+#expe h2{
+    color: var(--yellow);
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.card{
+    margin: auto;
+    width: 80%;
+    height: 30vh;
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.img{
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 40%;
+    border-radius: 4px 0px 0px 4px;
+}
+    
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 50px;
+}
+.card-title {
+    color:var(--blue-dark);
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+span {
+    color: var(--gray-dark);
+    padding: 5px;
+}
+.card > .info > a { 
+    text-decoration: none;
+    color: var(--blue-dark);
+    font-weight: 600;
+    padding: 5px;
+}
+.new {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: var(--yellow-dark);
+    color: var(--blue-dark);
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+#mapa{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2%;
+}
+#mapa h2{
+    color: var(--yellow);
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+#mapa p{
+    color: var(--white);
+}
+
+#map{
+    margin-top: 5%;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 5%;
+}
+
+
+@media (max-width: 600px){
+    #expe{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #expe h2{
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .card{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .img{
+        width: 100%;
+        border-radius: 4px 4px 0px 0px;
+    }
+    .info{
+        padding: 10px 15px;
+        gap: 15px;
+    }
+    .card-title{
+        margin-bottom: 0px;
+    }
+
+    #mapa{
+        width: 100%;
+        height: 75vh;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    #mapa h2{
+        align-self: center;
+    }
+    #mapa p{
+        padding: 10px 20px;
+    }
+    #map{
+
+    }
+}

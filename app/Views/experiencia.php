@@ -8,13 +8,13 @@
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="<?= base_url('css/index.css')?>">
+    <link rel="stylesheet" href="<?= base_url('css/experiencia.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
-    <nav class="navbar">
+<nav class="navbar">
         <div class="nav-top">
             <div id="search">
                 <form action="" role="search" id="searchform">
@@ -129,111 +129,29 @@
     </div>
     </div>
 
-    <div class="slideshow-container">
-
-        <div class="mySlides fade" id="slide-1">
-            <div class="jumbo-slider">
-                <span>Lorem, ipsum.</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <div class="mySlides fade" id="slide-2">
-            <div class="jumbo-slider">
-                <span>Lorem, ipsum.</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <div class="mySlides fade" id="slide-3">
-            <div class="jumbo-slider">
-                <span>Lorem, ipsum.</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-
-    <div class="container">
-        <h2>Experiencias más visitadas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis!</p>
-        
-        <div class="cards">
-            <?php foreach ($activitat as $key => $value) {
-            echo "
-            <div class='card'>
-                <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                <span class='card-title'>".$value['nom']."</span>
-                <span>".$value['descripcio']."</span>
-                <span>".$value['categoria']."</span>
-                <a href='#'>Ver más</a>
-                <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
-            </div>
-            ";
-            }?>
-            <div class="card">
-                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container" id="div-buscador">
-        <h2>Buscador de actividades</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quas itaque delectus nostrum fugit ut, id nisi at, natus doloribus aspernatur ipsum officiis vero dignissimos, quasi voluptatibus ea obcaecati vitae!</p>
-            <div class="buscador">
-                <div class="busca"style="background-color: #202935;">
-                    <button>Busca</button>
+<section id="expe">
+    <h2>Experiencia</h2>   
+        <div class="card">
+            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card" class="img">
+                <div class="info">
+                    <span class="card-title">Activity Title</span>
+                    <span>Category of the activity</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime architecto nemo quibusdam neque voluptatum commodi magnam nulla vero. Hic, voluptates fugiat. Sunt, quaerat quis inventore deserunt velit aliquid! Dolorem?</span>
+                    <span class="new">new</span>
                 </div>
-                <div id="map" class="map">
-                </div>  
-            </div>
+        </div> 
+
+</section>
+
+<section id="mapa">
+    <h2>Mapa</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! </p>
             
-    </div>
+    <div id="map" class="map"></div>
+</section>
 
-    <div class="container">
-        <h2>¿No está tu experiencia deseada?</h2>
-        <div class="container2">
-            <div class="idea">
-                <img src="<?= base_url('img/idea.jpg')?>" alt="idea" class="imagen-contacto">
-            </div>
-            <div class="texto-idea">
-                <div class="jumbotron">
-                    <span>Si crees que falta alguna experiencia en nuestra web, puedes sugerirnosla aqui!</span>
-                    <a href="#"><button>Enviar</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
     <!-- Footer -->
     <footer>
@@ -260,11 +178,9 @@
     <!-- JS -->
     <script  type="text/javascript">
         window.onload = function(){
-            showSlides(1);
             getMap();
             modal();
         }
-
         const burgerMenu = document.getElementById("burger");
         const navbarMenu = document.getElementById("menu");
 
@@ -279,7 +195,6 @@
                 navbarMenu.removeAttribute("style");
             }
         });
-       
     </script>
 </body>
 </html>

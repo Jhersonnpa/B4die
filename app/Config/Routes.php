@@ -35,6 +35,10 @@ $routes->get('/', 'Index::index');
 $routes->add('/ranking','Index::ranking');
 $routes->add('/perfil','Index::perfil');
 $routes->add('/experiencias','Index::experiencias');
+$routes->add('/experiencia', 'Index::experiencia');
+$routes->add('/login', 'Index::login');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

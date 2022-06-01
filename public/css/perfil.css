@@ -9,19 +9,26 @@
     --black-blue: #0D1117;
     --bronze: #CE782D;
     --silver: #BBBBBB;
+
+    /* perfil */
+    --width: 300px;
+    --padding: 10px;
+    --bg-color: var(--gray-dark);
+    --hovercolor: var(--gray-light);
+    --width-collapsed: 50px;
 }
 
 .flex{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100%;
     border-bottom: 1px solid var(--gray-dark);
 }
 
 .perfil{
     background-color: var(--blue-dark);
     width: 20%;
-    height: 100%;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,4 +274,84 @@ span {
 /* remove the scroll bar */
 .scroll-cartitas2::-webkit-scrollbar{
     -webkit-appearance: none;
+}
+
+
+
+@media (max-width: 600px){
+    .flex{
+        position: relative;
     }
+    .general{
+        width: 80%;
+        padding: 0;
+    }
+    #guardadas{
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    #guardadas h2{
+        align-self: center;
+        font-size: 2.5em;
+    }
+    .main-scroll-div{
+        width: 90%;
+        padding-left: 10px;
+        /* align-self: left; */
+    }
+    .cover{
+        width: 90%;
+    }
+    .child{
+        min-width: 95%;
+    }
+    
+    .icon-right, .icon-right2{
+        margin: 0px;
+    }
+    .icon-left:hover, .icon-right:hover {
+       background: none;
+    }
+    .bx-chevron-left:before{
+        font-size: 0.8em;
+    }
+    .bx-chevron-right:before{
+        font-size: 0.8em;
+    }
+
+    #realizadas{
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    #realizadas h2{
+        align-self: center;
+        font-size: 2.5em;
+    }
+    .childLogros{
+        min-width: 95%;
+    }
+
+    /* menu lateral */
+    .infoPerfil{
+        display: none;
+    }
+    .divLogros{
+        display: none;
+    }
+    .perfil{
+        padding: 0;
+        height: 100vh;
+    }
+    .divFoto{
+        height: 100px;
+        margin-top: 0;
+    }
+
+
+}
