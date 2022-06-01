@@ -1,3 +1,10 @@
+<?php 
+    // $session = session();
+    // if ($session->logged_in == false) {
+    //     $session->set('msg', 'No te has logueado');
+    //     return redirect()->to('/');
+    // }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

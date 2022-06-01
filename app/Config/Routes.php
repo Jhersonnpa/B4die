@@ -37,6 +37,11 @@ $routes->add('/perfil','Index::perfil');
 $routes->add('/experiencias','Index::experiencias');
 $routes->add('/experiencia', 'Index::experiencia');
 $routes->add('/login', 'Index::login');
+$routes->add('/rebreFormRegister', 'Register::save');
+$routes->add('/rebreFormLogin', 'Login::auth');
+$routes->add('/logout', 'Login::logout');
+
+
 
 
 /*

@@ -1,3 +1,4 @@
+<?php $session = session(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -136,27 +137,118 @@
                 <button id="login-toggle" onclick="toggleLogin()">Login</button>
                 <button id="signup-toggle" onclick="toggleSignup()">Registro</button>
             </div>
-
+            <span><?php if (isset($msg)) {
+                echo $msg;
+            }?></span>
             <div id="login-form">
                 <form action="<?= base_url() ?>/rebreFormLogin" method="post">
-                    <input type="text" placeholder="Nombre usuario"/>
-                    <input type="password" placeholder="Contraseña"/>
+                    <?= csrf_field() ?>
+                    <?php
+                    $nom_usuari=isset($nom_usuari)? $nom_usuari:"";
+                    $msg=isset($session->msg)? $session->msg:"";
+                    echo $msg;
+                    ?>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('nom_usuari')) {
+                            echo $validation->getError('nom_usuari');
+                        }    
+                    }
+                    ?>
+                    <input type="text" name="nom_usuari" placeholder="Nombre usuario" value="<?= $nom_usuari ?>"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('contrasenya')) {
+                            echo $validation->getError('contrasenya');
+                        }    
+                    }
+                    ?>
+                    <input type="password" name="contrasenya" placeholder="Contraseña"/>
                     <button type="submit" class="btn login">Login</button>
                     <p><a href="javascript:void(0)" onclick="toggleSignup()">Crea una cuenta!</a> </p>
                 </form>
             </div>
 
             <div id="signup-form">
-                <form action="<?= base_url() ?>/rebreFormRegister" method="post">
-                    <input type="email" placeholder="Email *"/>
-                    <input type="text" placeholder="Nombre usuario *"/>
-                    <input type="password" placeholder="Contraseña *"/>
-                    <input type="password" placeholder="Confirma contraseña *"/>
-                    <input type="text" placeholder="Nombre *"/>
-                    <input type="text" placeholder="Apellidos *"/>
+                <form action="<?= base_url() ?>/rebreFormRegister" method="post" enctype="multipart/form-data">
+                    <?= csrf_field() ?>
+                    <?php
+                    $email=isset($email)? $email:"";
+                    $nom_usuari=isset($nom_usuari)? $nom_usuari:"";
+                    $contrasenya=isset($contrasenya)? $contrasenya:"";
+                    $contrasenyaC=isset($contrasenyaC)? $contrasenyaC:"";
+                    $nom=isset($nom)? $nom:"";
+                    $cognom=isset($cognom)? $cognom:"";
+                    $data_naixament=isset($data_naixament)? $data_naixament:"";
+                    $pais=isset($pais)? $pais:"";
+                    $telefon=isset($telefon)? $telefon:"";
+                    ?>
+
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('email')) {
+                            echo $validation->getError('email');
+                        }    
+                    }
+                    ?>
+                    <input type="email" name="email" placeholder="Email *"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('nom_usuari')) {
+                            echo $validation->getError('nom_usuari');
+                        }    
+                    }
+                    ?>
+                    <input type="text" name="nom_usuari" placeholder="Nombre usuario *"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('contrasenya')) {
+                            echo $validation->getError('contrasenya');
+                        }    
+                    }
+                    ?>
+                    <input type="password" name="contrasenya" placeholder="Contraseña *"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('contrasenyaC')) {
+                            echo $validation->getError('contrasenyaC');
+                        }    
+                    }
+                    ?>
+                    <input type="password" name="contrasenyaC" placeholder="Confirma contraseña *"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('nom')) {
+                            echo $validation->getError('nom');
+                        }    
+                    }
+                    ?>
+                    <input type="text" name="nom" placeholder="Nombre *"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('cognom')) {
+                            echo $validation->getError('cognom');
+                        }    
+                    }
+                    ?>
+                    <input type="text" name="cognom" placeholder="Apellidos *"/>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('data_naixament')) {
+                            echo $validation->getError('data_naixament');
+                        }    
+                    }
+                    ?>
                     <input type="date" name="data_naixament" placeholder="Fecha nacimiento *"> 
                     <label for="pais">Selecciona pais donde resides</label>
-                    <select name="pais">
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('pais')) {
+                            echo $validation->getError('pais');
+                        }    
+                    }
+                    ?>
+                    <select name="pais" name="pais">
                         <option value="Elegir" id="AF">Elegir opción</option>
                         <option value="Afganistán" id="AF">Afganistán</option>
                         <option value="Albania" id="AL">Albania</option>
@@ -396,7 +488,21 @@
                         <option value="Zambia" id="ZM">Zambia</option>
                         <option value="Zimbabue" id="ZW">Zimbabue</option>
                     </select>
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('telefon')) {
+                            echo $validation->getError('telefon');
+                        }    
+                    }
+                    ?>
                     <input type="tel" name="telefon" placeholder="Telefono *"> 
+                    <?php
+                    if (!empty($validation)) {
+                        if ($validation->getError('img')) {
+                            echo $validation->getError('img');
+                        }    
+                    }
+                    ?>
                     <label for="img">Foto/Avatar</label>
                     <input type="file" name="img" id="img">
                     <button type="submit" class="btn signup"><i class="fa fa-spinner fa-pulse"></i> Registro</button> 

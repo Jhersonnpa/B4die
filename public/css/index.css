@@ -130,6 +130,11 @@
     background-size: cover;
 }
 
+#slide-4 {
+    background: url(../img/kart.jpg)center no-repeat;
+    background-size: cover;
+}
+
 .container {
     width: 90%;
     min-height: minmax(90vh, 100vh);

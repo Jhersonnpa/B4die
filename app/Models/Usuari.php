@@ -8,20 +8,6 @@ class Usuari extends Model
 {
     protected $table      = 'usuari';
     protected $primaryKey = 'id';
-
-    protected $useAutoIncrement = true;
-
     protected $returnType     = 'array';
-    protected $useSoftDeletes = true;
-
-    protected $allowedFields = ['nom_usuari', 'nom','cognom','email','contrasenya','data_naixament','pais','telefon','img','tipo','puntuacion'];
-
-    protected $useTimestamps = false;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
-
-    protected $validationRules    = [];
-    protected $validationMessages = [];
-    protected $skipValidation     = false;
+    protected $allowedFields = ['nom_usuari', 'nom','cognom','email','contrasenya','data_naixament','pais','telefon','img','tipo_img','tipo_usuari','puntuacion','rango'];
 }

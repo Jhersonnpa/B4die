@@ -1,3 +1,4 @@
+<?php $session = session();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,7 +26,19 @@
                 </form>
             </div>
             <div class="dropdown-user">
-                <a href="<?= base_url('/login')?>"><i class='bx bxs-user-circle dropbtn-user'></i></a>
+                <?php 
+                    if ($session->logged_in == false) {
+                        echo "<a href='". base_url('/login')."'><i class='bx bxs-user-circle dropbtn-user'></i></a>";
+                    }else {
+                        echo "<a href='". base_url('/perfil')."'><img src='data:".$session->tipo_img.";base64,".base64_encode($session->tipo_img)."'/></a>";
+                    }
+                ?>
+                <?php
+                
+                if(isset($session->nom_usuari)){
+                    echo 'Hola, '.$session->nom_usuari;
+                }
+                ?>
                 <!-- <div class="dropdown-content-user">
                     <a href="#">Registrate</a>
                     <a href="#">Inicia Sesión</a>
@@ -108,6 +121,11 @@
                     </li>
                     <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
+                    <?php 
+                    if ($session->logged_in == true) {
+                        echo "<li class='menu-item'><a href='".base_url('/logout')."' class='menu-link'>Cerrar sesión<i class='bx bx-log-out' ></i></a></li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -133,15 +151,15 @@
 
         <div class="mySlides fade" id="slide-1">
             <div class="jumbo-slider">
-                <span>Lorem, ipsum.</span>
+                <span>Experiencias inolvidables</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <a href="#"><button>Ir</button></a>
+                <a href="<?= base_url('/')?>"><button>Ir</button></a>
             </div>
         </div>
 
         <div class="mySlides fade" id="slide-2">
             <div class="jumbo-slider">
-                <span>Lorem, ipsum.</span>
+                <span>Actividades emocionantes</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
                 <a href="#"><button>Ir</button></a>
             </div>
@@ -149,7 +167,15 @@
 
         <div class="mySlides fade" id="slide-3">
             <div class="jumbo-slider">
-                <span>Lorem, ipsum.</span>
+                <span>Adrenalina pura!</span>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
+                <a href="#"><button>Ir</button></a>
+            </div>
+        </div>
+
+        <div class="mySlides fade" id="slide-4">
+            <div class="jumbo-slider">
+                <span>Adrenalina Viajes!</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
                 <a href="#"><button>Ir</button></a>
             </div>
@@ -157,7 +183,6 @@
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-
     </div>
 
     <div class="container">
@@ -239,18 +264,15 @@
     <footer>
         <div class="logo-footer">
             <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
-            <p>&copy;</p>
         </div>
-        <ul>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Terminos de privacidad</a></li>
-            <li><a href="#">Ayuda</a></li>
-        </ul>
+        <div>
+        <p>&copy; 2022 Jherson & Marc | Todos los derechos reservados.</p>
+        </div>
         <div class="media-footer">
-            <div>
+            <!-- <div>
                 <a href="#"><i class='bx bxl-instagram' id="insta"></i></a>
                 <a href="#"><i class='bx bxl-facebook-square' style="color: #1A6ED8;"></i></a>
-            </div>
+            </div> -->
             <div>
                 <a href="#"><i class='bx bxs-up-arrow-square' ></i></a>
             </div>

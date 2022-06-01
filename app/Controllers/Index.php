@@ -10,14 +10,18 @@ class Index extends BaseController
 {
     public function __construct(){
 		helper(['form', 'url', 'html']);
-		$db = \Config\Database::connect();
+        $this->db=db_connect();
 	}
 
     public function index()
     {
-        $db = \Config\Database::connect();
-        // $session = session();
-        $query   = $db->query('SELECT * FROM activitat LIMIT 6');
+        $session = session();
+        if ($session->logged_in == false) {
+            $query = $this->db->query("SELECT * FROM usuari WHERE id = ".$session->id);
+            $results = $query->getRowArray();
+            $dades['usuari'] = $results;
+        }
+        $query   = $this->db->query('SELECT * FROM activitat LIMIT 6');
         $results = $query->getResultArray();
         $dades = ['activitat' => $results];
         return view('index', $dades);
