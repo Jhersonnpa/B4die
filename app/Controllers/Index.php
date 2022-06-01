@@ -44,4 +44,8 @@ class Index extends BaseController
     public function experiencia(){
         return view('experiencia');
     }
+
+    public function login(){
+        return view('login');
+    }
 }

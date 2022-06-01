@@ -25,13 +25,13 @@
                 </form>
             </div>
             <div class="dropdown-user">
-                <i class='bx bxs-user-circle dropbtn-user'></i>
-                <div class="dropdown-content-user">
+                <a href="<?= base_url('/login')?>"><i class='bx bxs-user-circle dropbtn-user'></i></a>
+                <!-- <div class="dropdown-content-user">
                     <a href="#">Registrate</a>
                     <a href="#">Inicia Sesión</a>
                     <hr>
                     <a href="#">Ayuda</a>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="nav-bottom wrapper">
