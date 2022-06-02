@@ -8,17 +8,12 @@ class Login extends BaseController
     public function index()
     {
         helper(['form']);
-        $session = session();
-        // if ($session->has('nom_usuari')) {
-        //     return redirect()->to('/dashboard');
-        // }
         return view('login');
     } 
 
     public function __construct(){
 		helper(['form', 'url', 'html']);
 		$this->db = db_connect();
-		$db = \Config\Database::connect();
 	}
   
     public function auth()
@@ -40,20 +35,31 @@ class Login extends BaseController
 		];
 
         if($this->validate($regles,$missatges)){
+            
             $model = new Usuari();
             $nom_usuari = $this->request->getVar('nom_usuari');
             $contrasenya = md5($this->request->getVar('contrasenya'));
             $data = $model->where('nom_usuari', $nom_usuari)->first();
             if($data){
+                $query = $this->db->query("SELECT TIMESTAMPDIFF(YEAR,data_naixament,CURDATE()) AS edad FROM usuari where id = ".$data['id']);
+                $row = $query->getRow();
                 $pass = $data['contrasenya'];
                 if($pass == $contrasenya){
                     $ses_data = [
                         'id' => $data['id'],
                         'nom_usuari'       => $data['nom_usuari'],
+                        'nom' => $data['nom'],
+                        'cognom' => $data['cognom'],
                         'email'     => $data['email'],
+                        'data_naixament'  => $data['data_naixament'],
+                        'pais' => $data['pais'],
                         'telefon'    => $data['telefon'],
                         'img' => $data['img'],
+                        'edad' => $row->edad,
                         'tipo_img' => $data['tipo_img'],
+                        'tipo_usuari' => $data['tipo_usuari'],
+                        'puntuacion' => $data['puntuacion'],
+                        'rango' => $data['rango'],
                         'logged_in'     => TRUE
                     ];
                     $session->set($ses_data);

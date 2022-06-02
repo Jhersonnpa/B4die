@@ -9,6 +9,7 @@
     --black-blue: #0D1117;
 }
 
+
 /* Slider */
 .mySlides {
     display: flex;
@@ -131,7 +132,7 @@
 }
 
 #slide-4 {
-    background: url(../img/kart.jpg)center no-repeat;
+    background: url(../img/viajes-slider.jpg)center no-repeat;
     background-size: cover;
 }
 
@@ -143,6 +144,9 @@
     flex-direction: column;
     gap: 30px;
 }
+.container > p{
+    font-size: 1.5em;
+}
 
 #div-buscador {
     height: 90vh;
@@ -150,7 +154,7 @@
 
 h2 {
     color:var(--yellow);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 400;
 }
 
@@ -165,7 +169,7 @@ p {
     gap: 30px;
 }
 
-.card {
+.card{
     width: 100%;
     min-height: 202px;
     display: flex;
@@ -257,7 +261,6 @@ span {
 }
 .texto-idea{
     width: 50%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,6 +313,7 @@ span {
 
 
 @media (max-width: 600px){
+    
     .slideshow-container{
         max-height: 400px;
     }
@@ -390,7 +394,6 @@ span {
     /* jumbotron */
     .jumbotron{
         margin-left: 0;
-        gap: 25px;
         width: 90%;
     }
     .jumbotron > span{

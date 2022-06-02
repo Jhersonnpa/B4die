@@ -16,7 +16,6 @@ class Register extends BaseController
     public function __construct(){
 		helper(['form', 'url', 'html']);
 		$this->db = db_connect();
-		$db = \Config\Database::connect();
 	}
   
     public function save()

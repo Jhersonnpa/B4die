@@ -28,16 +28,16 @@
 .perfil{
     background-color: var(--blue-dark);
     width: 20%;
-    height: 110vh;
+    /* height: 110vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    padding: 1rem 0;
+    padding: 4rem 0;
 }
 .divFoto{
-    width: 80%;
-    height: 300px;
+    width: 60%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +58,7 @@
     display: flex;
     flex-direction: column;
     color: var(--white);
+    padding-top: 2rem;
 }
 .nombreUsuario{
     font-size: 2em;
@@ -76,10 +77,13 @@
     display: flex;
     justify-content: center;
 }
+button{
+    border: 0;
+}
 .btnEditar{ 
     align-self: center;
     width: 70%;
-    margin-top: 10%;
+    margin-top: 20%;
     padding: 5px 20px;
     border-radius: 4px;
     background-color: var(--yellow);
@@ -102,12 +106,12 @@
     column-gap: 20px;
     row-gap: 10px;
     justify-content: center;
+    margin-top: 15%;
   }
   .logoLogros{
     width: 40px;
     height: 40px;
   }
-
 
 
 
@@ -180,7 +184,7 @@
 /* card activities */
 .child{
     min-width: 30%;
-    height: 300px;
+    height: 100%;
     margin: 10px 10px;
     cursor: pointer;
     overflow: hidden;
@@ -249,7 +253,7 @@ span {
 /* cartas logros */
 .childLogros{
     min-width: 30%;
-    height: 300px;
+    height: 100%;
     margin: 10px 10px;
     cursor: pointer;
     overflow: hidden;
@@ -350,7 +354,7 @@ span {
     }
     .divFoto{
         height: 100px;
-        margin-top: 0;
+        margin-top: 25%;
     }
 
 

@@ -8,20 +8,7 @@ class Activitat extends Model
 {
     protected $table      = 'activitat';
     protected $primaryKey = 'id';
-
-    protected $useAutoIncrement = true;
-
     protected $returnType     = 'array';
-    protected $useSoftDeletes = true;
+    protected $allowedFields = ['nom', 'descripcio','categoria','subcategoria','pais','ciutat','longitud','latitud','dificultat','img','tipo_img'];
 
-    protected $allowedFields = ['nom', 'descripcio','categoria','subcategoria','pais','ciutat','longitud','latitud','dificultat','img'];
-
-    protected $useTimestamps = false;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
-
-    protected $validationRules    = [];
-    protected $validationMessages = [];
-    protected $skipValidation     = false;
 }

@@ -1,10 +1,4 @@
-<?php 
-    // $session = session();
-    // if ($session->logged_in == false) {
-    //     $session->set('msg', 'No te has logueado');
-    //     return redirect()->to('/');
-    // }
-?>
+<?php $session = session();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,7 +15,7 @@
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
-<nav class="navbar">
+    <nav class="navbar">
         <div class="nav-top">
             <div id="search">
                 <form action="" role="search" id="searchform">
@@ -32,13 +26,19 @@
                 </form>
             </div>
             <div class="dropdown-user">
-                <a href="<?= base_url('/login')?>"><i class='bx bxs-user-circle dropbtn-user'></i></a>
-                <!-- <div class="dropdown-content-user">
-                    <a href="#">Registrate</a>
-                    <a href="#">Inicia Sesión</a>
-                    <hr>
-                    <a href="#">Ayuda</a>
-                </div> -->
+                <?php 
+                    if ($session->logged_in == false) {
+                        echo "<a href='". base_url('/login')."'><i class='bx bxs-user-circle dropbtn-user'></i></a>";
+                    }else {
+                        echo "<a href='". base_url('/perfil')."'><div class='divRedondo'><img class='redondita' src='data:".$session->tipo_img.";base64,".base64_encode($session->img)."'/></div></a>";
+                    }
+                ?>
+                <?php
+                
+                if(isset($session->nom_usuari)){
+                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                }
+                ?>
             </div>
         </div>
         <div class="nav-bottom wrapper">
@@ -56,65 +56,49 @@
                                 <div class="nav-experiencias">
                                     <ul>
                                         <li><a href="#" class="subcategoria">aereo</a></li>
-                                        <li><a href="#">Paracaidismo</a></li>
-                                        <li><a href="#">Aeromodelismo</a></li>
-                                        <li><a href="#">Ala delta</a></li>
-                                        <li><a href="#">Parapente</a></li>
-                                        <li><a href="#">Acrobacia aérea</a></li>
-                                        <li><a href="#">Parafoil</a></li>
-                                        <li><a href="#">Parasailing</a></li>
-                                        <li><a href="#">Globo aeroestatico</a></li>
-                                        <li><a href="#">Wingfly</a></li>
-                                        <li><a href="#">Salto base</a></li>
-                                        <li><a href="#">Puenting</a></li>
-                                        <li><a href="#">Vuelta en Helicóptero</a></li>
+                                        <?php 
+                                        foreach ($aereo as $key => $value) {
+                                            echo "<li><a href='#'>".$aereo[$key]['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                     <ul>
                                         <li><a href="#" class="subcategoria">terrestre</a></li>
-                                        <li><a href="#">Senderismo</a></li>
-                                        <li><a href="#">Alpinismo</a></li>
-                                        <li><a href="#">Rapel</a></li>
-                                        <li><a href="#">Escalada</a></li>
-                                        <li><a href="#">Parkour</a></li>
-                                        <li><a href="#">Zorbing</a></li>
-                                        <li><a href="#">Bubble Football</a></li>
-                                        <li><a href="#">Tobogan Alpino</a></li>
-                                        <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
-                                        <li><a href="#">Street Luge</a></li>
-                                        <li><a href="#">Slackline</a></li>
-                                        <li><a href="#">Tirolina</a></li>
+                                        <?php 
+                                        foreach ($terrestre as $key => $value) {
+                                            echo "<li><a href='#'>".$terrestre[$key]['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                     <ul>
                                         <li><a href="#" class="subcategoria">acuatico</a></li>
-                                        <li><a href="#">Surf</a></li>
-                                        <li><a href="#">Kitesurf</a></li>
-                                        <li><a href="#">Wakesurf</a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <?php 
+                                        foreach ($acuatico as $key => $value) {
+                                            echo "<li><a href='#'>".$acuatico[$key]['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                     <ul>
                                         <li><a href="#" class="subcategoria">viajes</a></li>
-                                        <li><a href="#">culo</a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <?php 
+                                        foreach ($viajes as $key => $value) {
+                                            echo "<li><a href='#'>".$viajes[$key]['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                         </div>
                     </li>
                     <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
+                    <?php 
+                    if ($session->tipo_usuari > 0) {
+                        echo "<li class='menu-item'><a href='".base_url('/admin')."' class='menu-link'>Admin</a></li>";
+                    }
+                    if ($session->logged_in == true) {
+                        echo "<li class='menu-item'><a href='".base_url('/logout')."' class='menu-link'>Cerrar sesión<i class='bx bx-log-out' ></i></a></li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -139,15 +123,15 @@
     <div class="flex">
         <div class="perfil" id="perfil">
             <div class="divFoto">
-                <img src="<?= base_url('img/MARC_MORELL.jpg')?>" alt="Imagen perfil" class="fotoPerfil" id="img-click" onclick="mostrarPerfil()">
+                <?php echo "<img alt='Imagen perfil' class='fotoPerfil' id='img-click'  src='data:".$session->tipo_img.";base64,".base64_encode($session->img)."'/>"?>
             </div>
             <div class="infoPerfil">
-                <div class="nombreUsuario">Jhersonnpa</div>
+                <div class="nombreUsuario"><?= $session->nom_usuari?></div>
                 <div class="datos">
-                    <p class="nombre">Jherson</p>
-                    <p class="apellidos">Navir Pabon</p>
-                    <p class="edad">22</p>
-                    <p class="direccion">Sabadell, España</p>
+                    <p class="nombre"><?= $session->nom?></p>
+                    <p class="apellidos"><?= $session->cognom?></p>
+                    <p class="edad"><?= $session->edad?> años</p>
+                    <p class="pais"><?= $session->pais?></p>
                 </div>
                 <div class="btn"><button class="btnEditar">EDITAR</button></div>
             </div>
@@ -455,17 +439,15 @@
 
         // Show and Hide Navbar Menu
         burgerMenu.addEventListener("click", () => {
-            burgerMenu.classList.toggle("is-active");
-            navbarMenu.classList.toggle("is-active");
-
-            if (navbarMenu.classList.contains("is-active")) {
-                navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
-            } else {
-                navbarMenu.removeAttribute("style");
-            }
+        burgerMenu.classList.toggle("is-active");
+        navbarMenu.classList.toggle("is-active");
+        if (navbarMenu.classList.contains("is-active")) {
+            navbarMenu.style.maxHeight = navbarMenu.scrollHeight + "px";
+        } else {
+            navbarMenu.removeAttribute("style");
+        }
         });
-       
-    </script>
 
+    </script>
 </body>
 </html>
