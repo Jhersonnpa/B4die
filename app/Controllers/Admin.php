@@ -129,6 +129,28 @@ class Admin extends BaseController
           
     }
 
+    public function editarAct()
+    {
+        $session = session();
+        if ($session->logged_in == false && $session->tipo_usuari == 0) {
+            return redirect()->to('/');
+        }
+        $model = new Subcategoria();
+        $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+        return view('editarAct', $dades);
+    }
+
+    public function editarUser()
+    {
+        $session = session();
+        if ($session->logged_in == false && $session->tipo_usuari == 0) {
+            return redirect()->to('/');
+        }
+        $model = new Subcategoria();
+        $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+        return view('editarUser', $dades);
+    }
+
     public function eliminarActivitat()
     {
         $model = new Activitat();

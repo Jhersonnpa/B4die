@@ -152,106 +152,27 @@
             </div>
                 <div class="cover">
                     <div class="CAT1 snaps-inline">
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
+                        <?php
+                        foreach ($aerea_content as $key => $value) {
+                            echo "
+                            <div class='child'>
+                                <div class='card'>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
+                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                                    <div class='containerInfo'>
+                                        <span class='card-title'>".$value['nom']."</span>
+                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+                                        <span >".$value['subcategoria']."</span>
+                                        <span>Dificultad: ".$value['dificultat']."</span>
+                                    </div>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
+                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
+                            ";
+                        }
+                        ?>
                     </div>
                 </div>
             <div class="minimoMargen">
@@ -269,106 +190,27 @@
             </div>
                 <div class="cover">
                     <div class="CAT2 snaps-inline">
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
+                        <?php
+                        foreach ($terrestre_content as $key => $value) {
+                            echo "
+                            <div class='child'>
+                                <div class='card'>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
+                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                                    <div class='containerInfo'>
+                                        <span class='card-title'>".$value['nom']."</span>
+                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+                                        <span >".$value['subcategoria']."</span>
+                                        <span>Dificultad: ".$value['dificultat']."</span>
+                                    </div>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
+                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
+                            ";
+                        }
+                        ?>
                     </div>
                 </div>
             <div class="minimoMargen">
@@ -387,106 +229,27 @@
             </div>
                 <div class="cover">
                     <div class="CAT3 snaps-inline">
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
+                        <?php
+                        foreach ($acuatica_content as $key => $value) {
+                            echo "
+                            <div class='child'>
+                                <div class='card'>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
+                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                                    <div class='containerInfo'>
+                                        <span class='card-title'>".$value['nom']."</span>
+                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+                                        <span >".$value['subcategoria']."</span>
+                                        <span>Dificultad: ".$value['dificultat']."</span>
+                                    </div>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
+                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
+                            ";
+                        }
+                        ?>
                     </div>
                 </div>
             <div class="minimoMargen">
@@ -505,106 +268,27 @@
             </div>
                 <div class="cover">
                     <div class="CAT4 snaps-inline">
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
+                        <?php
+                        foreach ($viajes_content as $key => $value) {
+                            echo "
+                            <div class='child'>
+                                <div class='card'>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
+                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                                    <div class='containerInfo'>
+                                        <span class='card-title'>".$value['nom']."</span>
+                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+                                        <span >".$value['subcategoria']."</span>
+                                        <span>Dificultad: ".$value['dificultat']."</span>
+                                    </div>
+                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
+                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
-                        <div class="child">
-                            <div class="card">
-                                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                                <span class="card-title">Card Title</span>
-                                <span>More details about card</span>
-                                <span>Even more details about the card</span>
-                                <a href="#">View details</a>
-                                <span class="new">new</span>
-                            </div>
-                        </div>
+                            ";
+                        }
+                        ?>
                     </div>
                 </div>
             <div class="minimoMargen">

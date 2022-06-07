@@ -141,20 +141,37 @@
     object-fit: cover;
     border-radius: 4px 4px 0 0;
 }
+
 .card-title {
     color:var(--blue-dark);
     font-weight: 800;
+    font-size: 1.7em;
 }
+
 span {
     color: var(--gray-dark);
     padding: 5px;
 }
+
 .card > a { 
     text-decoration: none;
     color: var(--blue-dark);
-    font-weight: 600;
-    padding: 5px;
+    font-weight: 500;
+    padding: 0px;
 }
+
+.card > a .containerInfo{
+    padding: 10px 15px;
+    display: flex; 
+    flex-direction: column;
+    height: 120px;
+}
+.linkMas{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
 .new {
     position: absolute;
     right: 5px;

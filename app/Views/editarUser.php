@@ -123,88 +123,8 @@
     </div>
     </div>
 
-    <div class="slideshow-container">
-
-        <div class="mySlides fade" id="slide-1">
-            <div class="jumbo-slider">
-            <span>Viaja por todo el mundo</span>
-                <span>Visita los lugares más increíbles e inéditos de este planeta.</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <div class="mySlides fade" id="slide-2">
-            <div class="jumbo-slider">
-                <span>Actividades emocionantes</span>
-                <span>!Realiza actividades increíbles mientras te das un chapuzón!</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <div class="mySlides fade" id="slide-3">
-            <div class="jumbo-slider">
-                <span>Adrenalina en estado puro</span>
-                <span>!Siente la emoción recorriendo por tus venas al estar por los aires!</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <div class="mySlides fade" id="slide-4">
-            <div class="jumbo-slider">
-            <span>Experiencias inolvidables</span>
-                <span>¿Quieres vivir experiencias terrestres que te dejaran con la boca abierta?</span>
-                <a href="#"><button>Ir</button></a>
-            </div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-
-    <div class="container">
-        <h2>Experiencias más visitadas</h2>
-        <p>Estas són las experiencias más realizadas por los usuarios. Echales un vistazo y guardate las que más te gusten para hacerlas en un futuro.</p>
-        
-        <div class="cards">
-            <?php foreach ($activitat as $key => $value) {
-            echo "
-            
-            <div class='card'>
-                <a href='".base_url('/experiencia?id='.$value['id'])."'>
-                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                    <div class='containerInfo'>
-                        <span class='card-title'>".$value['nom']."</span>
-                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
-                        <span >".$value['subcategoria']."</span>
-                        <span>Dificultad: ".$value['dificultat']."</span>
-                    </div>
-                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
-                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
-                </a>
-            </div>
-            
-            ";
-            }?>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>¿No está tu experiencia deseada?</h2>
-        <div class="container2">
-            <div class="idea">
-                <img src="<?= base_url('img/idea.jpg')?>" alt="idea" class="imagen-contacto">
-            </div>
-            <div class="texto-idea">
-                <div class="jumbotron">
-                    <span>Si crees que falta alguna experiencia en nuestra web, puedes sugerirnosla aqui!</span>
-                    <a href="#"><button>Enviar</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
+        <!-- Footer -->
+        <footer>
         <div class="logo-footer">
             <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
         </div>
@@ -225,8 +145,6 @@
     <!-- JS -->
     <script  type="text/javascript">
         window.onload = function(){
-            showSlides(1);
-            getMap();
             modal();
         }
 

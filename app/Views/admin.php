@@ -489,7 +489,7 @@
 
 
         
-        <h2 class="h2">Usuarios registrados</h2>
+        <!-- <h2 class="h2">Usuarios registrados</h2>
         <div class="tabla-pers">
             <div class="scrolling">
                 <table class="table table-hover table-responsive" id="table_id2">
@@ -526,7 +526,7 @@
                                 <td><img src='data:".$usuaris[$key]['tipo_img'].";base64,".base64_encode($usuaris[$key]['img'])."'/></td>
                                 <td>".$usuaris[$key]['puntuacion']."</td>
                                 <td>".$usuaris[$key]['rango']."</td>
-                                <form action='". base_url('/editarActivitat')."' method='post' enctype='multipart/form-data'>
+                                <form action='". base_url('/editarUsuario')."' method='post' enctype='multipart/form-data'>
                                 <td><button type='submit'><i class='bx bx-edit' ></i></button></td>
                                 </form>
                                 <form action='". base_url('/eliminarUsuario')."' method='post' enctype='multipart/form-data'>
@@ -540,7 +540,7 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+        </div> -->
     </div>
     
 
