@@ -1,0 +1,18 @@
+:root {
+    --yellow: #FFDB49;
+    --yellow-dark: #FEAF26;
+    --white: #ffffff;
+    --gray-shadow: #F6F6F6;
+    --gray-light: #EAEAEA;
+    --gray-dark: #545454;
+    --blue-dark: #202935;
+    --black-blue: #0D1117;
+}
+
+/* .tabla {
+    width: 80%;
+    min-height: auto;
+    margin: 50px auto;
+    background-color: var(--white);
+    border-radius: 4px;
+} */

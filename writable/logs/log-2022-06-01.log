@@ -171,3 +171,1033 @@ CRITICAL - 2022-06-01 06:08:04 --> Call to a member function hasMoved() on null
 #2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+ERROR - 2022-06-01 10:55:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+ERROR - 2022-06-01 10:55:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 10:55:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 10:55:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:16:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:16:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:17:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:17:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:17:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:17:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:18:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:18:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:18:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:18:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:18:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:18:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:19:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:19:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:19:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:19:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:19:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:19:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:19:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:19:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:19:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:19:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:20:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:20:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:20:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:20:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->index()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:22:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:22:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 16:22:35 --> Trying to get property 'edad' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-01 16:23:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:23:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 16:24:22 --> Trying to get property 'edad' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 16:24:50 --> Trying to get property 'edad' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-01 16:26:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:26:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 16:30:15 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-01 16:30:20 --> Trying to get property 'edad' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 16:30:55 --> Trying to get property 'edad' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-01 16:32:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:32:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 16:35:25 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654118681.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654119324, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:35:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:35:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(42): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:37:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:37:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(38): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:39:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:39:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(38): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:39:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:39:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(38): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 16:40:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRowResult()
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-01 16:41:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 16:42:04 --> syntax error, unexpected '$model' (T_VARIABLE), expecting ';' or ','
+#0 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 16:43:11 --> Trying to get property 'edad' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-01 16:43:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:43:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(38): CodeIgniter\Database\BaseConnection->query('SELECT TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-06-01 16:44:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-01 16:44:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('select TIMESTAM...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select TIMESTAM...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select TIMESTAM...')
+#3 C:\xampp\htdocs\B4die\app\Controllers\Login.php(38): CodeIgniter\Database\BaseConnection->query('select TIMESTAM...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Login->auth()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 17:10:05 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654120607.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654121404, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 17:10:33 --> Undefined variable: session
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(47): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 17:10:34 --> Undefined variable: session
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(47): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 17:10:38 --> Undefined variable: session
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(47): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-06-01 17:44:29 --> Unknown column 'activitat.deleted_at' in 'where clause'
+CRITICAL - 2022-06-01 17:44:29 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\B4die\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(24): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-06-01 17:44:45 --> Unknown column 'activitat.deleted_at' in 'where clause'
+CRITICAL - 2022-06-01 17:44:45 --> Unknown column 'activitat.deleted_at' in 'where clause'
+#0 C:\xampp\htdocs\B4die\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\B4die\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\B4die\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\B4die\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\B4die\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#8 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-06-01 17:46:11 --> Undefined index: nom_usuari
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(27): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 17:46:21 --> Undefined index: nom_usuari
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 174, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(27): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:28:06 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\B4die\app\Controllers\Admin.php on line 32
+#0 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(32): view('admin', NULL)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 19:28:48 --> syntax error, unexpected ']'
+#0 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 19:35:19 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:22 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:25 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:40 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-01 19:35:49 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:49 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:51 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:53 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:54 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:54 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:35:59 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:36:01 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:36:54 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:36:57 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:37:47 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:37:48 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:37:58 --> Undefined variable: categoria
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 212, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:40:01 --> Undefined variable: sub
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 221, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:40:17 --> Undefined offset: 4
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(222): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 222, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:40:23 --> Undefined offset: 4
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(222): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 222, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 19:40:51 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654124803.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654130450, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:20:20 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Rapel', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Rapel', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:38:49 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Rapel', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Rapel', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:39:35 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches(NULL, NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', NULL, Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:40:27 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Rapel', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Rapel', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:43:07 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Rapel', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Rapel', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:43:20 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Paracaidismo', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Paracaidismo', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:54:46 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Rapel', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Rapel', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 20:55:46 --> Argument 2 passed to CodeIgniter\Validation\Rules::matches() must be of the type string, null given, called in C:\xampp\htdocs\B4die\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\B4die\system\Validation\Validation.php(291): CodeIgniter\Validation\Rules->matches('Rapel', NULL)
+#1 C:\xampp\htdocs\B4die\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('subcategoria', 'subcategoria', 'Rapel', Array, Array)
+#2 C:\xampp\htdocs\B4die\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(117): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 21:09:17 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:09:37 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:09:46 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:09:49 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:09:54 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:10:10 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:10:20 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:10:30 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:10:35 --> Undefined variable: activitats
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(126): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:14:47 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-01 21:14:53 --> syntax error, unexpected 'container' (T_STRING), expecting ';' or ','
+#0 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-01 21:14:57 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#2 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-01 21:29:59 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 21:32:35 --> Argument 2 passed to view() must be of the type array, null given, called in C:\xampp\htdocs\B4die\app\Controllers\Index.php on line 47
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(47): view('perfil', NULL)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-01 21:40:41 --> Undefined variable: descripcio
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(60): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 21:40:55 --> Undefined variable: descripcio
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 155, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(60): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 22:07:55 --> Undefined variable: tipo_img
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(60): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 22:09:58 --> Undefined variable: tipo_img
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(60): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 22:20:28 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654139610.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654140024, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-01 23:17:34 --> Undefined variable: tipo_img
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(70): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 23:19:49 --> syntax error, unexpected '_usuari' (T_STRING), expecting ')'
+#0 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#2 C:\xampp\htdocs\B4die\app\Controllers\Index.php(70): view('experiencia', Array)
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-01 23:24:15 --> Undefined index: tipo_img
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(70): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 23:26:26 --> Undefined index: tipo_img
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(70): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 23:28:55 --> Undefined index: tipo_img
+#0 C:\xampp\htdocs\B4die\app\Views\experiencia.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('experiencia', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(70): view('experiencia', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->experiencia()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 23:30:28 --> Undefined variable: top
+#0 C:\xampp\htdocs\B4die\app\Views\ranking.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 151, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('ranking', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(40): view('ranking', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->ranking()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

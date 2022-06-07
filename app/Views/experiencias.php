@@ -1,3 +1,4 @@
+<?php $session = session();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +15,7 @@
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
-<nav class="navbar">
+    <nav class="navbar">
         <div class="nav-top">
             <div id="search">
                 <form action="" role="search" id="searchform">
@@ -25,13 +26,19 @@
                 </form>
             </div>
             <div class="dropdown-user">
-                <a href="<?= base_url('/login')?>"><i class='bx bxs-user-circle dropbtn-user'></i></a>
-                <!-- <div class="dropdown-content-user">
-                    <a href="#">Registrate</a>
-                    <a href="#">Inicia Sesión</a>
-                    <hr>
-                    <a href="#">Ayuda</a>
-                </div> -->
+                <?php 
+                    if ($session->logged_in == false) {
+                        echo "<a href='". base_url('/login')."'><i class='bx bxs-user-circle dropbtn-user'></i></a>";
+                    }else {
+                        echo "<a href='". base_url('/perfil')."'><div class='divRedondo'><img class='redondita' src='data:".$session->tipo_img.";base64,".base64_encode($session->img)."'/></div></a>";
+                    }
+                ?>
+                <?php
+                
+                if(isset($session->nom_usuari)){
+                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                }
+                ?>
             </div>
         </div>
         <div class="nav-bottom wrapper">
@@ -108,6 +115,14 @@
                     </li>
                     <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
+                    <?php 
+                    if ($session->tipo_usuari > 0) {
+                        echo "<li class='menu-item'><a href='".base_url('/admin')."' class='menu-link'>Admin</a></li>";
+                    }
+                    if ($session->logged_in == true) {
+                        echo "<li class='menu-item'><a href='".base_url('/logout')."' class='menu-link'>Cerrar sesión<i class='bx bx-log-out' ></i></a></li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -129,8 +144,8 @@
     </div>
     </div>
 
-<section id="scroll">
-    <h2>CATEGORIA</h2>   
+<section id="scroll" class="marginTop">
+    <h2>AÉREA</h2>   
         <div class="main-scroll-div">
             <div class="minimoMargen">
                 <button class="icon icon-left" onclick="scrollLCAT1()"><i class='bx bx-chevron-left'></i></button>
@@ -247,7 +262,7 @@
 </section>
 
 <section id="scroll">
-    <h2>CATEGORIA</h2>   
+    <h2>TERRESTRE</h2>   
         <div class="main-scroll-div">
             <div class="minimoMargen">
                 <button class="icon icon-left" onclick="scrollLCAT2()"><i class='bx bx-chevron-left'></i></button>
@@ -365,7 +380,7 @@
 
 
 <section id="scroll">
-    <h2>CATEGORIA</h2>   
+    <h2>ACUÁTICA</h2>   
         <div class="main-scroll-div">
             <div class="minimoMargen">
                 <button class="icon icon-left" onclick="scrollLCAT3()"><i class='bx bx-chevron-left'></i></button>
@@ -483,7 +498,7 @@
 
 
 <section id="scroll">
-    <h2>CATEGORIA</h2>   
+    <h2>VIAJES  </h2>   
         <div class="main-scroll-div">
             <div class="minimoMargen">
                 <button class="icon icon-left" onclick="scrollLCAT4()"><i class='bx bx-chevron-left'></i></button>

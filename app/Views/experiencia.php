@@ -1,3 +1,4 @@
+<?php $session = session();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +15,7 @@
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
-<nav class="navbar">
+    <nav class="navbar">
         <div class="nav-top">
             <div id="search">
                 <form action="" role="search" id="searchform">
@@ -25,13 +26,19 @@
                 </form>
             </div>
             <div class="dropdown-user">
-                <a href="<?= base_url('/login')?>"><i class='bx bxs-user-circle dropbtn-user'></i></a>
-                <!-- <div class="dropdown-content-user">
-                    <a href="#">Registrate</a>
-                    <a href="#">Inicia Sesión</a>
-                    <hr>
-                    <a href="#">Ayuda</a>
-                </div> -->
+                <?php 
+                    if ($session->logged_in == false) {
+                        echo "<a href='". base_url('/login')."'><i class='bx bxs-user-circle dropbtn-user'></i></a>";
+                    }else {
+                        echo "<a href='". base_url('/perfil')."'><div class='divRedondo'><img class='redondita' src='data:".$session->tipo_img.";base64,".base64_encode($session->img)."'/></div></a>";
+                    }
+                ?>
+                <?php
+                
+                if(isset($session->nom_usuari)){
+                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                }
+                ?>
             </div>
         </div>
         <div class="nav-bottom wrapper">
@@ -43,10 +50,10 @@
             <div class="menu" id="menu">
                 <ul class="menu-inner">
                     <li class="dropdown menu-item">
-                        <a href="<?= base_url().'/experiencias'?>" id="experiencias" class="dropbtn menu-link">Experiencias</a>
-                        <div class="dropdown-content" id="nav-experiencias">
+                        <a href="<?= base_url().'/experiencia'?>" id="experiencia" class="dropbtn menu-link">Experiencia</a>
+                        <div class="dropdown-content" id="nav-experiencia">
                                 <div class="transparent"></div>
-                                <div class="nav-experiencias">
+                                <div class="nav-experiencia">
                                     <ul>
                                         <li><a href="#" class="subcategoria">aereo</a></li>
                                         <li><a href="#">Paracaidismo</a></li>
@@ -108,6 +115,14 @@
                     </li>
                     <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
+                    <?php 
+                    if ($session->tipo_usuari > 0) {
+                        echo "<li class='menu-item'><a href='".base_url('/admin')."' class='menu-link'>Admin</a></li>";
+                    }
+                    if ($session->logged_in == true) {
+                        echo "<li class='menu-item'><a href='".base_url('/logout')."' class='menu-link'>Cerrar sesión<i class='bx bx-log-out' ></i></a></li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -130,13 +145,15 @@
     </div>
 
 <section id="expe">
-    <h2>Experiencia</h2>   
+    <h2>Experiencia</h2> 
+        <input type="hidden" id="long" value="<?= $experiencia['longitud']=isset($experiencia['longitud'])? $experiencia['longitud']:"";?>">
+        <input type="hidden" id="lat" value="<?= $experiencia['latitud']=isset($experiencia['latitud'])? $experiencia['latitud']:"";?>">
         <div class="card">
-            <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card" class="img">
+            <?= "<img src='data:".$experiencia['tipo_img'].";base64,".base64_encode($experiencia['img'])."' class='img'/>"?>
                 <div class="info">
-                    <span class="card-title">Activity Title</span>
-                    <span>Category of the activity</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime architecto nemo quibusdam neque voluptatum commodi magnam nulla vero. Hic, voluptates fugiat. Sunt, quaerat quis inventore deserunt velit aliquid! Dolorem?</span>
+                    <span class="card-title"><?php $experiencia['nom']=isset($experiencia['nom'])? $experiencia['nom']:"Card title"; echo $experiencia['nom'];?></span>
+                    <span><?php $experiencia['categoria']=isset($experiencia['categoria'])? $experiencia['categoria']:"Category of the activity"; echo $experiencia['categoria'];?></span>
+                    <span><?php $experiencia['descripcio']=isset($experiencia['descripcio'])? $experiencia['descripcio']:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime architecto nemo quibusdam neque voluptatum commodi magnam nulla vero. Hic, voluptates fugiat. Sunt, quaerat quis inventore deserunt velit aliquid! Dolorem?"; echo $experiencia['descripcio'];?></span>
                     <span class="new">new</span>
                 </div>
         </div> 

@@ -15,6 +15,11 @@ body{
     background-color: var(--gray-light)!important;
 }
 
+h1 {
+  margin: 20px auto;
+  color:var(--black-blue);
+}
+
 .container{
     width:90%;
     margin: auto; 
@@ -192,95 +197,97 @@ body{
 table {
     background-color: transparent;
     border-spacing: 0px;
-  }
-  th {
-    text-align: left;
-  }
-  .table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  .table > thead > tr > th,
-  .table > tbody > tr > th,
-  .table > tfoot > tr > th,
-  .table > thead > tr > td,
-  .table > tbody > tr > td,
-  .table > tfoot > tr > td {
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd;
-  }
-  .table > thead > tr > th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
-  }
-  .table > caption + thead > tr:first-child > th,
-  .table > colgroup + thead > tr:first-child > th,
-  .table > thead:first-child > tr:first-child > th,
-  .table > caption + thead > tr:first-child > td,
-  .table > colgroup + thead > tr:first-child > td,
-  .table > thead:first-child > tr:first-child > td {
-    border-top: 0;
-  }
-  .table > tbody + tbody {
-    border-top: 2px solid #ddd;
-  }
-  .table .table {
-    background-color: #fff;
-  }
-  
-  .table-hover > tbody > tr:hover {
-    background-color: #f5f5f5;
-  }
-  .table > thead > tr > td.active,
-  .table > tbody > tr > td.active,
-  .table > tfoot > tr > td.active,
-  .table > thead > tr > th.active,
-  .table > tbody > tr > th.active,
-  .table > tfoot > tr > th.active,
-  .table > thead > tr.active > td,
-  .table > tbody > tr.active > td,
-  .table > tfoot > tr.active > td,
-  .table > thead > tr.active > th,
-  .table > tbody > tr.active > th,
-  .table > tfoot > tr.active > th {
-    background-color: #f5f5f5;
-  }
-  .table-hover > tbody > tr > td.active:hover,
-  .table-hover > tbody > tr > th.active:hover,
-  .table-hover > tbody > tr.active:hover > td,
-  .table-hover > tbody > tr:hover > .active,
-  .table-hover > tbody > tr.active:hover > th {
-    background-color: #e8e8e8;
-  }
+    /* overflow-x: auto;
+    overflow-y: hidden;
+    white-space: no-wrap;     */
+}
+th {
+  text-align: left;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 10px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table .table {
+  background-color: #fff;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+.table-responsive {
+  min-height: 0.01%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
   .table-responsive {
-    min-height: 0.01%;
-    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
   }
-  @media screen and (max-width: 767px) {
-    .table-responsive {
-      width: 100%;
-      margin-bottom: 15px;
-      overflow-y: hidden;
-      -ms-overflow-style: -ms-autohiding-scrollbar;
-      border: 1px solid #ddd;
-    }
-    .table-responsive > .table {
-      margin-bottom: 0;
-    }
-    .table-responsive > .table > thead > tr > th,
-    .table-responsive > .table > tbody > tr > th,
-    .table-responsive > .table > tfoot > tr > th,
-    .table-responsive > .table > thead > tr > td,
-    .table-responsive > .table > tbody > tr > td,
-    .table-responsive > .table > tfoot > tr > td {
-      white-space: nowrap;
-    }
+  .table-responsive > .table {
+    margin-bottom: 0;
   }
-
-
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+}
 
 @media (max-width: 600px){
   .container{
@@ -292,7 +299,7 @@ table {
   /* carta numero 1 */
   .cartaTop1{
     width: 100%;
-    height: 15vh;
+    
     margin-top: 20px;
   }
   .crown{
@@ -304,21 +311,16 @@ table {
   }
   .img-top1{
     width: 25%;
-    height: 70%;
+    height: 60%;
   }
   .divInfoTop1{
-    padding: 10px 0px 10px 10px;
+    padding: 25px 0px 10px 10px;
     width: 45%;
   }
   .username1{
-    font-size: 1em;
+    font-size: 1.3em;
   }
-  .tituloExpeTop{
-    font-size: 0.8em;
-  }
-  .nombreExpeTop{
-    font-size: 0.8em;
-  }
+  
   .logoRango{
     width: 25px;
     height: 25px;
@@ -330,34 +332,221 @@ table {
     row-gap: 5px;
     margin-right: 5px;
   }
-/* cartas numeros 2,3,4,5 */
-.cartasTop{
-  margin-top: 30px;
+  /* cartas numeros 2,3,4,5 */
+  .cartasTop{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nums{
+    padding: 3px;
+  }
+
+  .logoRange{
+    width: 25px;
+    height: 25px;
+  }
+  .divLogros{
+    grid-template-columns: 25px;
+    grid-template-rows: 25px 25px 25px 25px;
+    row-gap: 3px;
+  }
+  .tabla{
+    margin: 0;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+/* ADMIN */
+.body{
+  background-color: var(--black-blue)!important;
+}
+.h2{
+  color: var(--yellow-dark);
+}
+.tabla-pers{
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 95%;
+  align-self: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: white;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
-.cartasTop > div{
-  height: 15vh;
+.scrolling{
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-.nums{
-  padding: 3px;
+.container-pers{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
-.divInfoTops{
+.estilo-añadir{
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 1em;
+  text-align: center;
+  align-self: center;
+  width: 15%;
+  height: 100%;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  padding: 8px 0px;
+}
 
-}
-.logoRange{
-  width: 25px;
-  height: 25px;
-}
-.divLogros{
-  grid-template-columns: 25px;
-  grid-template-rows: 25px 25px 25px 25px;
-  row-gap: 3px;
-}
-.tabla{
-  margin: 0;
-  margin-top: 50px;
+.estilo-añadir:hover{ 
+  background-color: var(--yellow-dark);
+  cursor: pointer;
+  transition: all .5s;
 }
 
+td img {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+}
+
+
+
+/* MODAL EDITAR ACTIVIDAD */
+.ebcf_modal-content form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 100px;
+  height: 100%;
+}
+
+.ebcf_modal-content input{
+  width: 30%;
+  height: 20px;
+  padding: 1em 1.5em;
+  appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.825);
+}
+.ebcf_modal-content label{
+  margin-top: 30px;
+}
+#img{
+  border-bottom-color: transparent;
+  height: 100%;
+}
+.ebcf_modal-content #descripcio{
+  width: 80%;
+}
+.ebcf_modal-content select{
+  width: 30%;
+}
+.ebcf_modal-content button{
+  width: 30%;
+  background-color: var(--yellow);
+  align-self: center;
+  border: 0;
+  padding: 5px 10px;
+}
+.ebcf_modal-content button:hover{
+  background-color: var(--yellow-dark);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+  .estilo-añadir{
+    width: 40%;
+  }
+  .container-pers{
+    width: 95%;
+  }
+  .tabla-pers{
+    width: 100%;
+    padding: 20px;
+  }
+  .h2{
+    align-self: center;
+    margin: 40px 0px 10px 0px;
+  }
+  .ebcf_modal-content form{
+    gap: 20px;
+    padding: 10px 10px;
+    height: 100%;
+  }
+  .ebcf_modal-content{
+    display: flex;
+  }
+  
+  .ebcf_modal-content{
+    width: 95% !important;
+    align-self: center;
+  }
+
+  .ebcf_modal-content input{
+    width: 100%!important;
+  }
+}
+
+
+
+
+
+
+/* The Modal (background) */
+.ebcf_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.ebcf_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.ebcf_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ebcf_close:hover,
+.ebcf_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

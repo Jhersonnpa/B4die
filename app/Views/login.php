@@ -239,7 +239,7 @@
                         }    
                     }
                     ?>
-                    <input type="date" name="data_naixament" placeholder="Fecha nacimiento *"> 
+                    <input type="date" name="data_naixament"  max="2003-12-31" placeholder="Fecha nacimiento *"> 
                     <label for="pais">Selecciona pais donde resides</label>
                     <?php
                     if (!empty($validation)) {

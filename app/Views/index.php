@@ -30,21 +30,18 @@
                     if ($session->logged_in == false) {
                         echo "<a href='". base_url('/login')."'><i class='bx bxs-user-circle dropbtn-user'></i></a>";
                     }else {
-                        echo "<a href='". base_url('/perfil')."'><img src='data:".$session->tipo_img.";base64,".base64_encode($session->tipo_img)."'/></a>";
+                        echo "<a href='". base_url('/perfil')."'><div class='divRedondo'><img class='redondita' src='data:".$session->tipo_img.";base64,".base64_encode($session->img)."'/></div></a>";
                     }
                 ?>
                 <?php
                 
                 if(isset($session->nom_usuari)){
-                    echo 'Hola, '.$session->nom_usuari;
+                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                }
+                else {
+                    echo '<span class="nomUsu">Usuario</span>';
                 }
                 ?>
-                <!-- <div class="dropdown-content-user">
-                    <a href="#">Registrate</a>
-                    <a href="#">Inicia Sesión</a>
-                    <hr>
-                    <a href="#">Ayuda</a>
-                </div> -->
             </div>
         </div>
         <div class="nav-bottom wrapper">
@@ -56,7 +53,7 @@
             <div class="menu" id="menu">
                 <ul class="menu-inner">
                     <li class="dropdown menu-item">
-                        <a href="<?= base_url().'/experiencias'?>" id="experiencias" class="dropbtn menu-link">Experiencias</a>
+                        <a href="<?= base_url().'/experiencias'?>" id="experiencias" class="dropbtn menu-link">Experiencias <i class='bx bxs-chevron-down'></i></a>
                         <div class="dropdown-content" id="nav-experiencias">
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
@@ -119,9 +116,12 @@
                                 </div>
                         </div>
                     </li>
-                    <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
+                    <li class="menu-item"><a href="<?=base_url().'/ranking'?>" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
                     <?php 
+                    if ($session->tipo_usuari > 0) {
+                        echo "<li class='menu-item'><a href='".base_url('/admin')."' class='menu-link'>Admin</a></li>";
+                    }
                     if ($session->logged_in == true) {
                         echo "<li class='menu-item'><a href='".base_url('/logout')."' class='menu-link'>Cerrar sesión<i class='bx bx-log-out' ></i></a></li>";
                     }
@@ -151,32 +151,32 @@
 
         <div class="mySlides fade" id="slide-1">
             <div class="jumbo-slider">
-                <span>Experiencias inolvidables</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
-                <a href="<?= base_url('/')?>"><button>Ir</button></a>
+            <span>Viaja por todo el mundo</span>
+                <span>Visita los lugares más increíbles e inéditos de este planeta.</span>
+                <a href="#"><button>Ir</button></a>
             </div>
         </div>
 
         <div class="mySlides fade" id="slide-2">
             <div class="jumbo-slider">
                 <span>Actividades emocionantes</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
+                <span>!Realiza actividades increíbles mientras te das un chapuzón!</span>
                 <a href="#"><button>Ir</button></a>
             </div>
         </div>
 
         <div class="mySlides fade" id="slide-3">
             <div class="jumbo-slider">
-                <span>Adrenalina pura!</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
+                <span>Adrenalina en estado puro</span>
+                <span>!Siente la emoción recorriendo por tus venas al estar por los aires!</span>
                 <a href="#"><button>Ir</button></a>
             </div>
         </div>
 
         <div class="mySlides fade" id="slide-4">
             <div class="jumbo-slider">
-                <span>Adrenalina Viajes!</span>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, rem!</span>
+            <span>Experiencias inolvidables</span>
+                <span>¿Quieres vivir experiencias terrestres que te dejaran con la boca abierta?</span>
                 <a href="#"><button>Ir</button></a>
             </div>
         </div>
@@ -187,52 +187,29 @@
 
     <div class="container">
         <h2>Experiencias más visitadas</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis!</p>
+        <p>Estas són las experiencias más realizadas por los usuarios. Echales un vistazo y guardate las que más te gusten para hacerlas en un futuro.</p>
         
         <div class="cards">
             <?php foreach ($activitat as $key => $value) {
             echo "
+            
             <div class='card'>
-                <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                <span class='card-title'>".$value['nom']."</span>
-                <span>".$value['descripcio']."</span>
-                <span>".$value['categoria']."</span>
-                <a href='#'>Ver más</a>
-                <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                <a href='".base_url('/experiencia?id='.$value['id'])."'>
+                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                    <span class='card-title'>".$value['nom']."</span>
+                    <span>".$value['descripcio']."</span>
+                    <span>".$value['categoria']."</span>
+                    <a href='#'>Ver más</a>
+                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                </a>
             </div>
+            
             ";
             }?>
-            <div class="card">
-                <img src="<?= base_url('img/slider-surf.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
-            <div class="card">
-                <img src="<?= base_url('img/caida-libre.jpg')?>" alt="caida libre card">
-                <span class="card-title">Card Title</span>
-                <span>More details about card</span>
-                <span>Even more details about the card</span>
-                <a href="#">View details</a>
-                <span class="new">new</span>
-            </div>
-
         </div>
     </div>
 
-    <div class="container" id="div-buscador">
+    <!-- <div class="container" id="div-buscador">
         <h2>Buscador de actividades</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quas itaque delectus nostrum fugit ut, id nisi at, natus doloribus aspernatur ipsum officiis vero dignissimos, quasi voluptatibus ea obcaecati vitae!</p>
             <div class="buscador">
@@ -242,8 +219,7 @@
                 <div id="map" class="map">
                 </div>  
             </div>
-            
-    </div>
+    </div> -->
 
     <div class="container">
         <h2>¿No está tu experiencia deseada?</h2>

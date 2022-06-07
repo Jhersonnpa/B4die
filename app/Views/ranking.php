@@ -1,3 +1,4 @@
+<?php $session = session();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,7 +15,7 @@
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
-<nav class="navbar">
+    <nav class="navbar">
         <div class="nav-top">
             <div id="search">
                 <form action="" role="search" id="searchform">
@@ -25,13 +26,19 @@
                 </form>
             </div>
             <div class="dropdown-user">
-                <a href="<?= base_url('/login')?>"><i class='bx bxs-user-circle dropbtn-user'></i></a>
-                <!-- <div class="dropdown-content-user">
-                    <a href="#">Registrate</a>
-                    <a href="#">Inicia Sesión</a>
-                    <hr>
-                    <a href="#">Ayuda</a>
-                </div> -->
+                <?php 
+                    if ($session->logged_in == false) {
+                        echo "<a href='". base_url('/login')."'><i class='bx bxs-user-circle dropbtn-user'></i></a>";
+                    }else {
+                        echo "<a href='". base_url('/perfil')."'><div class='divRedondo'><img class='redondita' src='data:".$session->tipo_img.";base64,".base64_encode($session->img)."'/></div></a>";
+                    }
+                ?>
+                <?php
+                
+                if(isset($session->nom_usuari)){
+                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                }
+                ?>
             </div>
         </div>
         <div class="nav-bottom wrapper">
@@ -108,6 +115,14 @@
                     </li>
                     <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
+                    <?php 
+                    if ($session->tipo_usuari > 0) {
+                        echo "<li class='menu-item'><a href='".base_url('/admin')."' class='menu-link'>Admin</a></li>";
+                    }
+                    if ($session->logged_in == true) {
+                        echo "<li class='menu-item'><a href='".base_url('/logout')."' class='menu-link'>Cerrar sesión<i class='bx bx-log-out' ></i></a></li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -139,7 +154,7 @@
                 echo "
                 <div class='cartaTop1'>
                     <div class='crown'><i class='bx bxs-crown'></i></div>
-                    <img class='img-top1' src='" .base_url('img/foto1.jpg')."' alt='Imagen usuario en primer lugar'>
+                    <img src='data:".$top[$key]['tipo_img'].";base64,".base64_encode($top[$key]['img'])."' class='img-top1' alt='Imagen usuario en primer lugar'/>
                     <div class='divInfoTop1'>
                         <p class='username1'><b>".$top[$key]['nom_usuari']."</b></p>
                         <div class='divRango'><img src='" .base_url('img/rango.png')."' alt='rango' class='logoRango'><p class='textoRango'>Leyenda</p></div>
@@ -172,7 +187,7 @@
                 echo "
                 <div class='carta'>
                     <div class='nums second'>".($key+1)."</div>
-                    <img src='".base_url('img/foto1.jpg')."' class='imgPerfilTop'>
+                    <img src='data:".$top[$key]['tipo_img'].";base64,".base64_encode($top[$key]['img'])."' class='imgPerfilTop'>
                     <div class='divInfoTops'>
                         <p class='username'>".$top[$key]['nom_usuari']."</p>
                         <div class='divRange'><img src='". base_url('img/rango.png')."' alt='rango' class='logoRange'><p class='textRange'>Leyenda</p></div>
