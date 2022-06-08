@@ -264,10 +264,9 @@ span {
 }
 .idea{
     width: 50%;
-    background: url(../img/idea.jpg)center no-repeat;
-    background-size: cover;
 }
 .imagen-contacto{
+    height: 100%;
     inline-size: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;

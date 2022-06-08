@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?= base_url('css/experiencia.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
@@ -161,9 +162,7 @@
 </section>
 
 <section id="mapa">
-    <h2>Mapa</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti facere ut officia ea hic porro adipisci, nemo in vitae provident corrupti minima perferendis! </p>
-            
+    <h2>Ubicación de la actividad</h2>            
     <div id="map" class="map"></div>
 </section>
 
@@ -193,9 +192,13 @@
     </footer>
     
     <!-- JS -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfkONw5olbb8Rpc6wg9_CPshlXTVmOMug&callback=initMap">
+    </script>
+
     <script  type="text/javascript">
         window.onload = function(){
-            getMap();
+            // getMap();
             modal();
         }
         const burgerMenu = document.getElementById("burger");

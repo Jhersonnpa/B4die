@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\Activitat;
 use CodeIgniter\Controller;
 use App\Models\Usuari;
@@ -47,9 +49,9 @@ class Index extends BaseController
             return redirect()->to('/');
         }
         else {
-            $model = new Usuari();
-            $usuari = $model->find($session->id);
-            $dades = ['usuari' => $model->find($session->id),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+            $modelUser = new Usuari();
+            $usuari = $modelUser->find($session->id);
+            $dades = ['usuari' => $modelUser->find($session->id),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
             return view('perfil',$usuari);
         }
     }
@@ -71,17 +73,24 @@ class Index extends BaseController
         return view('experiencias',$dades);
     }
 
-    public function experiencia(){
+    public function experiencia()
+    {
         $modelAct = new Activitat();
         $model = new Subcategoria();
         $dades = ['experiencia' => $modelAct->find($this->request->getVar('id')),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
         return view('experiencia',$dades);
     }
 
-    public function login(){
-        $model = new Subcategoria();
-        $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
-        return view('login',$dades);
-    }
-    
+    public function login()
+    {
+        $session = session();
+        if ($session->logged_in == false) {
+            $model = new Subcategoria();
+            $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+            return view('login',$dades);
+        }
+        else {
+            return redirect()->to('/');
+        }
+    }    
 }

@@ -49,8 +49,6 @@ $routes->add('/eliminarUsuario', 'Admin::eliminarUsuario');
 $routes->add('/experiencia', 'Index::experiencia');
 
 
-
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B4die</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?= base_url('css/index.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
     <script src="<?=  base_url('js/js.js')?>"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body onload="getLocation()">
     <nav class="navbar">
@@ -22,7 +23,7 @@
                     <label for="s">
                         <i class='bx bx-search-alt-2'></i>
                     </label>
-                    <input type="text" placeholder="Buscar" id="s" />
+                    <input type="text" placeholder="Busca tu experiencia" id="s"/>
                 </form>
             </div>
             <div class="dropdown-user">
@@ -36,7 +37,7 @@
                 <?php
                 
                 if(isset($session->nom_usuari)){
-                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                    echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
                 }
                 else {
                     echo '<span class="nomUsu">Usuario</span>';
@@ -189,6 +190,22 @@
     </div>
 
     <div class="container">
+        <h2>Compite con los demás usuarios y consigue premios!</h2>
+        <div class="container2">
+            <div class="idea">
+                <img src="<?= base_url('img/campeon.jpg')?>" alt="campeon ranking" class="imagen-contacto">
+            </div>
+            <div class="texto-idea">
+                <div class="jumbotron">
+                    <span>Si quieres entrar en nuestro sistema de ranking y llevarte extraordinarios premios unéte a nuestra comunidad!</span>
+                    <a href="<?= base_url('/login')?>"><button>Unete!</button></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
         <h2>¿No está tu experiencia deseada?</h2>
         <div class="container2">
             <div class="idea">
@@ -244,7 +261,8 @@
                 navbarMenu.removeAttribute("style");
             }
         });
-       
     </script>
+    <!-- Google Maps -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
