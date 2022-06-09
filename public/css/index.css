@@ -171,8 +171,7 @@ p {
 
 .card{
     width: 100%;
-    min-height: 202px;
-    height: max-content;
+    min-height: 430px;
     display: flex;
     flex-direction: column;
     background-color:var(--gray-light);
@@ -213,13 +212,18 @@ span {
     padding: 0px;
 }
 
-.card > a .containerInfo{
+.containerInfo{
     padding: 10px 15px;
     display: flex; 
     flex-direction: column;
-    height: 120px;
+    height: 100%;
 }
-
+.tamañoLetra{
+    padding: 25px 0px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
 .containerInfo > div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

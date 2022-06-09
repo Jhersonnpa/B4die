@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?= base_url('css/experiencia.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="<?=  base_url('js/js.js')?>"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
     <nav class="navbar">
@@ -174,7 +174,7 @@
 
     <script  type="text/javascript">
         window.onload = function(){
-            // getMap();
+            initMap();
             modal();
         }
         const burgerMenu = document.getElementById("burger");

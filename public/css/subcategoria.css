@@ -15,9 +15,13 @@
     /* height: 800px; */
     /* background-color: rgba(0, 255, 255, 0.197); */
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-bottom: 50px;
 }
 h2{
-    margin-top: 100px;
+    margin-top: 50px;
     color: var(--yellow);
     font-size: 3em;
     font-weight: 400;
@@ -26,13 +30,14 @@ h2{
 
 .container > .cards {
     width: 100%;
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
 .card{
-    width: 100%;
+    /* width: 100%; */
     min-height: 202px;
     display: flex;
     flex-direction: column;
@@ -106,4 +111,11 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+
+@media (max-width: 600px){
+    .container > .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

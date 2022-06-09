@@ -175,14 +175,13 @@
                     <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
                     <div class='containerInfo'>
                         <span class='card-title'>".$value['nom']."</span>
-                        <div>
+                        <div class='tamañoLetra'>
                             <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
                             <span >".$value['subcategoria']."</span>
                             <span>Dificultad: ".$value['dificultat']."</span>
                             <span>Precio: ".$value['precio']."</span>
                         </div>
                     </div>
-                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
                     <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
                 </a>
             </div>

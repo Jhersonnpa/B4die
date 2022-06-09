@@ -113,4 +113,21 @@ class Index extends BaseController
         return view('subcategoria', $dades);
     }
 
+    public function categoria()
+    {
+        $modelAct = new Activitat();
+        $model = new Subcategoria();
+        // $idSub = $this->request->getVar('id');
+        $query = $this->db->query("SELECT nom FROM subcategoria");
+        $subcategoria = $query->getRow();
+        $comprobacion = $this->db->query("SELECT * FROM activitat WHERE subcategoria = '$subcategoria->nom'");
+        if (empty($comprobacion->getResult())) {
+            $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=>$model->find($this->request->getVar('id'))];
+        }
+        else {
+            $dades = ['activitat' => $modelAct->where('subcategoria', $subcategoria->nom)->findAll(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=>$model->find($this->request->getVar('id'))];
+        }
+        return view('categoria', $dades);
+    }
+
 }
