@@ -29,7 +29,7 @@ class Admin extends BaseController
         $usuaris = $model->findAll();
         $categorias = $modelCategoria->findAll();
         $subcategorias = $modelSubcategoria->findAll();
-        $data = ["usuaris" => $usuaris, "activitats" => $activitats, "categorias" => $categorias, "subcategorias" => $subcategorias];
+        $data = ["usuaris" => $usuaris, "activitats" => $activitats, "categorias" => $categorias, "subcategorias" => $subcategorias, 'aerea' => $modelSubcategoria->where('id_categoria', 1)->findAll(), 'terrestre' => $modelSubcategoria->where('id_categoria', 2)->findAll(), 'acuatica' => $modelSubcategoria->where('id_categoria', 3)->findAll(), 'viajes' => $modelSubcategoria->where('id_categoria', 4)->findAll()];
         return view('admin',$data);
     } 
 
@@ -118,7 +118,7 @@ class Admin extends BaseController
 		if($this->validate($regles,$missatges)){
 			$model = new Activitat();
             $model->save($dades);
-            $session->set('msg', 'Se ha añadido correctamente!');
+            $session->set('msg', 'Se ha añadido la actividad correctamente!');
             return redirect()->to('/admin');
 			
 		}
@@ -129,6 +129,19 @@ class Admin extends BaseController
           
     }
 
+    public function editarActVista()
+    {
+        $session = session();
+        if ($session->logged_in == false && $session->tipo_usuari == 0) {
+            return redirect()->to('/');
+        }
+        $model = new Subcategoria();
+        $modelActivitat = new Activitat();
+        $modelCategoria = new Categoria();
+        $dades = ['activitat' => $modelActivitat->find($this->request->getVar('id')),'categorias' => $modelCategoria->findAll(),'subcategorias' => $model->findAll(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+        return view('editarAct', $dades);
+    }
+
     public function editarAct()
     {
         $session = session();
@@ -136,7 +149,9 @@ class Admin extends BaseController
             return redirect()->to('/');
         }
         $model = new Subcategoria();
-        $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+        $modelActivitat = new Activitat();
+        $modelCategoria = new Categoria();
+        $dades = ['activitat' => $modelActivitat->find($this->request->getVar('id')),'categorias' => $modelCategoria->findAll(),'subcategorias' => $model->findAll(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
         return view('editarAct', $dades);
     }
 
@@ -153,8 +168,10 @@ class Admin extends BaseController
 
     public function eliminarActivitat()
     {
+        $session = session();
         $model = new Activitat();
         $model->where('id', $this->request->getVar('id'))->delete();
+        $session->set('msg', 'Se ha eliminado la actividad correctamente!');
         return redirect()->to('/admin');
     }
 

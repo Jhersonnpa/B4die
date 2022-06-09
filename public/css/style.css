@@ -219,6 +219,10 @@ footer > ul > li > a:hover {
     animation: animate__bounce;
 }
 
+.footer > div > p {
+    color: #fff !important;
+}
+
 
 /* drop */
 .dropdown {
@@ -469,8 +473,10 @@ footer > ul > li > a:hover {
     
     /* Modal Contact */
     .modal__container{
-        width: 80%;
+        width: 90%;
         top: 45%;
+        left: 0;
+        right: 0;
     }
 
     .modal__container input, .modal__container textarea{

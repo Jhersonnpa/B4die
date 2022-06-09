@@ -136,6 +136,7 @@ span {
     }
     #mapa h2{
         align-self: center;
+        text-align: center;
     }
     #mapa p{
         padding: 10px 20px;

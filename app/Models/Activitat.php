@@ -9,6 +9,6 @@ class Activitat extends Model
     protected $table      = 'activitat';
     protected $primaryKey = 'id';
     protected $returnType     = 'array';
-    protected $allowedFields = ['nom', 'descripcio','categoria','subcategoria','pais','ciutat','longitud','latitud','dificultat','img','tipo_img'];
+    protected $allowedFields = ['nom', 'descripcio','categoria','subcategoria','pais','ciutat','longitud','latitud','dificultat','img','tipo_img','precio','url_empresa'];
 
 }
