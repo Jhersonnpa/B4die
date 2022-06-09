@@ -23,16 +23,16 @@ class Index extends BaseController
             $dades['usuari'] = $results;
         }
         $query   = $this->db->query('SELECT * FROM activitat ORDER BY id DESC LIMIT 8 ');
-        $results = $query->getResultArray();
+        // $results = $query->getResultArray();
         $model = new Subcategoria();
         $dades = ['activitat' => $query->getResultArray(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
         return view('index', $dades);
-    } 
+    }
 
     public function ranking()
     {
-        $db = \Config\Database::connect();
-        $query = $db->query('SELECT * FROM usuari ORDER BY puntuacion DESC');
+        // $db = \Config\Database::connect();
+        $query = $this->db->query('SELECT * FROM usuari ORDER BY puntuacion DESC');
         $model = new Subcategoria();
         $dades = ['top' => $query->getResultArray(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
         return view('ranking', $dades);

@@ -46,7 +46,6 @@ $routes->add('/editarActivitat', 'Admin::editarAct');
 $routes->add('/editarUsuario', 'Admin::editarUser');
 $routes->add('/eliminarActivitat', 'Admin::eliminarActivitat');
 $routes->add('/eliminarUsuario', 'Admin::eliminarUsuario');
-$routes->add('/experiencia', 'Index::experiencia');
 
 
 
