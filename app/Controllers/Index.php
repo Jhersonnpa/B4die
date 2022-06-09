@@ -2,8 +2,8 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\HTTP\RequestInterface;
-use CodeIgniter\HTTP\ResponseInterface;
+// use CodeIgniter\HTTP\RequestInterface;
+// use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\Activitat;
 use CodeIgniter\Controller;
 use App\Models\Usuari;
@@ -44,16 +44,18 @@ class Index extends BaseController
     {
         $session = session();
         $model = new Subcategoria();
-        $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
-        if ($session->logged_in == false) {
-            return redirect()->to('/');
+        $modelUser = new Usuari();
+        if (isset($_GET['id'])) {
+            $query = $this->db->query("SELECT TIMESTAMPDIFF(YEAR,data_naixament,CURDATE()) AS edad FROM usuari where id = ".$this->request->getVar('id'));
+            $row = $query->getRow();
+            $dades = ['usuari' => $modelUser->find($this->request->getVar('id')),'edad' => $row->edad,'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
         }
         else {
-            $modelUser = new Usuari();
-            $usuari = $modelUser->find($session->id);
-            $dades = ['usuari' => $modelUser->find($session->id),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
-            return view('perfil',$usuari);
+            $query = $this->db->query("SELECT TIMESTAMPDIFF(YEAR,data_naixament,CURDATE()) AS edad FROM usuari where id = ".$session->id);
+            $row = $query->getRow();
+            $dades = ['usuari' => $modelUser->find($session->id),'edad' => $row->edad,'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
         }
+        return view('perfil',$dades);
     }
 
     public function experiencias()
@@ -92,5 +94,23 @@ class Index extends BaseController
         else {
             return redirect()->to('/');
         }
-    }    
+    }  
+    
+    public function subcategoria()
+    {
+        $modelAct = new Activitat();
+        $model = new Subcategoria();
+        $idSub = $this->request->getVar('id');
+        $query = $this->db->query("SELECT nom FROM subcategoria WHERE id=$idSub LIMIT 1");
+        $subcategoria = $query->getRow();
+        $comprobacion = $this->db->query("SELECT * FROM activitat WHERE subcategoria = '$subcategoria->nom'");
+        if (empty($comprobacion->getResult())) {
+            $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=>$model->find($this->request->getVar('id'))];
+        }
+        else {
+            $dades = ['activitat' => $modelAct->where('subcategoria', $subcategoria->nom)->findAll(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=>$model->find($this->request->getVar('id'))];
+        }
+        return view('subcategoria', $dades);
+    }
+
 }

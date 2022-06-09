@@ -172,6 +172,7 @@ p {
 .card{
     width: 100%;
     min-height: 202px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     background-color:var(--gray-light);
@@ -217,6 +218,11 @@ span {
     display: flex; 
     flex-direction: column;
     height: 120px;
+}
+
+.containerInfo > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .linkMas{
     display: flex;
@@ -358,6 +364,10 @@ span {
         column-gap: 0;
     }
 
+    .card {
+        min-height: 222px;
+    }
+
     /* seccion buscador */
     .busca{
         width: 100%;
@@ -427,4 +437,7 @@ span {
         transition: all .5s;
     }
 
+    .containerInfo > div {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

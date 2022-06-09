@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B4die</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?= base_url('css/ranking.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
     <script src="<?=  base_url('js/js.js')?>"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body onload="getLocation()">
     <nav class="navbar">
@@ -22,7 +23,7 @@
                     <label for="s">
                         <i class='bx bx-search-alt-2'></i>
                     </label>
-                    <input type="text" placeholder="Buscar" id="s" />
+                    <input type="text" placeholder="Busca tu experiencia" id="s"/>
                 </form>
             </div>
             <div class="dropdown-user">
@@ -36,7 +37,10 @@
                 <?php
                 
                 if(isset($session->nom_usuari)){
-                    echo '<span class="nomUsu">Hola, '.$session->nom_usuari . '</span>';
+                    echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
+                }
+                else {
+                    echo '<span class="nomUsu">Usuario</span>';
                 }
                 ?>
             </div>
@@ -50,70 +54,46 @@
             <div class="menu" id="menu">
                 <ul class="menu-inner">
                     <li class="dropdown menu-item">
-                        <a href="<?= base_url().'/experiencias'?>" id="experiencias" class="dropbtn menu-link">Experiencias</a>
+                        <a href="<?= base_url().'/experiencias'?>" id="experiencias" class="dropbtn menu-link">Experiencias <i class='bx bxs-chevron-down'></i></a>
                         <div class="dropdown-content" id="nav-experiencias">
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
                                     <ul>
-                                        <li><a href="#" class="subcategoria">aereo</a></li>
-                                        <li><a href="#">Paracaidismo</a></li>
-                                        <li><a href="#">Aeromodelismo</a></li>
-                                        <li><a href="#">Ala delta</a></li>
-                                        <li><a href="#">Parapente</a></li>
-                                        <li><a href="#">Acrobacia aérea</a></li>
-                                        <li><a href="#">Parafoil</a></li>
-                                        <li><a href="#">Parasailing</a></li>
-                                        <li><a href="#">Globo aeroestatico</a></li>
-                                        <li><a href="#">Wingfly</a></li>
-                                        <li><a href="#">Salto base</a></li>
-                                        <li><a href="#">Puenting</a></li>
-                                        <li><a href="#">Vuelta en Helicóptero</a></li>
+                                        <li><a href="#" class="subcategoria">aerea</a></li>
+                                        <?php
+                                        foreach ($aerea as $key => $value) {
+                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                     <ul>
                                         <li><a href="#" class="subcategoria">terrestre</a></li>
-                                        <li><a href="#">Senderismo</a></li>
-                                        <li><a href="#">Alpinismo</a></li>
-                                        <li><a href="#">Rapel</a></li>
-                                        <li><a href="#">Escalada</a></li>
-                                        <li><a href="#">Parkour</a></li>
-                                        <li><a href="#">Zorbing</a></li>
-                                        <li><a href="#">Bubble Football</a></li>
-                                        <li><a href="#">Tobogan Alpino</a></li>
-                                        <li><a href="#">Esquí / Snow (Heliesquí)</a></li>
-                                        <li><a href="#">Street Luge</a></li>
-                                        <li><a href="#">Slackline</a></li>
-                                        <li><a href="#">Tirolina</a></li>
+                                        <?php
+                                        foreach ($terrestre as $key => $value) {
+                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">acuatico</a></li>
-                                        <li><a href="#">Surf</a></li>
-                                        <li><a href="#">Kitesurf</a></li>
-                                        <li><a href="#">Wakesurf</a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <li><a href="#" class="subcategoria">acuatica</a></li>
+                                        <?php
+                                        foreach ($acuatica as $key => $value) {
+                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                     <ul>
                                         <li><a href="#" class="subcategoria">viajes</a></li>
-                                        <li><a href="#">culo</a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <?php
+                                        foreach ($viajes as $key => $value) {
+                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                         </div>
                     </li>
-                    <li class="menu-item"><a href="<?=base_url().'/ranking'?>" target="__blank" class="menu-link">Ranking</a></li>
+                    <li class="menu-item"><a href="<?=base_url().'/ranking'?>" class="menu-link">Ranking</a></li>
                     <li class="menu-item"><a href="#jsModal" id="popup" class="jsModalTrigger menu-link">Contacto</a></li>
                     <?php 
                     if ($session->tipo_usuari > 0) {
@@ -152,29 +132,31 @@
         foreach ($top as $key => $value) {
             if ($key == 0) {
                 echo "
-                <div class='cartaTop1'>
-                    <div class='crown'><i class='bx bxs-crown'></i></div>
-                    <img src='data:".$top[$key]['tipo_img'].";base64,".base64_encode($top[$key]['img'])."' class='img-top1' alt='Imagen usuario en primer lugar'/>
-                    <div class='divInfoTop1'>
-                        <p class='username1'><b>".$top[$key]['nom_usuari']."</b></p>
-                        <div class='divRango'><img src='" .base_url('img/rango.png')."' alt='rango' class='logoRango'><p class='textoRango'>Leyenda</p></div>
-                        <p class='tituloExpeTop'><b>Puntuación</b> <p class='nombreExpeTop'>".$top[$key]['puntuacion']."</p></p>
+                <a href='".base_url('/perfil?id='.$top[$key]['id'])."' class='color-text'>
+                    <div class='cartaTop1'>
+                        <div class='crown'><i class='bx bxs-crown'></i></div>
+                        <img src='data:".$top[$key]['tipo_img'].";base64,".base64_encode($top[$key]['img'])."' class='img-top1' alt='Imagen usuario en primer lugar'/>
+                        <div class='divInfoTop1'>
+                            <p class='username1'><b>".$top[$key]['nom_usuari']."</b></p>
+                            <div class='divRango'><img src='" .base_url('img/rango.png')."' alt='rango' class='logoRango'><p class='textoRango'>".$top[$key]['rango']."</p></div>
+                            <p class='tituloExpeTop'><b>Puntuación</b> <p class='nombreExpeTop'>".$top[$key]['puntuacion']."</p></p>
+                        </div>
+                        <div class='divLogrosTop'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                        </div>
                     </div>
-                    <div class='divLogrosTop'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='".base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                    </div>
-                </div>
+                </a>
                 ";
             }
         }
@@ -185,21 +167,23 @@
         foreach ($top as $key => $value) {
             if ($key >= 1 && $key <= 4) {
                 echo "
-                <div class='carta'>
-                    <div class='nums second'>".($key+1)."</div>
-                    <img src='data:".$top[$key]['tipo_img'].";base64,".base64_encode($top[$key]['img'])."' class='imgPerfilTop'>
-                    <div class='divInfoTops'>
-                        <p class='username'>".$top[$key]['nom_usuari']."</p>
-                        <div class='divRange'><img src='". base_url('img/rango.png')."' alt='rango' class='logoRange'><p class='textRange'>Leyenda</p></div>
-                        <p class='tituloExpe'><b>Puntuación</b> <p class='nombreExpe'>".$top[$key]['puntuacion']."</p></p>
-                    </div>
-                    <div class='divLogros'>
-                        <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                        <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
-                    </div>
-                </div>
+                    <a href='".base_url('/perfil?id='.$top[$key]['id'])."' class='color-text'>
+                        <div class='carta'>
+                            <div class='nums'>".($key+1)."</div>
+                            <img src='data:".$top[$key]['tipo_img'].";base64,".base64_encode($top[$key]['img'])."' class='imgPerfilTop'>
+                            <div class='divInfoTops'>
+                                <p class='username'>".$top[$key]['nom_usuari']."</p>
+                                <div class='divRange'><img src='". base_url('img/rango.png')."' alt='rango' class='logoRange'><p class='textRange'>".$top[$key]['rango']."</p></div>
+                                <p class='tituloExpe'><b>Puntuación</b> <p class='nombreExpe'>".$top[$key]['puntuacion']."</p></p>
+                            </div>
+                            <div class='divLogros'>
+                                <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                                <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                                <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                                <img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'>
+                            </div>
+                        </div>
+                    </a>
                 ";
             }
         }
@@ -212,7 +196,7 @@
             <table class="table table-hover table-responsive" id="table_id">
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>Top</th>
                         <th>Usuario</th>
                         <th>Rango</th>
                         <th>Logros</th>
@@ -223,14 +207,14 @@
                     <?php
                     foreach ($top as $key => $value) {
                         if ($key >= 5) {
-                            echo "
-                            <tr>
-                                <td class='bold'>".($key+1)."</td>
-                                <td>".$top[$key]['nom_usuari']."</td>
-                                <td>Leyenda</td>
-                                <td><img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'><img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'><img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'></td>
-                                <td>".$top[$key]['puntuacion']."</td>
-                            </tr>
+                            echo "                            
+                                <tr>
+                                    <td class='bold'><a href='".base_url('/perfil?id='.$top[$key]['id'])."'>".($key+1)."</td>
+                                    <td><a href='".base_url('/perfil?id='.$top[$key]['id'])."'>".$top[$key]['nom_usuari']."</a></td>
+                                    <td><a href='".base_url('/perfil?id='.$top[$key]['id'])."'>".$top[$key]['rango']."</a></td>
+                                    <td><a href='".base_url('/perfil?id='.$top[$key]['id'])."'><img src='". base_url('img/rango.png')."' alt='logro1' class='logoLogros'></a></td>
+                                    <td><a href='".base_url('/perfil?id='.$top[$key]['id'])."'>".$top[$key]['puntuacion']."</a></td>
+                                </tr>                            
                             ";
                         }
                     }
@@ -243,19 +227,16 @@
     <!-- Footer -->
     <footer>
         <div class="logo-footer">
-            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>"></a>
-            <p>&copy;</p>
+            <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
         </div>
-        <ul>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Terminos de privacidad</a></li>
-            <li><a href="#">Ayuda</a></li>
-        </ul>
+        <div>
+        <p style="color: #fff;">&copy; 2022 Jherson & Marc | Todos los derechos reservados.</p>
+        </div>
         <div class="media-footer">
-            <div>
+            <!-- <div>
                 <a href="#"><i class='bx bxl-instagram' id="insta"></i></a>
                 <a href="#"><i class='bx bxl-facebook-square' style="color: #1A6ED8;"></i></a>
-            </div>
+            </div> -->
             <div>
                 <a href="#"><i class='bx bxs-up-arrow-square' ></i></a>
             </div>

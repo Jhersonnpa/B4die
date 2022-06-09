@@ -15,9 +15,8 @@ body{
     background-color: var(--gray-light)!important;
 }
 
-h1 {
-  margin: 20px auto;
-  color:var(--black-blue);
+.color-text {
+  color: var(--gray-dark)
 }
 
 .container{
@@ -28,7 +27,15 @@ h1 {
     flex-direction: column;
 }
 
+.container a {
+  text-decoration: none;
+  color: var(--gray-dark);
+}
 
+h1 {
+  margin: 20px auto;
+  color:var(--black-blue);
+}
 /* titulo ranking */
 .header-ranking{
     color: var(--gray-dark);
@@ -44,18 +51,24 @@ h1 {
     height: 20vh;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
+    padding: 10px;
+}
+.cartaTop1:hover{
+  /* background-color: rgba(248, 248, 248, 0.824); */
+  background-color: rgba(255, 255, 255, 0.536);
+  transition-duration: 0.3s;
 }
 .crown{
   width: 5%; 
 }
 .bxs-crown{
-  color: var(--yellow-dark);
+  color: var(--yellow-dark) !important;
   font-size: 2em;
   margin: 10px;
 }
 .img-top1{
   border-radius: 50%;
-  width: 18%;
+  width: 15%;
   height: 90%;
   align-self: center;
 }
@@ -112,15 +125,23 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.cartasTop > div{
+/* .cartasTop > div{
     background-color: var(--white);
     height: 150px;
     border-radius: 4px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
 .carta{
   display: flex;
-
+  background-color: var(--white);
+  border-radius: 4px;
+  padding: 10px 20px 10px 0px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+.carta:hover{
+  background-color: rgba(255, 255, 255, 0.536);
+  transition-duration: 0.3s;
 }
 .nums{
   padding: 10px;
@@ -128,10 +149,10 @@ h1 {
   font-weight: 500;
 }
 .second{
-  color: var(--silver);
+  color: var(--silver)!important;
 }
 .third{
-  color: var(--bronze);
+  color: var(--bronze)!important;
 }
 .imgPerfilTop{
   border-radius: 50%;
@@ -367,7 +388,7 @@ th {
   background-color: var(--black-blue)!important;
 }
 .h2{
-  color: var(--yellow-dark);
+  color: var(--yellow-dark) !important;
 }
 .tabla-pers{
   border: 2px solid black;
@@ -396,7 +417,7 @@ th {
 }
 .estilo-añadir{
   text-decoration: none;
-  color: black;
+  color: black !important;
   font-weight: 800;
   font-size: 1em;
   text-align: center;
@@ -538,7 +559,7 @@ td img {
 
 /* The Close Button */
 .ebcf_close {
-  color: #aaaaaa;
+  color: #aaaaaa !important;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -546,7 +567,7 @@ td img {
 
 .ebcf_close:hover,
 .ebcf_close:focus {
-  color: #000;
+  color: #000 !important;
   text-decoration: none;
   cursor: pointer;
 }

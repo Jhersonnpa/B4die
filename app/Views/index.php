@@ -62,7 +62,7 @@
                                         <li><a href="#" class="subcategoria">aerea</a></li>
                                         <?php
                                         foreach ($aerea as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -70,7 +70,7 @@
                                         <li><a href="#" class="subcategoria">terrestre</a></li>
                                         <?php
                                         foreach ($terrestre as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -78,7 +78,7 @@
                                         <li><a href="#" class="subcategoria">acuatica</a></li>
                                         <?php
                                         foreach ($acuatica as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -86,7 +86,7 @@
                                         <li><a href="#" class="subcategoria">viajes</a></li>
                                         <?php
                                         foreach ($viajes as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -130,7 +130,7 @@
             <div class="jumbo-slider">
             <span>Viaja por todo el mundo</span>
                 <span>Visita los lugares más increíbles e inéditos de este planeta.</span>
-                <a href="#"><button>Ir</button></a>
+                <a href="#"><button>Ver actividades</button></a>
             </div>
         </div>
 
@@ -138,7 +138,7 @@
             <div class="jumbo-slider">
                 <span>Actividades emocionantes</span>
                 <span>!Realiza actividades increíbles mientras te das un chapuzón!</span>
-                <a href="#"><button>Ir</button></a>
+                <a href="#"><button>Ver actividades</button></a>
             </div>
         </div>
 
@@ -146,7 +146,7 @@
             <div class="jumbo-slider">
                 <span>Adrenalina en estado puro</span>
                 <span>!Siente la emoción recorriendo por tus venas al estar por los aires!</span>
-                <a href="#"><button>Ir</button></a>
+                <a href="#"><button>Ver actividades</button></a>
             </div>
         </div>
 
@@ -154,7 +154,7 @@
             <div class="jumbo-slider">
             <span>Experiencias inolvidables</span>
                 <span>¿Quieres vivir experiencias terrestres que te dejaran con la boca abierta?</span>
-                <a href="#"><button>Ir</button></a>
+                <a href="#"><button>Ver actividades</button></a>
             </div>
         </div>
 
@@ -164,20 +164,23 @@
 
     <div class="container">
         <h2>Experiencias más visitadas</h2>
-        <p>Estas són las experiencias más realizadas por los usuarios. Echales un vistazo y guardate las que más te gusten para hacerlas en un futuro.</p>
+        <p>Estas són las experiencias más visitadas por los usuarios. Echales un vistazo y guardate las que más te gusten para hacerlas en un futuro.</p>
         
         <div class="cards">
             <?php foreach ($activitat as $key => $value) {
             echo "
             
             <div class='card'>
-                <a href='".base_url('/experiencia?id='.$value['id'])."'>
+                <a href='".base_url('/experiencia?id='.$value['id'])."' target='_blank'>
                     <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
                     <div class='containerInfo'>
                         <span class='card-title'>".$value['nom']."</span>
-                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
-                        <span >".$value['subcategoria']."</span>
-                        <span>Dificultad: ".$value['dificultat']."</span>
+                        <div>
+                            <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+                            <span >".$value['subcategoria']."</span>
+                            <span>Dificultad: ".$value['dificultat']."</span>
+                            <span>Precio: ".$value['precio']."</span>
+                        </div>
                     </div>
                     <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
                     <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
@@ -226,7 +229,7 @@
             <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
         </div>
         <div>
-        <p>&copy; 2022 Jherson & Marc | Todos los derechos reservados.</p>
+        <p style="color: #fff;">&copy; 2022 Jherson & Marc | Todos los derechos reservados.</p>
         </div>
         <div class="media-footer">
             <!-- <div>

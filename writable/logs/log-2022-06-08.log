@@ -79,3 +79,459 @@ CRITICAL - 2022-06-08 11:23:30 --> Undefined variable: session
 #3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-06-08 13:58:58 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654714410.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654714737, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 14:37:35 --> Undefined index: edad
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(54): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 14:37:49 --> Undefined index: edad
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(54): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 14:42:09 --> Undefined index: edad
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(56): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 14:42:23 --> Undefined variable: w
+#0 C:\xampp\htdocs\B4die\app\Views\perfil.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(56): view('perfil', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 14:42:30 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\B4die\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('perfil', Array, true)
+#3 C:\xampp\htdocs\B4die\app\Controllers\Index.php(56): view('perfil', Array)
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->perfil()
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 15:51:48 --> Undefined variable: aerea
+#0 C:\xampp\htdocs\B4die\app\Views\admin.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('admin', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(33): view('admin', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 16:27:06 --> Undefined variable: aerea
+#0 C:\xampp\htdocs\B4die\app\Views\login.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 64, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('login', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Register.php(110): view('login', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Register->save()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:11:07 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 135, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(141): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:11:25 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 135, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(141): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:11:35 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(141): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:13:30 --> Undefined variable: categorias
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 135, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(141): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:17:00 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:17:03 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:17:04 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:17:05 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:17:07 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:36:42 --> Undefined index: url_activitat
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(401): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 401, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:39:50 --> Undefined index: url_activitat
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(401): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 401, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 17:40:45 --> Undefined index: nom
+#0 C:\xampp\htdocs\B4die\app\Views\editarAct.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('editarAct', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Admin.php(142): view('editarAct', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Admin->editarAct()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:03:26 --> Undefined variable: activitat
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(103): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:05:43 --> Undefined variable: Subcategoria
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(103): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:08:00 --> Undefined variable: activitat
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:08:06 --> Undefined variable: activitat
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 150, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:18:21 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654730238.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654730301, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 18:29:30 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654730265.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654730969, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 18:29:35 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654730274.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654730974, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 18:34:38 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:34:40 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:34:51 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:34:59 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(105): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:35:01 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(105): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:35:06 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\B4die\app\Views\subcategoria.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\B4die\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\B4die\system\Common.php(1089): CodeIgniter\View\View->render('subcategoria', Array, true)
+#4 C:\xampp\htdocs\B4die\app\Controllers\Index.php(105): view('subcategoria', Array)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#7 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-08 18:35:36 --> Cannot use [] for reading
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-08 18:35:50 --> Cannot use [] for reading
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-08 18:35:53 --> Cannot use [] for reading
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-08 18:37:09 --> Cannot use [] for reading
+#0 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-08 18:37:38 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:37:40 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:37:46 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:37:55 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:37:55 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:38:39 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:38:41 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:38:45 --> Trying to get property 'nom' of non-object
+#0 C:\xampp\htdocs\B4die\app\Controllers\Index.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 104, Array)
+#1 C:\xampp\htdocs\B4die\system\CodeIgniter.php(832): App\Controllers\Index->subcategoria()
+#2 C:\xampp\htdocs\B4die\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+#3 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-08 18:43:04 --> unlink(C:\xampp\htdocs\B4die\writable\debugbar/debugbar_1654731276.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74, Array)
+#1 C:\xampp\htdocs\B4die\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1654731784, 20)
+#3 C:\xampp\htdocs\B4die\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\B4die\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\B4die\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 18:44:05 --> syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-08 18:50:36 --> syntax error, unexpected '{'
+#0 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\B4die\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\B4die\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\B4die\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\B4die\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\B4die\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

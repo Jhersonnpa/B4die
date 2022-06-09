@@ -210,6 +210,7 @@ function scrollRCAT4(){
 function FuntionResize() {
   var widthBrowser = window.outerWidth;
   // var heightBrowser = window.outerHeight;
+  
   if(widthBrowser < 600){
     let img_click = document.getElementById("img-click");
     img_click.setAttribute("onclick", "mostrarPerfil()");

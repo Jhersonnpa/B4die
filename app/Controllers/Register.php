@@ -2,6 +2,7 @@
   
 use CodeIgniter\Controller;
 use App\Models\Usuari;
+use App\Models\Subcategoria;
 
 class Register extends BaseController
 {
@@ -103,12 +104,16 @@ class Register extends BaseController
 				"max_length" => "Formato invalido del telefono. Ej: 666333111",
 			],
 		];
-
+        $model = new Subcategoria();
+        $dades['aerea'] = $model->where('id_categoria', 1)->findAll();
+        $dades['terrestre'] = $model->where('id_categoria', 2)->findAll();
+        $dades['acuatica'] = $model->where('id_categoria', 3)->findAll();
+        $dades['viajes'] = $model->where('id_categoria', 4)->findAll();
 		if($this->validate($regles,$missatges)){
-			$model = new Usuari();
-            $model->save($dades);
+			$modelUser = new Usuari();
+            $modelUser->save($dades);
+            
             return view('login',$dades);
-			
 		}
 		else {
             $dades['msg'] = 'No se ha podido registrar, comprueba los datos.';

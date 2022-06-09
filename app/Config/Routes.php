@@ -42,11 +42,12 @@ $routes->add('/rebreFormLogin', 'Login::auth');
 $routes->add('/logout', 'Login::logout');
 $routes->add('/admin', 'Admin::index');
 $routes->add('/añadirActivitat', 'Admin::save');
-$routes->add('/editarActivitat', 'Admin::editarAct');
+$routes->add('/editarActivitat', 'Admin::editarActVista');
+$routes->add('/editadaActivitat', 'Admin::editarAct');
 $routes->add('/editarUsuario', 'Admin::editarUser');
 $routes->add('/eliminarActivitat', 'Admin::eliminarActivitat');
 $routes->add('/eliminarUsuario', 'Admin::eliminarUsuario');
-$routes->add('/experiencia', 'Index::experiencia');
+$routes->add('/subcategoria', 'Index::subcategoria');
 
 
 /*
