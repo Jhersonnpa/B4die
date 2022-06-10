@@ -47,6 +47,7 @@ $routes->add('/editadaActivitat', 'Admin::editarAct');
 $routes->add('/editarUsuario', 'Admin::editarUser');
 $routes->add('/eliminarActivitat', 'Admin::eliminarActivitat');
 $routes->add('/eliminarUsuario', 'Admin::eliminarUsuario');
+$routes->add('/editarUser', 'Admin::editarUser');
 $routes->add('/subcategoria', 'Index::subcategoria');
 $routes->add('/categoria', 'Index::categoria');
 

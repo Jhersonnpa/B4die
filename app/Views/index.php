@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die</title>
+    <title>B4die - Home</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?= base_url('css/index.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="<?=  base_url('js/js.js')?>"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
     <nav class="navbar">
@@ -40,7 +40,7 @@
                     echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
                 }
                 else {
-                    echo '<span class="nomUsu">Usuario</span>';
+                    echo "<a href='". base_url('/login')."' class='nomUsu'>Usuario</a>";
                 }
                 ?>
             </div>
@@ -59,7 +59,7 @@
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
                                     <ul>
-                                        <li><a href="#" class="subcategoria">aerea</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=1'?>" class="subcategoria">aérea</a></li>
                                         <?php
                                         foreach ($aerea as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -67,7 +67,7 @@
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">terrestre</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=2'?>" class="subcategoria">terrestre</a></li>
                                         <?php
                                         foreach ($terrestre as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -75,7 +75,7 @@
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">acuatica</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=3'?>" class="subcategoria">acuática</a></li>
                                         <?php
                                         foreach ($acuatica as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -83,7 +83,7 @@
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">viajes</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=4'?>" class="subcategoria">viajes</a></li>
                                         <?php
                                         foreach ($viajes as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -130,23 +130,23 @@
             <div class="jumbo-slider">
             <span>Viaja por todo el mundo</span>
                 <span>Visita los lugares más increíbles e inéditos de este planeta.</span>
-                <a href="#"><button>Ver actividades</button></a>
+                <a href="<?= base_url('/categoria').'?id=1'?>"><button>Ver actividades</button></a>
             </div>
         </div>
 
         <div class="mySlides fade" id="slide-2">
             <div class="jumbo-slider">
                 <span>Actividades emocionantes</span>
-                <span>!Realiza actividades increíbles mientras te das un chapuzón!</span>
-                <a href="#"><button>Ver actividades</button></a>
+                <span>¡Realiza actividades increíbles mientras te das un chapuzón!</span>
+                <a href="<?= base_url('/categoria').'?id=2'?>"><button>Ver actividades</button></a>
             </div>
         </div>
 
         <div class="mySlides fade" id="slide-3">
             <div class="jumbo-slider">
                 <span>Adrenalina en estado puro</span>
-                <span>!Siente la emoción recorriendo por tus venas al estar por los aires!</span>
-                <a href="#"><button>Ver actividades</button></a>
+                <span>¡Siente la emoción recorriendo por tus venas al estar por los aires!</span>
+                <a href="<?= base_url('/categoria').'?id=3'?>"><button>Ver actividades</button></a>
             </div>
         </div>
 
@@ -154,7 +154,7 @@
             <div class="jumbo-slider">
             <span>Experiencias inolvidables</span>
                 <span>¿Quieres vivir experiencias terrestres que te dejaran con la boca abierta?</span>
-                <a href="#"><button>Ver actividades</button></a>
+                <a href="<?= base_url('/categoria').'?id=4'?>"><button>Ver actividades</button></a>
             </div>
         </div>
 
@@ -176,10 +176,10 @@
                     <div class='containerInfo'>
                         <span class='card-title'>".$value['nom']."</span>
                         <div class='tamañoLetra'>
-                            <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+                            <span>".$value['categoria']."</span>
+                            <span>".$value['pais']."</span>
                             <span >".$value['subcategoria']."</span>
-                            <span>Dificultad: ".$value['dificultat']."</span>
-                            <span>Precio: ".$value['precio']."</span>
+                            <span>Precio: ".$value['precio']." €</span>
                         </div>
                     </div>
                     <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
@@ -216,7 +216,24 @@
             <div class="texto-idea">
                 <div class="jumbotron">
                     <span>Si crees que falta alguna experiencia en nuestra web, puedes sugerirnosla aqui!</span>
-                    <a href="#"><button>Enviar</button></a>
+                    
+                    <a href="#mySizeChartModal" id="mySizeChart"><button>Enviar sugerencia</button></a>
+                    
+                    <div id="mySizeChartModal" class="ebcf_modal">
+                        <div class="ebcf_modal-content">
+                            <span class="ebcf_close">&times;</span>
+                            <form action='#' method='post' enctype='multipart/form-data' class="form">
+                                <?= csrf_field() ?>
+                                    <label for="nom">Nom</label>
+                                        <input type="text" name="nom" id="nom" placeholder="Nombre actividad">
+                                    
+                                    <label for="descripcio">Descripción</label>    
+                                        <textarea name="descripcio" id="descripcio" placeholder="Descripción de la actividad"></textarea>
+
+                                    <button type="submit">Enivar propuesta</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,7 +262,6 @@
     <script  type="text/javascript">
         window.onload = function(){
             showSlides(1);
-            getMap();
             modal();
         }
 
@@ -263,6 +279,35 @@
                 navbarMenu.removeAttribute("style");
             }
         });
+
+
+        // Modal ADD
+        // Get the modal
+        var ebModal = document.getElementById('mySizeChartModal');
+
+        // Get the button that opens the modal
+        var ebBtn = document.getElementById("mySizeChart");
+
+        // Get the <span> element that closes the modal
+        var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+
+        // When the user clicks the button, open the modal 
+        ebBtn.onclick = function() {
+            ebModal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        ebSpan.onclick = function() {
+            ebModal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == ebModal) {
+                ebModal.style.display = "none";
+            }
+        }
+
     </script>
     <!-- Google Maps -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

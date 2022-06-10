@@ -207,13 +207,47 @@ function scrollRCAT4(){
 
 
 // FUNCION MENU LATERAL PERFIL EN PANTALLA PEQUEÑA
-function FuntionResize() {
+function functionResize(){
   var widthBrowser = window.outerWidth;
   // var heightBrowser = window.outerHeight;
-  
+  console.log(widthBrowser);
   if(widthBrowser < 600){
     let img_click = document.getElementById("img-click");
     img_click.setAttribute("onclick", "mostrarPerfil()");
+    var divFoto = document.querySelector(".divFoto");
+    divFoto.style.marginTop = "25%";
+    divFoto.style.height = "auto";
+    var info = document.querySelector(".infoPerfil");
+    info.style.display = "none";
+    var datos = document.querySelector(".datos");
+    datos.style.display = "none";
+    var logros = document.querySelector(".divLogros");
+    logros.style.display = "none";
+  }
+  else {
+    let img_click = document.getElementById("img-click");
+    img_click.removeAttribute("onclick");
+    mostrarperfil2();
+    var info = document.querySelector(".infoPerfil");
+    info.style.display = "flex";
+    info.style.justifyContent = "flex-start";
+    info.style.paddingTop = "2rem";
+
+    var datos = document.querySelector(".datos");
+    datos.style.display = "flex";
+    datos.style.flexDirection = "column";
+    datos.style.alignItems = "start";
+
+    var logros = document.querySelector(".divLogros");
+    logros.style.display = "grid";
+    logros.style.gridTemplateColumns = "40px 40px 40px 40px";
+    logros.style.gridTemplateRows = "40px 40px 40px 40px";
+    logros.style.columnGap = "20px";
+    logros.style.rowGap = "10px";
+    logros.style.marginBottom = "30px";
+    logros.style.marginTop = "0";
+    logros.style.justifyContent = "center";
+
   }
 }
 function mostrarPerfil(){
@@ -225,7 +259,7 @@ function mostrarPerfil(){
 
   var divFoto = document.querySelector(".divFoto");
   divFoto.style.height = "320px";
-  divFoto.style.marginTop = "5%"
+  divFoto.style.marginTop = "25%";
 
   var info = document.querySelector(".infoPerfil");
   info.style.display = "flex";
@@ -272,7 +306,7 @@ function mostrarPerfil(){
 
     var divFoto = document.querySelector(".divFoto");
     divFoto.style.height = "100px";
-    divFoto.style.marginTop = "0"
+    divFoto.style.marginTop = "5%"
 
     var info = document.querySelector(".infoPerfil");
     info.style.display = "none";
@@ -282,8 +316,8 @@ function mostrarPerfil(){
 
     var general = document.querySelector(".general");
     general.style.display = "block";
-    general.style.width = "80%";
-    general.style.padding = "0";
+    general.style.width = "75%";
+    general.style.paddingLeft = "5%";
     
     cruz.remove("#cruz");
   });
@@ -294,36 +328,36 @@ function mostrarPerfil(){
 
 // Funcion javascript para redimensionar el perfil en pantalla grande
 
-function FuntionResize2() {
-  var widthBrowser = window.outerWidth;
-  if(widthBrowser > 600){
-    let img_click = document.getElementById("img-click");
-    img_click.setAttribute("onclick", "mostrarPerfil2()");
-  }
-}
+// function functionResize2() {
+//   var widthBrowser = window.outerWidth;
+//   if(widthBrowser > 600){
+//     let img_click = document.getElementById("img-click");
+//     img_click.setAttribute("onclick", "mostrarPerfil2()");
+//   }
+// }
 
 function mostrarperfil2(){
   
   var perfil = document.querySelector(".perfil");
-    perfil.style.padding = "4rem 0 !important";
-    perfil.style.height= "120vh";
+    perfil.style.padding = "0px";
+    perfil.style.height= "auto";
 
     var divFoto = document.querySelector(".divFoto");
     divFoto.style.height = "200px";
-    divFoto.style.marginTop = "25%";
+    divFoto.style.marginTop = "5%";
 
     var info = document.querySelector(".infoPerfil");
-    info.style.display = "flex";
+    info.style.display = "none";
     info.style.justifyContent = "center";
     info.style.padding = "2rem";
 
     var datos = document.querySelector(".datos");
-    datos.style.display = "flex";
+    datos.style.display = "none";
     datos.style.flexDirection = "column";
     datos.style.alignItems = "center";
 
     var logros = document.querySelector(".divLogros");
-    logros.style.display = "grid";
+    logros.style.display = "none";
     logros.style.gridTemplateColumns = "40px 40px 40px 40px";
     logros.style.gridTemplateRows = "40px 40px 40px";
     logros.style.columnGap = "20px";

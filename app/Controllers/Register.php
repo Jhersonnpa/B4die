@@ -68,6 +68,7 @@ class Register extends BaseController
             "data_naixament" => "required",
             "pais" => "required",
 			"telefon" => "required|min_length[9]|max_length[9]",
+            "img" => "mime_in[image,image/jpg,image/gif,image/png]",
 		];
 
 		$missatges = [
@@ -103,6 +104,9 @@ class Register extends BaseController
 				"min_length" => "Formato invalido del telefono. Ej: 666333111",
 				"max_length" => "Formato invalido del telefono. Ej: 666333111",
 			],
+            "img" => [
+                "mime_in" => "El archivo subido no es una imagen.",
+            ],
 		];
         $model = new Subcategoria();
         $dades['aerea'] = $model->where('id_categoria', 1)->findAll();
@@ -111,9 +115,25 @@ class Register extends BaseController
         $dades['viajes'] = $model->where('id_categoria', 4)->findAll();
 		if($this->validate($regles,$missatges)){
 			$modelUser = new Usuari();
-            $modelUser->save($dades);
-            
-            return view('login',$dades);
+            $queryEmail=$this->db->query("SELECT count(email)as contEmail FROM usuari WHERE email = '".$this->request->getVar('email')."'");
+            $queryNomUser=$this->db->query("SELECT count(nom_usuari) as contNomUsuari FROM usuari WHERE nom_usuari='".$this->request->getVar('nom_usuari')."'");
+            $emailValid = $queryEmail->getRow();
+            $nomUserValid = $queryNomUser->getRow();
+            if (intval($emailValid->contEmail) >= 1) {
+                $dades['nom_usuari'] = '';
+                $dades['msg'] = 'Ya existe una cuenta con este correo, intenta con otro.';
+                return view('login', $dades);
+            }else {
+                if (intval($nomUserValid->contNomUsuari) >= 1) {
+                    $dades['nom_usuari'] = '';
+                    $dades['msg'] = 'Ya existe una cuenta con este nombre de usuario, intenta con otro.';
+                    return view('login', $dades);
+                }
+                else {
+                    $modelUser->save($dades);
+                    return view('login',$dades);
+                }
+            }
 		}
 		else {
             $dades['msg'] = 'No se ha podido registrar, comprueba los datos.';

@@ -30,6 +30,10 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .divRedondo{
     width: 30px;
     height: 30px;
@@ -415,11 +419,13 @@ footer > ul > li > a:hover {
     align-items: center;
     justify-content: center;
 }
-.dropdown-user a:-webkit-any-link {
+.dropdown-user a {
     text-decoration: none;
     color: var(--gray-dark);
     display: flex;
+    transition: all .3s;
 }
+
 .dropbtn-user{
     cursor: pointer;
 }

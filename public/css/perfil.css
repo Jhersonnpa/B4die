@@ -96,6 +96,40 @@ button{
     transition: all .5s;
 }
 
+
+/* Modal editar perfil */
+.formEditar{
+    padding: 80px 150px 40px 150px;
+    display: flex;
+    flex-direction: column;
+}
+.formEditar label{
+    font-weight: 600;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.formEditar input{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.formEditar select{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.formEditar button{
+    margin-bottom: 0px;
+    width: 20%;
+    background-color: var(--yellow);
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 4px;
+    align-self: center;
+    transition: all .3s;
+}
+.formEditar button:hover{
+    background-color: var(--yellow-dark);
+}
+
 /* seccion logros del perfil */
 .divLogros{
     align-self: center;
@@ -279,7 +313,45 @@ span {
     -webkit-appearance: none;
 }
 
+/* Modal perfil */
+.ebcf_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.ebcf_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: var(--black-blue);
+}
+
+/* The Close Button */
+.ebcf_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ebcf_close:hover,
+.ebcf_close:focus {
+    color: var(--bronze);
+    text-decoration: none;
+    cursor: pointer;
+}
 
 @media (max-width: 600px){
     .flex{

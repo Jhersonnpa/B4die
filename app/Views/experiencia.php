@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die</title>
+    <title>B4die - <?= $experiencia['nom']?></title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -40,7 +40,7 @@
                     echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
                 }
                 else {
-                    echo '<span class="nomUsu">Usuario</span>';
+                    echo "<a href='". base_url('/login')."' class='nomUsu'>Usuario</a>";
                 }
                 ?>
             </div>
@@ -59,34 +59,34 @@
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
                                     <ul>
-                                        <li><a href="#" class="subcategoria">aerea</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=1'?>" class="subcategoria">aérea</a></li>
                                         <?php
                                         foreach ($aerea as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">terrestre</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=2'?>" class="subcategoria">terrestre</a></li>
                                         <?php
                                         foreach ($terrestre as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">acuatica</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=3'?>" class="subcategoria">acuática</a></li>
                                         <?php
                                         foreach ($acuatica as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">viajes</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=4'?>" class="subcategoria">viajes</a></li>
                                         <?php
                                         foreach ($viajes as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -130,12 +130,28 @@
         <input type="hidden" id="lat" value="<?= $experiencia['latitud']=isset($experiencia['latitud'])? $experiencia['latitud']:"";?>">
         <div class="card">
             <?= "<img src='data:".$experiencia['tipo_img'].";base64,".base64_encode($experiencia['img'])."' class='img'/>"?>
-                <div class="info">
+                <div class="flexbox">
                     <span class="card-title"><?php $experiencia['nom']=isset($experiencia['nom'])? $experiencia['nom']:"Card title"; echo $experiencia['nom'];?></span>
-                    <span><?php $experiencia['categoria']=isset($experiencia['categoria'])? $experiencia['categoria']:"Category of the activity"; echo $experiencia['categoria'];?></span>
-                    <span><?php $experiencia['descripcio']=isset($experiencia['descripcio'])? $experiencia['descripcio']:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime architecto nemo quibusdam neque voluptatum commodi magnam nulla vero. Hic, voluptates fugiat. Sunt, quaerat quis inventore deserunt velit aliquid! Dolorem?"; echo $experiencia['descripcio'];?></span>
-                    <span class="new">new</span>
+                    
+                    <div class="info">
+                        <span class="colorCat">Categoria: <span class="nomCat"><?php $experiencia['categoria']=isset($experiencia['categoria'])? $experiencia['categoria']:"Category of the activity"; echo $experiencia['categoria'];?></span></span>
+                        
+                        <span class="bold">Subcategoria: <span class="nomCat"><?php $experiencia['subcategoria']=isset($experiencia['subcategoria'])? $experiencia['subcategoria']:"Subcategory of the activity"; echo $experiencia['subcategoria'];?></span></span>
+
+                        <span class="bold">Descripción: <span class="nomCat"><?php $experiencia['descripcio']=isset($experiencia['descripcio'])? $experiencia['descripcio']:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime architecto nemo quibusdam neque voluptatum commodi magnam nulla vero. Hic, voluptates fugiat. Sunt, quaerat quis inventore deserunt velit aliquid! Dolorem?"; echo $experiencia['descripcio'];?></span></span>
+                        
+                        <span class="bold">País: <span class="nomCat"><?php $experiencia['pais']=isset($experiencia['pais'])? $experiencia['pais']:"Country of the activity"; echo $experiencia['pais'];?></span></span>
+
+                        <span class="bold">Ciudad: <span class="nomCat"><?php $experiencia['ciutat']=isset($experiencia['ciutat'])? $experiencia['ciutat']:"City of the activity"; echo $experiencia['ciutat'];?></span></span>
+
+                        <span class="bold">Precio: <span class="nomCat"><?php $experiencia['precio']=isset($experiencia['precio'])? $experiencia['precio']:"Price of the activity"; echo $experiencia['precio'];?></span></span>
+
+                        <span class="bold">URL: <span class="nomCat"><?php $experiencia['url_empresa']=isset($experiencia['url_empresa'])? $experiencia['url_empresa']:"URL of the activity"; echo "<a href='$experiencia[url_empresa]'>" . $experiencia['url_empresa']."</a>";?></span></span>
+                        
+                        <span class="new">new</span>
                 </div>
+                </div>
+                
         </div> 
 
 </section>

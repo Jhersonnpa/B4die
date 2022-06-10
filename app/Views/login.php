@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die</title>
+    <title>B4die - Sign Up</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?= base_url('css/login.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="<?=  base_url('js/js.js')?>"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
     <nav class="navbar">
@@ -40,7 +40,7 @@
                     echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
                 }
                 else {
-                    echo '<span class="nomUsu">Usuario</span>';
+                    echo "<a href='". base_url('/login')."' class='nomUsu'>Usuario</a>";
                 }
                 ?>
             </div>
@@ -59,34 +59,34 @@
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
                                     <ul>
-                                        <li><a href="#" class="subcategoria">aerea</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=1'?>" class="subcategoria">aérea</a></li>
                                         <?php
                                         foreach ($aerea as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">terrestre</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=2'?>" class="subcategoria">terrestre</a></li>
                                         <?php
                                         foreach ($terrestre as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">acuatica</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=3'?>" class="subcategoria">acuática</a></li>
                                         <?php
                                         foreach ($acuatica as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">viajes</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=4'?>" class="subcategoria">viajes</a></li>
                                         <?php
                                         foreach ($viajes as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -131,9 +131,9 @@
                 <button id="login-toggle" onclick="toggleLogin()">Login</button>
                 <button id="signup-toggle" onclick="toggleSignup()">Registro</button>
             </div>
-            <span><?php if (isset($msg)) {
-                echo $msg;
-            }?></span>
+            <?php if (isset($msg)) {
+                echo "<h3 style='text-align: center;padding: 10px;'>$msg</h3>";
+            }?>
             <div id="login-form">
                 <form action="<?= base_url() ?>/rebreFormLogin" method="post">
                     <?= csrf_field() ?>
@@ -159,7 +159,7 @@
                     ?>
                     <input type="password" name="contrasenya" placeholder="Contraseña"/>
                     <button type="submit" class="btn login">Login</button>
-                    <p><a href="javascript:void(0)" onclick="toggleSignup()">Crea una cuenta!</a> </p>
+                    <p><a href="javascript:void(0)" onclick="toggleSignup()">¿No te has registrado aún? Crea una cuenta!</a> </p>
                 </form>
             </div>
 
@@ -185,7 +185,7 @@
                         }    
                     }
                     ?>
-                    <input type="email" name="email" placeholder="Email *"/>
+                    <input type="email" name="email" placeholder="Email (Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('nom_usuari')) {
@@ -193,7 +193,7 @@
                         }    
                     }
                     ?>
-                    <input type="text" name="nom_usuari" placeholder="Nombre usuario *"/>
+                    <input type="text" name="nom_usuari" placeholder="Nombre usuario (Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('contrasenya')) {
@@ -201,7 +201,7 @@
                         }    
                     }
                     ?>
-                    <input type="password" name="contrasenya" placeholder="Contraseña *"/>
+                    <input type="password" name="contrasenya" placeholder="Contraseña (Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('contrasenyaC')) {
@@ -209,7 +209,7 @@
                         }    
                     }
                     ?>
-                    <input type="password" name="contrasenyaC" placeholder="Confirma contraseña *"/>
+                    <input type="password" name="contrasenyaC" placeholder="Confirma contraseña (Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('nom')) {
@@ -217,7 +217,7 @@
                         }    
                     }
                     ?>
-                    <input type="text" name="nom" placeholder="Nombre *"/>
+                    <input type="text" name="nom" placeholder="Nombre (Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('cognom')) {
@@ -225,7 +225,7 @@
                         }    
                     }
                     ?>
-                    <input type="text" name="cognom" placeholder="Apellidos *"/>
+                    <input type="text" name="cognom" placeholder="Apellidos (Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('data_naixament')) {
@@ -233,8 +233,9 @@
                         }    
                     }
                     ?>
-                    <input type="date" name="data_naixament"  max="2003-12-31" placeholder="Fecha nacimiento *"> 
-                    <label for="pais">Selecciona pais donde resides</label>
+                    <br><br>
+                    <label for="data_naixament">Fecha de Nacimiento (Obligatorio)</label><br>
+                    <input type="date" name="data_naixament" id="data_naixament" max="2003-12-31" placeholder="Fecha nacimiento (Obligatorio)"> 
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('pais')) {
@@ -242,6 +243,8 @@
                         }    
                     }
                     ?>
+                    <br><br>
+                    <label for="pais">Selecciona pais(Obligatorio)</label><br><br>
                     <select name="pais" name="pais">
                         <option value="Elegir" id="AF" disabled>Elegir opción</option>
                         <option value="Afganistán" id="AF">Afganistán</option>
@@ -308,7 +311,7 @@
                         <option value="Eritrea" id="ER">Eritrea</option>
                         <option value="Eslovaquia" id="SK">Eslovaquia</option>
                         <option value="Eslovenia" id="SI">Eslovenia</option>
-                        <option value="España" id="ES">España</option>
+                        <option value="España" id="ES" selected>España</option>
                         <option value="Estados Unidos" id="US">Estados Unidos</option>
                         <option value="Estonia" id="EE">Estonia</option>
                         <option value="c" id="ET">Etiopía</option>
@@ -489,15 +492,18 @@
                         }    
                     }
                     ?>
-                    <input type="tel" name="telefon" placeholder="Telefono *"> 
+                    <br><br>
+                    <input type="tel" name="telefon" placeholder="Telefono: 000-000-000 (Obligatorio)"> <br><br>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('img')) {
+                            echo "<p>";
                             echo $validation->getError('img');
+                            echo "</p>";
                         }    
                     }
-                    ?>
-                    <label for="img">Foto/Avatar</label>
+                    ?><br><br><br>
+                    <label for="img">Foto/Avatar (Opcional)</label>
                     <input type="file" name="img" id="img">
                     <button type="submit" class="btn signup"><i class="fa fa-spinner fa-pulse"></i> Registro</button> 
                 </form>
@@ -511,7 +517,7 @@
             <a href="<?= base_url()?>"><img src="<?= base_url('img/logo.png')?>" class="logo"></a>
         </div>
         <div>
-        <p>&copy; 2022 Jherson & Marc | Todos los derechos reservados.</p>
+        <p style="color: #fff;">&copy; 2022 Jherson & Marc | Todos los derechos reservados.</p>
         </div>
         <div class="media-footer">
             <!-- <div>

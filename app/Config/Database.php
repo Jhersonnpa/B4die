@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'b4die_t',
+        'database' => 'b4die',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

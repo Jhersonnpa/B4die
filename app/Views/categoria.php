@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die</title>
+    <title>B4die - Categoria</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="<?= base_url('css/index.css')?>">
+    <link rel="stylesheet" href="<?= base_url('css/categoria.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="<?=  base_url('js/js.js')?>"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()">
     <nav class="navbar">
@@ -40,7 +40,7 @@
                     echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
                 }
                 else {
-                    echo '<span class="nomUsu">Usuario</span>';
+                    echo "<a href='". base_url('/login')."' class='nomUsu'>Usuario</a>";
                 }
                 ?>
             </div>
@@ -59,7 +59,7 @@
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
                                     <ul>
-                                        <li><a href="#" class="subcategoria">aerea</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=1'?>" class="subcategoria">aérea</a></li>
                                         <?php
                                         foreach ($aerea as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -67,7 +67,7 @@
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">terrestre</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=2'?>" class="subcategoria">terrestre</a></li>
                                         <?php
                                         foreach ($terrestre as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -75,7 +75,7 @@
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">acuatica</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=3'?>" class="subcategoria">acuática</a></li>
                                         <?php
                                         foreach ($acuatica as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -83,7 +83,7 @@
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">viajes</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=4'?>" class="subcategoria">viajes</a></li>
                                         <?php
                                         foreach ($viajes as $key => $value) {
                                             echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
@@ -123,7 +123,51 @@
         <button class="modal__close jsModalClose"><i class='bx bx-x-circle' style='color:#feaf26'  ></i></button>
     </div>
     </div>
+    
 
+    <div class="container">
+            <?php
+                foreach ($nomSubCat as $key => $value) {
+                    $cont=0;
+                    echo "
+                    <h2><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></h2>
+                    <div class='cards'>
+                    ";
+                    foreach ($activitat as $ke => $valu) {
+                        if ($valu['subcategoria'] == $value['nom']) {
+                            echo "
+                            <div class='card'>
+                                <a href='".base_url('/experiencia?id='.$valu['id'])."' target='_blank'>
+                                    <img src='data:".$valu['tipo_img'].";base64,".base64_encode($valu['img'])."'/>
+                                    <div class='containerInfo'>
+                                        <span class='card-title'>".$valu['nom']."</span>
+                                        <div>
+                                            <span style='color: #FEAF26'>Categoria: <span>".$valu['categoria']."</span></span>
+                                            <span >".$valu['subcategoria']."</span>
+                                            <span>Dificultad: ".$valu['dificultat']."</span>
+                                            <span>Precio: ".$valu['precio']."</span>
+                                        </div>
+                                    </div>
+                                    <a href='".base_url('/experiencia?id='.$valu['id'])."' class='linkMas'>Ver más</a>
+                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                                </a>
+                            </div>
+                            
+                            ";
+                        }
+                    }
+                    foreach ($activitat as $ke => $valu) {
+                        if ($valu['subcategoria'] == $value['nom']) {
+                            $cont++;
+                        }
+                    }
+                    if ($cont == 0) {
+                        echo "<p>No existen actividades de esta categoria aún.</p>";
+                    }
+                    echo "</div>";
+                }
+            ?>
+    </div>
 
 
 

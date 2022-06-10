@@ -24,7 +24,7 @@ class Index extends BaseController
             $results = $query->getRowArray();
             $dades['usuari'] = $results;
         }
-        $query   = $this->db->query('SELECT * FROM activitat ORDER BY id DESC LIMIT 8 ');
+        $query   = $this->db->query('SELECT * FROM activitat ORDER BY id ASC LIMIT 8 ');
         // $results = $query->getResultArray();
         $model = new Subcategoria();
         $dades = ['activitat' => $query->getResultArray(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
@@ -117,17 +117,24 @@ class Index extends BaseController
     {
         $modelAct = new Activitat();
         $model = new Subcategoria();
-        // $idSub = $this->request->getVar('id');
-        $query = $this->db->query("SELECT nom FROM subcategoria");
-        $subcategoria = $query->getRow();
-        $comprobacion = $this->db->query("SELECT * FROM activitat WHERE subcategoria = '$subcategoria->nom'");
+        $idCat = $this->request->getVar('id');
+        $query = $this->db->query("SELECT nom FROM categoria WHERE id=$idCat");
+        $categoria = $query->getRow();
+        $query = $this->db->query("SELECT * FROM subcategoria WHERE id_categoria=$idCat");
+        $subcategoria = $query->getResultArray();
+        $comprobacion = $this->db->query("SELECT * FROM activitat WHERE categoria = '$categoria->nom'");
         if (empty($comprobacion->getResult())) {
-            $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=>$model->find($this->request->getVar('id'))];
+            $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=> $subcategoria];
         }
         else {
-            $dades = ['activitat' => $modelAct->where('subcategoria', $subcategoria->nom)->findAll(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomSubCat'=>$model->find($this->request->getVar('id'))];
+            $dades = ['activitat' => $modelAct->where('categoria', $categoria->nom)->findAll(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll(), 'nomCat'=>$model->find($this->request->getVar('id')), 'nomSubCat'=> $subcategoria];
         }
         return view('categoria', $dades);
+    }
+
+    public function buscador()
+    {
+        
     }
 
 }

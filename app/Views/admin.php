@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die</title>
+    <title>B4die - Admin</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="<?= base_url('css/ranking.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
-    <script src="<?=  base_url('js/js.js')?>"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="<?=  base_url('js/js.js')?>"></script>
 </head>
 <body onload="getLocation()" class="body">
     <nav class="navbar">
@@ -40,7 +40,7 @@
                     echo "<a href='". base_url('/perfil')."' class='nomUsu'>Hola, ".$session->nom_usuari ."</a>";
                 }
                 else {
-                    echo '<span class="nomUsu">Usuario</span>';
+                    echo "<a href='". base_url('/login')."' class='nomUsu'>Usuario</a>";
                 }
                 ?>
             </div>
@@ -59,34 +59,34 @@
                                 <div class="transparent"></div>
                                 <div class="nav-experiencias">
                                     <ul>
-                                        <li><a href="#" class="subcategoria">aerea</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=1'?>" class="subcategoria">aérea</a></li>
                                         <?php
                                         foreach ($aerea as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">terrestre</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=2'?>" class="subcategoria">terrestre</a></li>
                                         <?php
                                         foreach ($terrestre as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">acuatica</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=3'?>" class="subcategoria">acuática</a></li>
                                         <?php
                                         foreach ($acuatica as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
                                     <ul>
-                                        <li><a href="#" class="subcategoria">viajes</a></li>
+                                        <li><a href="<?= base_url('/categoria').'?id=4'?>" class="subcategoria">viajes</a></li>
                                         <?php
                                         foreach ($viajes as $key => $value) {
-                                            echo "<li><a href='#'>".$value['nom']."</a></li>";
+                                            echo "<li><a href='".base_url('/subcategoria').'?id='.$value['id']."'>".$value['nom']."</a></li>";
                                         }
                                         ?>
                                     </ul>
@@ -131,7 +131,7 @@
     <div class="container-pers">
         <?php 
         if (isset($session->msg)) {
-            echo "<h2 style='color: #fff;'>".$session->msg."</h2>";
+            echo "<h2 style='color: #fff;'><i class='bx bxs-info-square' style='color:#FFDB49'  ></i>".$session->msg."</h2>";
         }
         ?>
         <h2 class="h2">Experiencias registradas</h2>
@@ -176,8 +176,8 @@
                                 <td>".$value['precio']."</td>
                                 <td>".$value['url_empresa']."</td>
                                 <td><img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/></td>
-                                <td><a href='". base_url('/editarActivitat').'?id='.$value['id']."'><i class='bx bx-edit' ></i></a></td>
-                                <td><a href='". base_url('/eliminarActivitat').'?id='.$value['id']."'><i class='bx bxs-x-square' ></i></a></td>
+                                <td><a href='". base_url('/editarActivitat').'?id='.$value['id']."' style='color: #333;font-size: 1.5rem;'><i class='bx bx-edit' ></i></a></td>
+                                <td><a href='". base_url('/eliminarActivitat').'?id='.$value['id']."' style='color: red;font-size: 1.5rem;'><i class='bx bxs-x-square' ></i></a></td>
                             </tr>
                             ";
                         }
@@ -472,7 +472,7 @@
 
 
         
-        <!-- <h2 class="h2">Usuarios registrados</h2>
+        <h2 class="h2">Usuarios registrados</h2>
         <div class="tabla-pers">
             <div class="scrolling">
                 <table class="table table-hover table-responsive" id="table_id2">
@@ -489,7 +489,7 @@
                             <th>Avatar</th>
                             <th>Puntuacion</th>
                             <th>Rango</th>
-                            <th>Editar</th>
+                            <!-- <th>Editar</th> -->
                             <th>Eliminar</th>
                         </tr>
                     </thead>
@@ -498,24 +498,18 @@
                         foreach ($usuaris as $key => $value) {
                             echo "
                             <tr>
-                                <td>".$usuaris[$key]['id']."</td>
-                                <td>".$usuaris[$key]['nom_usuari']."</td>
-                                <td>".$usuaris[$key]['nom']."</td>
-                                <td>".$usuaris[$key]['cognom']."</td>
-                                <td>".$usuaris[$key]['email']."</td>
-                                <td>".$usuaris[$key]['data_naixament']."</td>
-                                <td>".$usuaris[$key]['pais']."</td>
-                                <td>".$usuaris[$key]['telefon']."</td>
-                                <td><img src='data:".$usuaris[$key]['tipo_img'].";base64,".base64_encode($usuaris[$key]['img'])."'/></td>
-                                <td>".$usuaris[$key]['puntuacion']."</td>
-                                <td>".$usuaris[$key]['rango']."</td>
-                                <form action='". base_url('/editarUsuario')."' method='post' enctype='multipart/form-data'>
-                                <td><button type='submit'><i class='bx bx-edit' ></i></button></td>
-                                </form>
-                                <form action='". base_url('/eliminarUsuario')."' method='post' enctype='multipart/form-data'>
-                                <input type='hidden' name='id' value='".$usuaris[$key]['id']."'>
-                                <td><button type='submit'><i class='bx bxs-x-square' ></i></button></td>
-                                </form>
+                                <td>".$value['id']."</td>
+                                <td>".$value['nom_usuari']."</td>
+                                <td>".$value['nom']."</td>
+                                <td>".$value['cognom']."</td>
+                                <td>".$value['email']."</td>
+                                <td>".$value['data_naixament']."</td>
+                                <td>".$value['pais']."</td>
+                                <td>".$value['telefon']."</td>
+                                <td><img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/></td>
+                                <td>".$value['puntuacion']."</td>
+                                <td>".$value['rango']."</td>
+                                <td><a href='". base_url('/eliminarUsuario').'?id='.$value['id']."' style='color: red;font-size: 1.5rem;'><i class='bx bxs-x-square' ></i></a></td>
                             </tr>
                             ";
                         }
@@ -523,7 +517,7 @@
                     </tbody>
                 </table>
             </div>
-        </div> -->
+        </div>
     </div>
     
 

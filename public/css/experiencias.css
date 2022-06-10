@@ -23,10 +23,20 @@
     margin-top: 5%!important;
 }
 #scroll h2{
+    width: max-content;
     color: var(--yellow);
     font-size: 3em;
     font-weight: 400;
     margin-bottom: 2%;
+}
+
+#scroll h2 a {
+    color: var(--yellow);
+    transition: all .3s;
+}
+
+#scroll h2 a:hover {
+    color: var(--yellow-dark);
 }
 
 /* Slider */
