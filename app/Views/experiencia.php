@@ -19,11 +19,11 @@
     <nav class="navbar">
         <div class="nav-top">
             <div id="search">
-                <form action="" role="search" id="searchform">
+                <form action="<?= base_url('/buscador')?>" method="POST" role="search" id="searchform">
                     <label for="s">
                         <i class='bx bx-search-alt-2'></i>
                     </label>
-                    <input type="text" placeholder="Busca tu experiencia" id="s"/>
+                    <input type="text" placeholder="Busca tu experiencia" id="s" name="inputBuscador"/>
                 </form>
             </div>
             <div class="dropdown-user">
@@ -144,7 +144,7 @@
 
                         <span class="bold">Ciudad: <span class="nomCat"><?php $experiencia['ciutat']=isset($experiencia['ciutat'])? $experiencia['ciutat']:"City of the activity"; echo $experiencia['ciutat'];?></span></span>
 
-                        <span class="bold">Precio: <span class="nomCat"><?php $experiencia['precio']=isset($experiencia['precio'])? $experiencia['precio']:"Price of the activity"; echo $experiencia['precio'];?></span></span>
+                        <span class="bold">Precio: <span class="nomCat"><?php $experiencia['precio']=isset($experiencia['precio'])? $experiencia['precio']:"Price of the activity"; echo $experiencia['precio'];?> €</span></span>
 
                         <span class="bold">URL: <span class="nomCat"><?php $experiencia['url_empresa']=isset($experiencia['url_empresa'])? $experiencia['url_empresa']:"URL of the activity"; echo "<a href='$experiencia[url_empresa]'>" . $experiencia['url_empresa']."</a>";?></span></span>
                         

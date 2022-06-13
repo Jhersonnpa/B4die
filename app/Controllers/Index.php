@@ -134,7 +134,16 @@ class Index extends BaseController
 
     public function buscador()
     {
-        
+        $model = new Subcategoria();
+        $busqueda = $this->request->getVar('inputBuscador');
+        $query = $this->db->query("SELECT * FROM activitat WHERE nom LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' OR subcategoria LIKE '%$busqueda%'");
+        if (empty($query->getResult())) {
+            $dades = ['aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+        }
+        else {
+            $dades = ['activitat' => $query->getResultArray(),'aerea' => $model->where('id_categoria', 1)->findAll(), 'terrestre' => $model->where('id_categoria', 2)->findAll(), 'acuatica' => $model->where('id_categoria', 3)->findAll(), 'viajes' => $model->where('id_categoria', 4)->findAll()];
+        }
+        return view('buscador', $dades);
     }
 
 }

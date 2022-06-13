@@ -19,11 +19,11 @@
     <nav class="navbar">
         <div class="nav-top">
             <div id="search">
-                <form action="" role="search" id="searchform">
+                <form action="<?= base_url('/buscador')?>" method="POST" role="search" id="searchform">
                     <label for="s">
                         <i class='bx bx-search-alt-2'></i>
                     </label>
-                    <input type="text" placeholder="Busca tu experiencia" id="s"/>
+                    <input type="text" placeholder="Busca tu experiencia" id="s" name="inputBuscador"/>
                 </form>
             </div>
             <div class="dropdown-user">
@@ -201,7 +201,7 @@
                         }    
                     }
                     ?>
-                    <input type="password" name="contrasenya" placeholder="Contraseña (Obligatorio)"/>
+                    <input type="password" name="contrasenya" placeholder="Contraseña 6 cáracteres min...(Obligatorio)"/>
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('contrasenyaC')) {
@@ -235,7 +235,7 @@
                     ?>
                     <br><br>
                     <label for="data_naixament">Fecha de Nacimiento (Obligatorio)</label><br>
-                    <input type="date" name="data_naixament" id="data_naixament" max="2003-12-31" placeholder="Fecha nacimiento (Obligatorio)"> 
+                    <input type="date" name="data_naixament" id="data_naixament" placeholder="Fecha nacimiento (Obligatorio)"> 
                     <?php
                     if (!empty($validation)) {
                         if ($validation->getError('pais')) {

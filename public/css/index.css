@@ -382,7 +382,7 @@ span {
 
 /* css modal envio de sugerencia */
 .form{
-    padding: 80px 100px 40px 100px;
+    padding: 20px 50px 40px 20px;
     display: flex;
     flex-direction: column;
     font-size: 1.4em;
@@ -406,7 +406,7 @@ span {
 }
 .form button{
     margin-top: 80px;
-    width: 40%;
+    width: max-content;
     background-color: var(--yellow);
     padding: 10px 15px;
     border: 0;
@@ -536,4 +536,16 @@ span {
     .containerInfo > div {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+
+/* css del buscador */
+.noEncontrada{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--yellow-dark);
+    font-size: 3em;
+    width: 100%;
 }

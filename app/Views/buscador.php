@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4die - Experiencias</title>
+    <title>B4die - Home</title>
     <link rel="icon" href="<?= base_url('img/logo.png')?>">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="<?= base_url('css/experiencias.css')?>">
+    <link rel="stylesheet" href="<?= base_url('css/index.css')?>">
     <link rel="stylesheet" href="<?= base_url('css/style.css')?>">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -124,161 +124,38 @@
     </div>
     </div>
 
-<section id="scroll" class="marginTop">
-    <h2><a href="<?= base_url('/categoria').'?id=1'?>">AÉREA</a></h2>
-        <div class="main-scroll-div">
-            <div class="minimoMargen">
-                <button class="icon icon-left" onclick="scrollLCAT1()"><i class='bx bx-chevron-left'></i></button>
-            </div>
-                <div class="cover">
-                    <div class="CAT1 snaps-inline">
-                        <?php
-                        foreach ($aerea_content as $key => $value) {
-                            echo "
-                            <div class='child'>
-                                <div class='card'>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
-                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                                    <div class='containerInfo'>
-                                        <span class='card-title'>".$value['nom']."</span>
-                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
+    <div class="container" style="min-height: 80vh;">
+        
+            <?php
+            if (isset($activitat)) {
+                foreach ($activitat as $key => $value) {
+                    echo "
+                    <div class='cards'>
+                        <div class='card'>
+                            <a href='".base_url('/experiencia?id='.$value['id'])."' target='_blank'>
+                                <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
+                                <div class='containerInfo'>
+                                    <span class='card-title'>".$value['nom']."</span>
+                                    <div class='tamañoLetra'>
+                                        <span>".$value['categoria']."</span>
+                                        <span>".$value['pais']."</span>
                                         <span >".$value['subcategoria']."</span>
-                                        <span>Dificultad: ".$value['dificultat']."</span>
+                                        <span>Precio: ".$value['precio']." €</span>
                                     </div>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
-                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
-                                    </a>
                                 </div>
-                            </div>
-                            ";
-                        }
-                        ?>
+                                <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            <div class="minimoMargen">
-                <button class="icon icon-right" onclick="scrollRCAT1()"><i class='bx bx-chevron-right'></i></button>
-            </div>
-        </div>
-
-</section>
-
-<section id="scroll">
-    <h2><a href="<?= base_url('/categoria').'?id=2'?>">TERRESTRE</a></h2> 
-        <div class="main-scroll-div">
-            <div class="minimoMargen">
-                <button class="icon icon-left" onclick="scrollLCAT2()"><i class='bx bx-chevron-left'></i></button>
-            </div>
-                <div class="cover">
-                    <div class="CAT2 snaps-inline">
-                        <?php
-                        foreach ($terrestre_content as $key => $value) {
-                            echo "
-                            <div class='child'>
-                                <div class='card'>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
-                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                                    <div class='containerInfo'>
-                                        <span class='card-title'>".$value['nom']."</span>
-                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
-                                        <span >".$value['subcategoria']."</span>
-                                        <span>Dificultad: ".$value['dificultat']."</span>
-                                    </div>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
-                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                            ";
-                        }
-                        ?>
-                    </div>
-                </div>
-            <div class="minimoMargen">
-                <button class="icon icon-right" onclick="scrollRCAT2()"><i class='bx bx-chevron-right'></i></button>
-            </div>
-        </div>
-
-</section>
-
-
-<section id="scroll">
-    <h2><a href="<?= base_url('/categoria').'?id=3'?>">ACUÁTICA</a></h2>   
-        <div class="main-scroll-div">
-            <div class="minimoMargen">
-                <button class="icon icon-left" onclick="scrollLCAT3()"><i class='bx bx-chevron-left'></i></button>
-            </div>
-                <div class="cover">
-                    <div class="CAT3 snaps-inline">
-                        <?php
-                        foreach ($acuatica_content as $key => $value) {
-                            echo "
-                            <div class='child'>
-                                <div class='card'>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
-                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                                    <div class='containerInfo'>
-                                        <span class='card-title'>".$value['nom']."</span>
-                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
-                                        <span >".$value['subcategoria']."</span>
-                                        <span>Dificultad: ".$value['dificultat']."</span>
-                                    </div>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
-                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                            ";
-                        }
-                        ?>
-                    </div>
-                </div>
-            <div class="minimoMargen">
-                <button class="icon icon-right" onclick="scrollRCAT3()"><i class='bx bx-chevron-right'></i></button>
-            </div>
-        </div>
-
-</section>
-
-
-<section id="scroll">
-    <h2><a href="<?= base_url('/categoria').'?id=4'?>">VIAJES</a></h2>  
-        <div class="main-scroll-div">
-            <div class="minimoMargen">
-                <button class="icon icon-left" onclick="scrollLCAT4()"><i class='bx bx-chevron-left'></i></button>
-            </div>
-                <div class="cover">
-                    <div class="CAT4 snaps-inline">
-                        <?php
-                        foreach ($viajes_content as $key => $value) {
-                            echo "
-                            <div class='child'>
-                                <div class='card'>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."'>
-                                    <img src='data:".$value['tipo_img'].";base64,".base64_encode($value['img'])."'/>
-                                    <div class='containerInfo'>
-                                        <span class='card-title'>".$value['nom']."</span>
-                                        <span style='color: #FEAF26'>Categoria: <span>".$value['categoria']."</span></span>
-                                        <span >".$value['subcategoria']."</span>
-                                        <span>Dificultad: ".$value['dificultat']."</span>
-                                    </div>
-                                    <a href='".base_url('/experiencia?id='.$value['id'])."' class='linkMas'>Ver más</a>
-                                    <span class='new'><i class='bx bxs-bookmark-heart' ></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                            ";
-                        }
-                        ?>
-                    </div>
-                </div>
-            <div class="minimoMargen">
-                <button class="icon icon-right" onclick="scrollRCAT4()"><i class='bx bx-chevron-right'></i></button>
-            </div>
-        </div>
-
-</section>
-
-
+                    ";
+                }
+            }
+            else {
+                echo "<h1 class='noEncontrada'>No se encontraron resultados</h1>";
+            }
+            ?>
+        
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -298,12 +175,13 @@
             </div>
         </div>
     </footer>
-
-<!-- JAVASCRIPT -->
-<script  type="text/javascript">
+    
+    <!-- JS -->
+    <script  type="text/javascript">
         window.onload = function(){
-            getMap();
+            modal();
         }
+
         const burgerMenu = document.getElementById("burger");
         const navbarMenu = document.getElementById("menu");
 
@@ -318,8 +196,9 @@
                 navbarMenu.removeAttribute("style");
             }
         });
-</script>
 
-
+    </script>
+    <!-- Google Maps -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

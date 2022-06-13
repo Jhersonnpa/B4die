@@ -19,11 +19,11 @@
     <nav class="navbar">
         <div class="nav-top">
             <div id="search">
-                <form action="" role="search" id="searchform">
+                <form action="<?= base_url('/buscador')?>" method="POST" role="search" id="searchform">
                     <label for="s">
                         <i class='bx bx-search-alt-2'></i>
                     </label>
-                    <input type="text" placeholder="Busca tu experiencia" id="s"/>
+                    <input type="text" placeholder="Busca tu experiencia" id="s" name="inputBuscador"/>
                 </form>
             </div>
             <div class="dropdown-user">
@@ -198,7 +198,7 @@
                                 echo "
                                 <div>
                                     <label for='data_naixament'>Fecha de Nacimiento</label>
-                                    <input type='date' name='data_naixament' id='data_naixament' max='2003-12-31' value='".$usuari['data_naixament']."'/>
+                                    <input type='date' name='data_naixament' id='data_naixament' value='".$usuari['data_naixament']."'/>
                                 </div>
                                 ";
                                 if (!empty($validation)) {

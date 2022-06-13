@@ -50,6 +50,7 @@ $routes->add('/eliminarUsuario', 'Admin::eliminarUsuario');
 $routes->add('/editarUser', 'Admin::editarUser');
 $routes->add('/subcategoria', 'Index::subcategoria');
 $routes->add('/categoria', 'Index::categoria');
+$routes->add('/buscador', 'Index::buscador');
 
 
 /*

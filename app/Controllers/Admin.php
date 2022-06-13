@@ -87,7 +87,6 @@ class Admin extends BaseController
             "longitud" => "required",
             "latitud" => "required",
 			"dificultat" => "required",
-            "img" => "mime_in[image,image/jpg,image/gif,image/png]",
             "precio" => "required",
             "url_empresa" => "required",
 		];
@@ -98,13 +97,13 @@ class Admin extends BaseController
 			],
 			"descripcio" => [
 				"required" => "Descripcion obligatorio",
-				],
+			],
 			"categoria" => [
 				"required" => "Categoria obligatoria",
-				],
+			],
 			"subcategoria" => [
 				"required" => "Subcategoria obligatoria",
-				],
+			],
             "dificultat" => [
                 "required" => "Dificultat obligatorio",
             ],
@@ -120,10 +119,7 @@ class Admin extends BaseController
 			"latitud" => [
                 "required" => "Latitud obligatoria.",
             ],
-            "img" => [
-                "mime_in" => "El archivo subido no es una imagen.",
-            ]
-            ,"precio" => [
+            "precio" => [
                 "required" => "Precio obligatorio.",
             ],
             "url_empresa" => [
@@ -193,7 +189,6 @@ class Admin extends BaseController
                 "longitud" => "required",
                 "latitud" => "required",
                 "dificultat" => "required",
-                "img" => "mime_in[image,image/jpg,image/gif,image/png]",
                 "precio" => "required",
                 "url_empresa" => "required",
             ];
@@ -260,9 +255,6 @@ class Admin extends BaseController
             ],
 			"latitud" => [
                 "required" => "Latitud obligatoria.",
-            ],
-            "img" => [
-                "mime_in" => "El archivo subido no es una imagen.",
             ],
             "precio" => [
                 "required" => "Precio obligatorio.",
@@ -350,7 +342,6 @@ class Admin extends BaseController
             "data_naixament" => "required",
             "pais" => "required",
 			"telefon" => "required|min_length[9]|max_length[9]",
-            "img" => "mime_in[image,image/jpg,image/gif,image/png]",
 		];
 
 		$missatges = [
@@ -386,9 +377,6 @@ class Admin extends BaseController
 				"min_length" => "Formato invalido del telefono. Ej: 666333111",
 				"max_length" => "Formato invalido del telefono. Ej: 666333111",
 			],
-            "img" => [
-                "mime_in" => "El archivo subido no es una imagen.",
-            ],
 		];
         $model = new Subcategoria();
         $dades['aerea'] = $model->where('id_categoria', 1)->findAll();
